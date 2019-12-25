@@ -1,8 +1,8 @@
-pH min,pH max,nitrogen min,nitrogen max,phosphorus min,phosphorus max,potasium min,potasium max,calcium min,calcium max,magnesium min,magnesium max,sulphur min,sulphur max,iron min,iron max,zinc min,zinc max,manganese min,manganese max,copper min,copper max,boron min,boron max,class,crop
-6.5,7.8,128,128,46,46,219,219,27,27,19,19,22,22,1.8,1.8,0.5,0.5,0.5,0.5,0.15,0.15,0,0,0,wheat
-5.5,8.5,80,80,40,40,40,40,20,20,17,17,21,21,2.5,2.5,0.21,0.21,0.17,0.17,0.3,0.3,0,0,1,Jowar
-6.5,7.5,191,191,89,89,235,235,57,57,73,73,21,21,0.13,0.13,0.38,0.38,0.34,0.34,0.11,0.11,0,0,2,Maize
-4.7,7.5,30,50,2,7,12,30,3,10,1,5,1,3,1.2,1.5,0.03,0.04,0.2,0.5,0.02,0.02,0,0,3,Pulses
-5.5,7.5,50,150,18,90,30,385,20,210,13,70,5,8,0.29,7.75,0.28,0.75,0.09,0.42,0.03,0.06,0,0,4,Oil Crop
-6,8,200,200,53,53,280,280,42,42,50,50,30,30,3.4,3.4,0.4,0.4,1.2,1.2,0.6,0.6,0.2,0.2,5,sugercane
-5.5,6.5,110,150,20,30,80,120,300,1000,40,100,0,0,45,45,4.5,4.5,5,5,5,25,1,3,6,grapes
+pH min,pH max,nitrogen min,nitrogen max,phosphorus min,phosphorus max,potasium min,potasium max,calcium min,calcium max,magnesium min,magnesium max,sulphur min,sulphur max,iron min,iron max,zinc min,zinc max,manganese min,manganese max,copper min,copper max,boron min,boron max,temperature min,temperature max,precipitation min,precipitation max,class,crop
+6.5,7.8,128,128,46,46,219,219,27,27,19,19,22,22,1.8,1.8,0.5,0.5,0.5,0.5,0.15,0.15,0,0,22,25,62,87,0,wheat
+5.5,8.5,80,80,40,40,40,40,20,20,17,17,21,21,2.5,2.5,0.21,0.21,0.17,0.17,0.3,0.3,0,0,25,32,40,40,1,Jowar
+6.5,7.5,191,191,89,89,235,235,57,57,73,73,21,21,0.13,0.13,0.38,0.38,0.34,0.34,0.11,0.11,0,0,18,27,60,100,2,Maize
+4.7,7.5,30,50,2,7,12,30,3,10,1,5,1,3,1.2,1.5,0.03,0.04,0.2,0.5,0.02,0.02,0,0,15,20,25,75,3,Pulses
+5.5,7.5,50,150,18,90,30,385,20,210,13,70,5,8,0.29,7.75,0.28,0.75,0.09,0.42,0.03,0.06,0,0,25,35,20,20,4,Oil Crop
+6,8,200,200,53,53,280,280,42,42,50,50,30,30,3.4,3.4,0.4,0.4,1.2,1.2,0.6,0.6,0.2,0.2,20,26,100,175,5,sugercane
+5.5,6.5,110,150,20,30,80,120,300,1000,40,100,0,0,45,45,4.5,4.5,5,5,5,25,1,3,25,35,50,60,6,grapes

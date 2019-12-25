@@ -11,10 +11,10 @@ import keras
 
 
 # load dataset
-dataframe = pandas.read_csv("data.csv", header=0)
+dataframe = pandas.read_csv("sdata.csv", header=0)
 dataset = dataframe.values
-X = dataset[:,0:24].astype(float)
-Y = dataset[:,24]
+X = dataset[:,0:28].astype(float)
+Y = dataset[:,28]
 
 one_hot_labels = keras.utils.to_categorical(Y, num_classes=7)
 
@@ -22,8 +22,8 @@ one_hot_labels = keras.utils.to_categorical(Y, num_classes=7)
 def baseline_model():
 	# create model
     model = Sequential()
-    model.add(Dense(48, input_dim=24, activation='relu'))
-    model.add(Dense(96, input_dim=48, activation='relu'))
+    model.add(Dense(56, input_dim=28, activation='relu'))
+    model.add(Dense(112, input_dim=56, activation='relu'))
     model.add(Dense(7, activation='softmax'))
 	# Compile model
     model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])

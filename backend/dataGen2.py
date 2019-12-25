@@ -1,5 +1,6 @@
 import pandas as pd
-dataOrg = pd.read_csv('idealConditions - Sheet1.csv',header=None)
+import random
+dataOrg = pd.read_csv('data.csv',header=None,low_memory=False)
 
 dataGen = {}
 
@@ -10,21 +11,25 @@ for rowIndex, row in dataOrg.iterrows():
         if rowIndex == 0:
             temp = {col : []}
             dataGen.update(temp)
-    
-    for col in row[:-2]:
+
+    for _ in range(0,28):
+        r1 = random.randint(0, 27)
+        col = row[r1]
         if rowIndex != 0:
             try:
-                newColinc = float(col) + float(col)*0.05
-                newColdec = float(col) - float(col)*0.05
-
+                
+                newColinc = float(col) + float(col)*0.2
+                newColdec = float(col) - float(col)*0.2
+                
             except:
                 pass
             
             #decrement
             dictIndex = 0
             for key, value in dataGen.items():
-               # print(dataGen)
-                if(dictIndex == colIndex):
+                #print(dataGen)
+                    
+                if(dictIndex == r1):
                     dataGen[key].append(newColdec)
 
                 else:
@@ -34,14 +39,14 @@ for rowIndex, row in dataOrg.iterrows():
             #increment
             dictIndex = 0
             for key, value in dataGen.items():
-               # print(dataGen)
-                if(dictIndex == colIndex):
+                #print(dataGen)
+                if(dictIndex == r1):
                     dataGen[key].append(newColinc)
 
                 else:
                     dataGen[key].append(row[dictIndex])
                 dictIndex += 1
-                   
+                    
         colIndex += 1
     
 
