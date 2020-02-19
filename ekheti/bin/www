@@ -9,8 +9,8 @@ var debug = require('debug')('ekheti:server');
 var http = require('http');
 var fs = require('fs');
 var https = require('https');
-var privateKey  = fs.readFileSync('./selfsigned.key', 'utf8');
-var certificate = fs.readFileSync('./selfsigned.crt', 'utf8');
+var privateKey  = fs.readFileSync('/home/rahul/Documents/https/selfsigned.key', 'utf8');
+var certificate = fs.readFileSync('/home/rahul/Documents/https/selfsigned.crt', 'utf8');
 var credentials = {key: privateKey, cert: certificate};
 
 /**
