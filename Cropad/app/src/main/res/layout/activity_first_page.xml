@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#32cb"
+    tools:context=".first_page">
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_navigation" />
+
+<!--        android:id="@+id/title"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="#102027"-->
+<!--        android:gravity="center"-->
+<!--        android:text="CROPAD"-->
+<!--        android:textColor="#fafafa"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textSize="45dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.228" />-->
+
+<!--    <ViewFlipper-->
+<!--        android:id="@+id/flipper"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="250dp"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/title"-->
+<!--        android:layout_below="@+id/title"-->
+<!--        tools:layout_editor_absoluteX="6dp"-->
+<!--        android:autoStart="true"-->
+<!--        android:flipInterval="3000">-->
+
+
+<!--        <Button-->
+<!--            android:id="@+id/logout_but"-->
+<!--            android:layout_width="70dp"-->
+<!--            android:layout_height="70dp"-->
+<!--            android:background="@drawable/logout_round"-->
+<!--            android:text="Log OUT"-->
+<!--            android:textColor="#fafafa"-->
+<!--            android:textSize="10dp" />-->
+<!--    </ViewFlipper>-->
+
+<!--    <ScrollView-->
+<!--        android:id="@+id/scrollView2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/flipper"-->
+<!--        app:layout_constraintVertical_bias="0.741"-->
+<!--        tools:layout_editor_absoluteX="-9dp"-->
+<!--        android:layout_below="@+id/flipper"-->
+<!--        android:layout_above="@id/bottom_navigation"-->
+<!--        >-->
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/market_place"-->
+<!--                style="@android:style/Widget.DeviceDefault.Button.Toggle"-->
+<!--                android:layout_width="150dp"-->
+<!--                android:layout_height="150dp"-->
+<!--                android:layout_marginStart="26dp"-->
+<!--                android:layout_marginLeft="26dp"-->
+<!--                android:layout_marginTop="44dp"-->
+<!--                android:layout_marginEnd="8dp"-->
+<!--                android:layout_marginRight="8dp"-->
+<!--                android:background="@drawable/roundbut"-->
+<!--                android:text=" Nearby Market     Place"-->
+<!--                android:textSize="20dp"-->
+<!--                android:textColor="#fafafa"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintHorizontal_bias="0.039"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+<!---->
+<!--            <Button-->
+<!--                android:textColor="#fafafa"-->
+<!--                android:id="@+id/input_form_but"-->
+<!--                android:layout_width="150dp"-->
+<!--                android:layout_height="150dp"-->
+<!--                android:layout_marginStart="194dp"-->
+<!--                android:layout_marginLeft="194dp"-->
+<!--                android:layout_marginTop="44dp"-->
+<!--                android:background="@drawable/roundbut"-->
+<!--                android:text="Input form"-->
+<!--                android:textSize="20dp"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintHorizontal_bias="0.402"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+<!---->
+<!--            <Button-->
+<!--                android:textColor="#fafafa"-->
+<!--                android:id="@+id/add_market_but"-->
+<!--                style="@android:style/Widget.DeviceDefault.Button.Toggle"-->
+<!--                android:layout_width="150dp"-->
+<!--                android:layout_height="150dp"-->
+<!--                android:layout_marginStart="26dp"-->
+<!--                android:layout_marginLeft="26dp"-->
+<!--                android:layout_marginTop="228dp"-->
+<!--                android:layout_marginEnd="8dp"-->
+<!--                android:layout_marginRight="8dp"-->
+<!--                android:background="@drawable/roundbut"-->
+<!--                android:text="Add market"-->
+<!--                android:textSize="20dp"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintHorizontal_bias="0.039"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+<!---->
+<!--            <Button-->
+<!--                android:textColor="#fafafa"-->
+<!--                android:id="@+id/weather"-->
+<!--                android:layout_width="150dp"-->
+<!--                android:layout_height="150dp"-->
+<!--                android:layout_marginStart="194dp"-->
+<!--                android:layout_marginLeft="194dp"-->
+<!--                android:layout_marginTop="228dp"-->
+<!--                android:layout_marginEnd="8dp"-->
+<!--                android:layout_marginRight="8dp"-->
+<!--                android:background="@drawable/roundbut"-->
+<!--                android:text="Weather"-->
+<!--                android:textSize="20dp"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintHorizontal_bias="0.457"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+<!---->
+<!--            <Button-->
+<!--                android:id="@+id/logout_but"-->
+<!--                android:layout_width="150dp"-->
+<!--                android:layout_height="150dp"-->
+<!--                android:layout_marginStart="194dp"-->
+<!--                android:layout_marginLeft="194dp"-->
+<!--                android:layout_marginTop="408dp"-->
+<!--                android:layout_marginEnd="8dp"-->
+<!--                android:layout_marginRight="8dp"-->
+<!--                android:background="@drawable/roundbut"-->
+<!--                android:text="LOG OUT"-->
+<!--                android:textColor="#fafafa"-->
+<!--                android:textSize="20dp"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintHorizontal_bias="0.457"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+<!---->
+<!--            <Button-->
+<!--                android:textColor="#fafafa"-->
+<!--                android:id="@+id/expert_articles"-->
+<!--                android:layout_width="150dp"-->
+<!--                android:layout_height="150dp"-->
+<!--                android:layout_marginTop="32dp"-->
+<!--                android:layout_marginEnd="176dp"-->
+<!--                android:layout_marginRight="176dp"-->
+<!--                android:background="@drawable/roundbut"-->
+<!--                android:text="EXpert Articles"-->
+<!--                android:textSize="20dp"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintHorizontal_bias="0.411"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/add_market_but" />-->
+<!---->
+<!---->
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--    </ScrollView>-->
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_navigation"
+        android:background="?android:attr/windowBackground"/>
+
+</RelativeLayout>

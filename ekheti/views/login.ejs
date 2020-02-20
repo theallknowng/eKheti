@@ -20,11 +20,63 @@
 	<link rel="stylesheet" type="text/css" href="stylesheets/Loginutil.css">
 	<link rel="stylesheet" type="text/css" href="stylesheets/Loginmain.css">
 <!--===============================================================================================-->
+
+<!-- <head> -->
+	<!-- <meta charset="utf-8">
+	<title>eKheti</title>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta content="" name="keywords">
+	<meta content="" name="description">
+   -->
+	<!-- Favicons -->
+	<!-- <link href="img/favicon.png" rel="icon">
+	<link href="img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+  
+	<!-- Google Fonts -->
+	<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900" rel="stylesheet"> -->
+  
+	<!-- Bootstrap CSS File -->
+	<!-- <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+  
+	<!-- Libraries CSS Files -->
+	<!-- <link href="lib/nivo-slider/css/nivo-slider.css" rel="stylesheet">
+	<link href="lib/owlcarousel/owl.carousel.css" rel="stylesheet">
+	<link href="lib/owlcarousel/owl.transitions.css" rel="stylesheet">
+	<link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="lib/animate/animate.min.css" rel="stylesheet"> -->
+	<!-- <link href="lib/venobox/venobox.css" rel="stylesheet"> -->
+  
+	<!-- Nivo Slider Theme -->
+	<!-- <link href="stylesheets/nivo-slider-theme.css" rel="stylesheet"> -->
+  
+	<!-- Main Stylesheet File -->
+	<!-- <link href="stylesheets/style.css" rel="stylesheet"> -->
+  
+	<!-- Responsive Stylesheet File -->
+	<!-- <link href="stylesheets/responsive.css" rel="stylesheet"> -->
+  
+	<!-- =======================================================
+	  Theme Name: eBusiness
+	  Theme URL: https://bootstrapmade.com/ebusiness-bootstrap-corporate-template/
+	  Author: BootstrapMade.com
+	  License: https://bootstrapmade.com/license/
+	======================================================= -->
+  <!-- </head> -->
+
+  <!--===============================================================================================-->	
+
+
 </head>
 <body>
-	
+
+	<div>
+		<%- include nav.ejs %>
+	</div>
+
 	<div class="limiter">
+		
 		<div class="container-login100">
+			
 			<div class="wrap-login100">
 				<div class="login100-pic js-tilt" data-tilt>
 					<img src="images/Login/img-01.png" alt="IMG">
@@ -36,7 +88,7 @@
 					</span>
 
 					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-						<input class="input100" type="text" name="email" placeholder="Email">
+						<input class="input100" type="tel" name="mobile" maxlength="10" placeholder="Email">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-envelope" aria-hidden="true"></i>
@@ -77,11 +129,9 @@
 		</div>
 	</div>
 	
-	
 
-	
-<!--===============================================================================================-->	
-	<script src="lib/Loginvendor/jquery/jquery-3.2.1.min.js"></script>
+</body>
+<script src="lib/Loginvendor/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
 	<script src="lib/Loginvendor/bootstrap/js/popper.js"></script>
 	<script src="lib/Loginvendor/bootstrap/js/bootstrap.min.js"></script>
@@ -97,5 +147,4 @@
 <!--===============================================================================================-->
 	<script src="javascripts/mainLogin.js"></script>
 
-</body>
 </html>

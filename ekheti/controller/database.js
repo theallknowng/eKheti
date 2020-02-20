@@ -4,8 +4,8 @@ var request = require('request-promise');
 
 
 
-function getUser (email_id, password, cb) {
-    var sql = 'select * from users where email_id ="' + email_id + '" and password ="' + password + '"'
+function getUser (contact, password, cb) {
+    var sql = 'select * from users where contact ="' + contact + '" and password ="' + password + '"'
     conn.query(sql, function (err, user) {
       cb(err, user[0])
     })
@@ -37,3 +37,4 @@ function weather(req,res){  //isme update ke zarurat hai like location tag wager
     })
   }
   
+  module.exports = { getUser, newUser }

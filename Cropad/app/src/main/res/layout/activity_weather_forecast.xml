@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".weather_forecast"
+    android:background="#32cb">
+
+
+    <!--    <TextView-->
+<!--        android:id="@+id/temperature_min"-->
+<!--        android:layout_width="140dp"-->
+<!--        android:layout_height="45dp"-->
+<!--        android:gravity="center"-->
+<!--        android:hint="Temperature min"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/temperature_max"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/title" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/temperature_max"-->
+<!--        android:layout_width="140dp"-->
+<!--        android:layout_height="45dp"-->
+<!--        android:layout_marginTop="116dp"-->
+<!--        android:gravity="center"-->
+<!--        android:hint="Temperature max"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.498"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/title" />-->
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="194dp"
+        android:layout_height="87dp"
+        android:background="@drawable/crad_round"
+        android:elevation="16dp"
+        android:layout_marginTop="68dp"
+        android:gravity="center"
+        android:text="Weather Forecast"
+        android:textSize="30sp"
+        android:textColor="#F9AA33"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="357dp"
+        android:layout_height="273dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="@dimen/cardview_compat_inset_shadow"
+        android:divider="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintVertical_bias="0.21">
+
+        <RelativeLayout
+            android:layout_width="337dp"
+            android:layout_height="255dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:elevation="10dp"
+            android:divider = "@android:color/transparent"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignStart="@+id/temperature_max"
+                android:layout_alignLeft="@+id/temperature_max"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="229dp"
+                android:layout_marginLeft="229dp"
+                android:layout_marginEnd="11dp"
+                android:layout_marginRight="11dp"
+                android:layout_marginBottom="154dp"
+                android:background="@drawable/weather" />
+
+            <TextView
+                android:id="@+id/temperature_max"
+                android:layout_width="201dp"
+                android:layout_height="44dp"
+                android:layout_alignTop="@+id/temperature_min"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="63dp"
+                android:layout_marginBottom="148dp"
+                android:gravity="center"
+                android:hint="Temperature max"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/temperature_min"
+                android:layout_width="201dp"
+                android:layout_height="61dp"
+                android:gravity="center"
+                android:hint="Temperature min"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/datetime"
+                android:layout_width="103dp"
+                android:layout_height="42dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="0dp"
+                android:gravity="center"
+                android:hint="Date" />
+
+            <TextView
+                android:id="@+id/humidity"
+                android:layout_width="287dp"
+                android:layout_height="77dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="48dp"
+                android:gravity="center"
+                android:hint="Humidity - "
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+
+            <TextView
+                android:id="@+id/minimumtemp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="min temp" />
+
+            <TextView
+                android:id="@+id/maximumtemp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="181dp"
+                android:text="max temp" />
+
+            <TextView
+                android:id="@+id/precipitationdata"
+                android:layout_width="147dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="100dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="100dp"
+                android:layout_marginBottom="126dp"
+                android:gravity="center"
+                android:text="precipitation_data" />
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

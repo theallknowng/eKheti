@@ -2,6 +2,10 @@
   "name": "ekheti",
   "version": "0.0.0",
   "private": true,
+  "author": {
+    "name": "Alok Pandey",
+    "email": "alokrocks217@gmail.com"
+  },
   "scripts": {
     "start": "node ./bin/www"
   },
@@ -14,6 +18,7 @@
     "http-errors": "~1.6.2",
     "https": "^1.0.0",
     "morgan": "~1.9.0",
+    "mysql": "^2.18.1",
     "request-promise": "^4.2.5"
   }
 }
