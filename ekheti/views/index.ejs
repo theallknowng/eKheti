@@ -64,7 +64,7 @@
 										<span class="icon-bar"></span>
 									</button>
                 <!-- Brand -->
-                <a class="navbar-brand page-scroll sticky-logo" href="index.html">
+                <a class="navbar-brand page-scroll sticky-logo" href="/">
                   <h1><span>e</span>KHETI</h1>
                   <!-- Uncomment below if you prefer to use an image logo -->
                   <!-- <img src="img/logo.png" alt="" title=""> -->
@@ -96,12 +96,16 @@
                   </li>
                  
                   <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Log in
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                     <span class="caret"></span></a>
                     <ul class="dropdown-menu">
+                      <%if(login=="false"){%>
                       <li><a href="/login">Log in</a></li>
                       <li><a href="Signup.html">Register </a></li>
-                    </ul>
+                        <%} else {%>
+                        <li><a href="/logout">Log out</a></li>
+                        <%}%>
+                        </ul>
                   </li>
                   <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Translate
@@ -306,7 +310,7 @@
                   <a class="services-icon" href="#">
 											<i class="fa fa-code"></i>
 										</a>
-                  <h4>Crop Suggestion</h4>
+                  <h4><a href='/cropSuggestion'>Crop Suggestion</a></h4>
                   <p>
                     We will be suggesting you crop to grow which will be beneficial to you as compared to the crops which you
                   were growing till now.</p>
@@ -1158,11 +1162,11 @@
 <!-- <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
+    <title><%=// title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <h1><%=// title %></h1>
+    <p>Welcome to <%= //title %></p>
   </body>
 </html> -->

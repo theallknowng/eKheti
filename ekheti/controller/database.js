@@ -4,8 +4,8 @@ var request = require('request-promise');
 
 
 
-function getUser (contact, password, cb) {
-    var sql = 'select * from users where contact ="' + contact + '" and password ="' + password + '"'
+function getUser (email, password, cb) {
+    var sql = 'select * from users where email ="' + email + '" and password ="' + password + '"'
     conn.query(sql, function (err, user) {
       cb(err, user[0])
     })

@@ -4,14 +4,23 @@ var database = require('../controller/database')
 
 
 router.post('/login', function (req, res) {
-    database.getUser(req.body.contact, req.body.password, (err, user) => {
+    database.getUser(req.body.email, req.body.pass, (err, user) => {
       if (user) {
-        res.json({ success: 'true', user: user })
+         req.session.email=user.firstname+user.lastname
+        // console.log(req.session.email)
+        res.redirect('/')
+        //res.json({ success: 'true', user: user })
       } else {
-        res.json({ success: 'false' })
+        res.render("login",{ success: 'false' })
       }
     })
   })
 
+
+router.get('/logout', (req,res)=>{
+  req.session.destroy(function(err){
+    res.redirect('/')
+  })
+})
 
   module.exports= router;

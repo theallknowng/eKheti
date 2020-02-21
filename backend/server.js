@@ -37,7 +37,8 @@ console.log(JSON.stringify(data))
 	var process = spawn('python3',["./model.py", JSON.stringify(data[0]) ]); 
 
 	process.stdout.on('data', function(data) { 
-		res.send(data); 
+console.log(data)
+		res.send(data);
 	} ) 
 	})
 
