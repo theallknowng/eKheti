@@ -23,4 +23,11 @@ router.get('/logout', (req,res)=>{
   })
 })
 
+
+
+router.post('/user/healthCard', (req,res)=>{
+  console.log(req.body)
+  res.json({ success: 'true' })
+})
+
   module.exports= router;
