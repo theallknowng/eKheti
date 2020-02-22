@@ -1,37 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent"
-    android:background="#32cb">
 
-    <Button
-        android:id="@+id/soilhealthcard"
-        style="@android:style/Widget.DeviceDefault.Button.Toggle"
-        android:layout_width="360dp"
-        android:layout_height="192dp"
-        android:layout_marginStart="26dp"
-        android:layout_marginLeft="26dp"
-        android:layout_marginTop="200dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:background="@drawable/roundbut"
-        android:text="Soil Health Card"
-        android:textColor="#fafafa"
-        android:textSize="30dp" />
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#32cb"
+    tools:context=".fragment_home">
+
+<!--    <include-->
+<!--        android:id="+@id/toolbar"-->
+<!--        layout="@layout/toolbar"/>-->
 
 
     <Button
-        android:id="@+id/edithealthcard"
-        style="@android:style/Widget.DeviceDefault.Button.Toggle"
-        android:layout_width="360dp"
-        android:layout_height="192dp"
+        android:id="@+id/suggestcrops"
+        android:layout_width="385dp"
+        android:layout_height="134dp"
         android:layout_marginStart="26dp"
         android:layout_marginLeft="26dp"
-        android:layout_marginTop="450dp"
+        android:layout_marginTop="250dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:background="@drawable/roundbut"
-        android:text="Edit Health Card"
+        android:background="@drawable/button_selector"
+        android:text="Suggest Crops"
         android:textColor="#fafafa"
+        android:textSize="30dp"
+
+
+        />
+
+
+    <Button
+        android:id="@+id/healthcard"
+        android:layout_width="374dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="480dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Health Card Details"
+        android:textColor="#000000"
         android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/inputform"
+        android:layout_width="374dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="550dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Input form"
+        android:textColor="#000000"
+        android:textSize="30dp" />
+
 
 </RelativeLayout>

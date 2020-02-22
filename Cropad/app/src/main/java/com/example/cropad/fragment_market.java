@@ -73,6 +73,9 @@ public class fragment_market extends Fragment {
                 System.out.println("this is clicked");
                 Intent market = new Intent(getActivity(), Market_list.class);
                 startActivity(market);
+
+
+
             }
         });
 

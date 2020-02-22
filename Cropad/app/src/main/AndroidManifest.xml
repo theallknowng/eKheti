@@ -9,9 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        android:usesCleartextTraffic="true"
-        >
-        <activity android:name=".Market_list"></activity>
+        android:usesCleartextTraffic="true">
+        <activity android:name=".edithealthcard"></activity>
+        <activity android:name=".Healthcards" />
+        <activity android:name=".Market_list" />
         <activity android:name=".marketplace" />
         <activity android:name=".expertadvice" />
         <activity android:name=".weather_forecast" />

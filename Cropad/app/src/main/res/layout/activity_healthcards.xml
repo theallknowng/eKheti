@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Healthcards"
+
+    android:background="#32cb"
+    >
+
+    <Button
+        android:id="@+id/currenthealthcard"
+        android:layout_width="wrap_content"
+        android:layout_height="116dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/roundbut"
+        android:text="View current health card"
+        android:textColor="#fafafa"
+        android:textSize="30dp" />
+
+
+    <Button
+        android:id="@+id/edithealthcard"
+        android:layout_width="374dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/roundbut"
+        android:text="Edit Health card"
+        android:textColor="#fafafa"
+        android:textSize="30dp" />
+
+</RelativeLayout>

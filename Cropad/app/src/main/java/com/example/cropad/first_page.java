@@ -2,16 +2,19 @@ package com.example.cropad;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
 import android.widget.ViewFlipper;
 
 import com.android.volley.RequestQueue;
@@ -49,6 +52,23 @@ public class first_page extends AppCompatActivity {
         v_flip.addView(imgview);
         v_flip.setInAnimation(this, android.R.anim.slide_in_left);
         v_flip.setOutAnimation(this, android.R.anim.slide_out_right);
+    }
+
+    private long backPressedTime;
+    private Toast backToast;
+
+    @Override
+    public void onBackPressed() {
+        if (backPressedTime + 2000 > System.currentTimeMillis()) {
+            backToast.cancel();
+            super.onBackPressed();
+            return;
+        } else {
+            backToast = Toast.makeText(getBaseContext(), "Press back again to exit", Toast.LENGTH_SHORT);
+            backToast.show();
+        }
+
+        backPressedTime = System.currentTimeMillis();
     }
 
     @Override
@@ -188,9 +208,54 @@ public class first_page extends AppCompatActivity {
 //            }
 //        });
 
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
         BottomNavigationView bottomNav = findViewById(R.id.bottom_navigation);
         bottomNav.setOnNavigationItemSelectedListener(navListener);
+
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                new fragment_home()).commit();
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menus, menu);
+        return true;
+    }
+
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+        if (id == R.id.about)
+            Toast.makeText(getApplicationContext(), "A dedicated effort to contribute in the field of agriculture by 3 sincere IT students",
+                    Toast.LENGTH_SHORT).show();
+
+        else if (id == R.id.exit) {
+
+
+
+            Intent goodbye = new Intent(first_page.this, MainActivity.class);
+
+            finish();
+
+            return false;
+
+        }
+
+
+        return true;
+
+
+
+
+
+    }
+
+
+
+
+
 
     private BottomNavigationView.OnNavigationItemSelectedListener navListener =
             new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -208,9 +273,7 @@ public class first_page extends AppCompatActivity {
                         case R.id.nav_articles:
                             selectedFragment = new fragment_articles();
                             break;
-                        case R.id.nav_settings:
-                            selectedFragment = new fragment_settings();
-                            break;
+
                     }
 
                     getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,

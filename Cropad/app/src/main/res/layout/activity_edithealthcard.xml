@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".edithealthcard"
+    android:background="@color/colorPrimary"
+    android:padding="10dp">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Enter your Health Card Data :"
+
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/heathcardid"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="85dp"
+        android:layout_marginLeft="45dp"
+        android:background="#ffffff"
+        android:hint="Enter your Health Card ID"
+
+        android:inputType="numberDecimal"/>
+
+
+
+    <EditText
+        android:id="@+id/pH"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="125dp"
+        android:layout_marginLeft="45dp"
+        android:background="#ffffff"
+        android:hint="pH min"
+
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/pHmax"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="125dp"
+        android:layout_marginLeft="170dp"
+        android:background="#ffffff"
+        android:hint="pH max"
+
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/N"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="155dp"
+        android:layout_marginLeft="45dp"
+        android:background="#ffffff"
+        android:hint="N min"
+
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/Nmax"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="155dp"
+        android:layout_marginLeft="170dp"
+        android:background="#ffffff"
+        android:hint="N max"
+
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/P"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="185dp"
+        android:layout_marginLeft="45dp"
+        android:background="#ffffff"
+        android:hint="P min"
+
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/Pmax"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="185dp"
+        android:layout_marginLeft="170dp"
+        android:background="#ffffff"
+        android:hint="P max"
+
+        android:inputType="numberDecimal"/>
+
+
+    <EditText
+        android:id="@+id/K"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="215dp"
+        android:layout_marginLeft="45dp"
+        android:background="#ffffff"
+        android:hint="K min"
+
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/Kmax"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="215dp"
+        android:layout_marginLeft="170dp"
+        android:background="#ffffff"
+        android:hint="K max"
+
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/Ca"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="245dp"
+        android:layout_marginLeft="45dp"
+        android:background="#ffffff"
+        android:hint="Ca min"
+
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/Camax"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="245dp"
+        android:layout_marginLeft="170dp"
+        android:background="#ffffff"
+        android:hint="Ca max"
+
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/Mg"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="275dp"
+        android:layout_marginLeft="45dp"
+        android:background="#ffffff"
+        android:hint="Mg min"
+
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/Mgmax"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="275dp"
+        android:layout_marginLeft="170dp"
+        android:background="#ffffff"
+        android:hint="Mg max"
+
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/S"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="305dp"
+        android:layout_marginLeft="45dp"
+        android:background="#ffffff"
+        android:hint="S min"
+
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/Smax"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="305dp"
+        android:layout_marginLeft="170dp"
+        android:background="#ffffff"
+        android:hint="S max"
+
+        android:inputType="numberDecimal"/>
+
+
+    <EditText
+        android:id="@+id/Fe"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="335dp"
+        android:layout_marginLeft="45dp"
+        android:background="#ffffff"
+        android:hint="Fe min"
+
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/Femax"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="335dp"
+        android:layout_marginLeft="170dp"
+        android:background="#ffffff"
+        android:hint="Fe max"
+
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/Zn"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="365dp"
+        android:layout_marginLeft="45dp"
+        android:background="#ffffff"
+        android:hint="Zn min"
+
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/Znmax"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="365dp"
+        android:layout_marginLeft="170dp"
+        android:background="#ffffff"
+        android:hint="Zn max"
+
+        android:inputType="numberDecimal"/>
+
+
+    <EditText
+        android:id="@+id/Mn"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="395dp"
+        android:layout_marginLeft="45dp"
+        android:background="#ffffff"
+        android:hint="Mn min"
+
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/Mnmax"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="395dp"
+        android:layout_marginLeft="170dp"
+        android:background="#ffffff"
+        android:hint="Mn max"
+
+        android:inputType="numberDecimal"/>
+
+
+    <EditText
+        android:id="@+id/Cu"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="425dp"
+        android:layout_marginLeft="45dp"
+        android:background="#ffffff"
+        android:hint="Cu min"
+
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/Cumax"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="425dp"
+        android:layout_marginLeft="170dp"
+        android:background="#ffffff"
+        android:hint="Cu max"
+
+        android:inputType="numberDecimal"/>
+
+
+
+
+
+
+
+
+
+
+    <EditText
+        android:id="@+id/B"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="455dp"
+        android:layout_marginLeft="45dp"
+        android:background="#ffffff"
+        android:hint="B min"
+
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/Bmax"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="455dp"
+        android:layout_marginLeft="170dp"
+        android:background="#ffffff"
+        android:hint="B max"
+
+        android:inputType="numberDecimal"/>
+
+
+    <EditText
+        android:id="@+id/temp"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="485dp"
+        android:layout_marginLeft="45dp"
+        android:background="#ffffff"
+        android:hint="Temp min"
+
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/tempmax"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="485dp"
+        android:layout_marginLeft="170dp"
+        android:background="#ffffff"
+        android:hint="Temp max"
+
+        android:inputType="numberDecimal"/>
+
+
+    <EditText
+        android:id="@+id/ppt"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="515dp"
+        android:layout_marginLeft="45dp"
+        android:background="#ffffff"
+        android:hint="ppt min"
+
+        android:inputType="numberDecimal"/>
+
+
+    <EditText
+        android:id="@+id/pptmax"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="515dp"
+        android:layout_marginLeft="170dp"
+        android:background="#ffffff"
+        android:hint="ppt max"
+
+        android:inputType="numberDecimal"/>
+
+
+
+
+
+
+
+    <Button
+        android:id="@+id/savebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_marginTop="565dp"
+        android:layout_marginLeft="125dp"/>
+
+
+
+    </RelativeLayout>

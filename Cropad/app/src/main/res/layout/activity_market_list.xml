@@ -44,6 +44,8 @@
         android:padding="10dp"
         />
 
+
+
 </RelativeLayout>
 <androidx.recyclerview.widget.RecyclerView
 android:id="@+id/market_list_recyclerview"

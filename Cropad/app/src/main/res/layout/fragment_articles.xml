@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent"
-    android:background="#32cb">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#32cb"
+    tools:context=".fragment_articles">
 
     <Button
         android:id="@+id/expertarticles"
-        style="@android:style/Widget.DeviceDefault.Button.Toggle"
         android:layout_width="360dp"
         android:layout_height="192dp"
         android:layout_marginStart="26dp"
@@ -20,8 +22,7 @@
 
 
     <Button
-        android:id="@+id/favorite"
-        style="@android:style/Widget.DeviceDefault.Button.Toggle"
+        android:id="@+id/favoritearticles"
         android:layout_width="360dp"
         android:layout_height="192dp"
         android:layout_marginStart="26dp"
@@ -30,7 +31,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:background="@drawable/roundbut"
-        android:text="My Favorite Articles"
+        android:text="My favorite articles"
         android:textColor="#fafafa"
         android:textSize="30dp" />
 
