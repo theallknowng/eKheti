@@ -1,14 +1,23 @@
 package com.example.cropad;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.text.SpannableString;
+import android.text.Spanned;
+import android.text.TextPaint;
+import android.text.method.LinkMovementMethod;
+import android.text.style.ClickableSpan;
+import android.text.style.ForegroundColorSpan;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.RequestQueue;
@@ -43,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
     public void testing(){
         Intent tes = new Intent(this, first_page.class);
         startActivity(tes);
+        MainActivity.this.finish();
     }
 
 
@@ -50,21 +60,53 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        TextView textView = findViewById(R.id.textView2);
+
+        String text = "If you are a new user , please REGISTER HERE ";
+
+        SpannableString ss = new SpannableString(text);
+
+      //  ForegroundColorSpan fcs = new ForegroundColorSpan(Color.BLUE);
+
+        ClickableSpan cs = new ClickableSpan() {
+            @Override
+            public void onClick(@NonNull View widget)
+            {
+                registerform();
+            }
+
+            @Override
+            public void updateDrawState(@NonNull TextPaint ds) {
+                super.updateDrawState(ds);
+                ds.setColor(Color.BLUE);
+            }
+        };
+
+       // ss.setSpan(fcs,31,44, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        ss.setSpan(cs,31,44, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+
+        textView.setText(ss);
+
+        textView.setMovementMethod(LinkMovementMethod.getInstance());
+
+
+
         final SharedPreferences sharedpreferences = getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE);
 
 
         user = (EditText) findViewById(R.id.email_id);
         p = (EditText) findViewById(R.id.password);
 
-        registe = (Button) findViewById(R.id.register_but);
-        registe.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View view) {
-                registerform();
-
-            }
-        });
+//       registe = (Button) findViewById(R.id.register_but);
+//        registe.setOnClickListener(new View.OnClickListener() {
+//
+//            @Override
+//            public void onClick(View view) {
+//                registerform();
+//
+//            }
+//        });
 
         test = (Button) findViewById(R.id.test_but);
         test.setOnClickListener(new View.OnClickListener() {
@@ -135,6 +177,15 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
+
+//    @Override
+//    protected void onPause()
+//    {
+//        super.onPause();
+//        MainActivity.this.finish();
+//    }
+
+
 
 
 }

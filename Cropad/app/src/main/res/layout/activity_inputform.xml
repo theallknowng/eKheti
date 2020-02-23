@@ -37,7 +37,7 @@
         android:layout_width="270dp"
         android:layout_height="55dp"
         android:ems="10"
-        android:hint="Crop Name"
+        android:hint="Previously Cultivated Crop"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/editText2"
         app:layout_constraintEnd_toEndOf="parent"

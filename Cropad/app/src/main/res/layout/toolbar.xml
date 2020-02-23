@@ -7,7 +7,7 @@
     android:elevation="4dp"
     android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
     app:title="A Crop Advisory Guide"
-    app:titleMarginStart="40dp"
-    app:logo="@drawable/ic_menu_black_24dp">
+    app:titleMarginStart="100dp">
+
 
 </androidx.appcompat.widget.Toolbar>

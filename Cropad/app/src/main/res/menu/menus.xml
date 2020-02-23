@@ -10,7 +10,7 @@
         android:id="@+id/about"/>
 
     <item
-        android:title="Logout"
+        android:title="Exit"
         android:id="@+id/exit"/>
 
 
