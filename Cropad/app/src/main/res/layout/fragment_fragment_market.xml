@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/page_gradient"
     tools:context=".FragmentMarket">
 
 
@@ -11,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="245dp"
         app:srcCompat="@drawable/market1"
-        android:layout_marginTop="40dp"/>
+        android:layout_marginTop="50dp"/>
 
     <Button
         android:id="@+id/nearbymarketplace"

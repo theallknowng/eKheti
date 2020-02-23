@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@drawable/button_gradient">
+    android:background="@drawable/page_gradient">
 
     <!--    <TextView-->
 <!--        android:id="@+id/logintitile"-->
@@ -98,6 +98,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="580dp"
         android:text="If you are a new user , please REGISTER HERE "
+        android:textSize="18dp"
+        android:textStyle="bold"
          />
 
 <!--    <Button-->

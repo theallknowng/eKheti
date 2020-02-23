@@ -3,18 +3,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="#32cb"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/page_gradient"
     tools:context=".fragment_articles">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="245dp"
+        app:srcCompat="@drawable/article2"
+        android:layout_marginTop="50dp"/>
 
     <Button
         android:id="@+id/expertarticles"
         android:layout_width="360dp"
-        android:layout_height="192dp"
-        android:layout_marginStart="26dp"
+        android:layout_height="102dp"
+
         android:layout_marginLeft="26dp"
-        android:layout_marginTop="200dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_marginTop="400dp"
+
         android:background="@drawable/roundbut"
         android:text="List of Expert Articles"
         android:textColor="#fafafa"
@@ -24,12 +30,11 @@
     <Button
         android:id="@+id/favoritearticles"
         android:layout_width="360dp"
-        android:layout_height="192dp"
-        android:layout_marginStart="26dp"
+        android:layout_height="102dp"
+
         android:layout_marginLeft="26dp"
-        android:layout_marginTop="450dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_marginTop="550dp"
+
         android:background="@drawable/roundbut"
         android:text="My favorite articles"
         android:textColor="#fafafa"
