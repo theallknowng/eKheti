@@ -1,6 +1,7 @@
 package com.example.cropad;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.os.Bundle;
 import android.view.View;
@@ -31,6 +32,8 @@ public class edithealthcard extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edithealthcard);
+
+
 
         phmin = (EditText)findViewById(R.id.pH);
         phmax = (EditText)findViewById(R.id.pHmax);

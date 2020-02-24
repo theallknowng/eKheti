@@ -3,10 +3,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Healthcards"
 
-    android:background="#32cb"
-    >
+    android:background="@drawable/inside_pages">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="207dp"
+        app:srcCompat="@drawable/soilhealth"
+        android:layout_marginTop="55dp"/>
 
     <Button
         android:id="@+id/currenthealthcard"
@@ -14,7 +24,7 @@
         android:layout_height="116dp"
         android:layout_marginStart="26dp"
         android:layout_marginLeft="26dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="500dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:background="@drawable/roundbut"
@@ -29,7 +39,7 @@
         android:layout_height="86dp"
         android:layout_marginStart="26dp"
         android:layout_marginLeft="26dp"
-        android:layout_marginTop="400dp"
+        android:layout_marginTop="330dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:background="@drawable/roundbut"

@@ -1,6 +1,8 @@
 package com.example.cropad;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -33,6 +35,9 @@ public class Healthcards extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_healthcards);
+
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
         edithealthcard = findViewById(R.id.edithealthcard);
         edithealthcard.setOnClickListener(new View.OnClickListener() {

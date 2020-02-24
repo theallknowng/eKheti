@@ -10,7 +10,7 @@
 
     app:title="A Crop Advisory Guide"
 
-    app:titleMarginStart="100dp"
+    app:titleMarginStart="80dp"
     app:logo="@drawable/logo_icon">
 
 

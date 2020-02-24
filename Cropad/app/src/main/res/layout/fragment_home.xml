@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/page_gradient"
+    android:background="@drawable/inside_pages"
     tools:context=".fragment_home">
 
 <!--    <include-->
