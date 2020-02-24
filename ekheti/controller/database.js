@@ -19,6 +19,39 @@ function getUser (email, password, cb) {
   }
 
 
+  function callName(req, cb) { 
+    var sql = 'select * from `TABLE 1` where region ="' + req.body.region + '" and irrigation ="' + req.body.irrigation + '"'
+    conn.query(sql, function (err, data) {
+    console.log(JSON.stringify(data))
+    var spawn = require("child_process").spawn; 
+  
+    var process = spawn('python3',["./model.py", JSON.stringify(data[0]) ]); 
+  
+    process.stdout.on('data', function(err,data) { 
+      console.log(data)
+      cb(err,data)
+      }) 
+    })
+  }
+  ///home/rahul/Desktop/eKheti/ekheti/controller
+
+  function withoutHealthCard(region, irrigation, cb){
+    var sql = 'select * from `actualConditions` where region ="' + region + '" and irrigation ="' + irrigation + '"'
+    conn.query(sql, function ( err , result){
+    console.log(JSON.stringify(result[0]))
+    var spawn = require("child_process").spawn; 
+    var process = spawn('python3',["./model.py", JSON.stringify(result[0]) ]);   
+    process.stdout.on('data', function(data,err) { 
+      console.log(data)
+      cb(err,data)
+      }) 
+    })
+  }
+
+
+
+
+
 function weather(req,res){  //isme update ke zarurat hai like location tag wagera aur response yehi se jara hai use services se bhejna hoga
     var data=1;
     request({url:url, qs:propertiesObject}, function(err, response, body) {
@@ -37,4 +70,4 @@ function weather(req,res){  //isme update ke zarurat hai like location tag wager
     })
   }
   
-  module.exports = { getUser, newUser }
+  module.exports = { getUser, newUser,withoutHealthCard }

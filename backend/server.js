@@ -21,7 +21,7 @@ connection.connect(function (err) {
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 
-app.listen(3000, function() { 
+app.listen(5656, function() { 
 	console.log('server running on port 3000'); 
 } ) 
 
@@ -35,7 +35,7 @@ console.log(JSON.stringify(data))
 	var spawn = require("child_process").spawn; 
 
 	var process = spawn('python3',["./model.py", JSON.stringify(data[0]) ]); 
-
+    //console.log(process)
 	process.stdout.on('data', function(data) { 
 console.log(data)
 		res.send(data);

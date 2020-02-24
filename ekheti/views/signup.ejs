@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body >
+    <div>
+    <%- include('nav'); %>
+    </div>
+    <div id="contact" class="contact-area" style="background-color: rgb(50, 51, 51)">
+        <div class="contact-inner area-padding">
+          <div class="contact-overly"></div>
+          <div class="container ">
+            <div class="row" style="padding-top: 2%">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="section-headline text-center">
+                  <h2 style="color: mintcream"> Register  </h2>
+                </div>
+              </div>
+            </div>
+      <div class="form contact-form" >
+        <div id="sendmessage">Your message has been sent. Thank you!</div>
+        <div id="errormessage"></div>
+        <form action="" method="post" role="form" class="contactForm">
+          <div class="form-group" style="background-color: white;">
+            <!-- Name -->
+            <input type="text" class="form-control" name="Name" id="Name" placeholder="Enter your name"  data-msg="Please enter your name" />
+            <div class="validation"></div>
+          </div>
+          <div class="form-group" style="background-color: white;">
+              <!-- email -->
+              <input type="email" class="form-control" name="email_id" id="email_id" placeholder="Enter your email id"  data-msg="Please enter correct email id" />
+              <div class="validation"></div>
+            </div>
+      
+            <div class="form-group">
+              <!-- password -->
+              <input type="password" class="form-control" name="password" id="password" placeholder="Enter your password" data-rule="minlen:8" data-msg="Please enter at least 10 chars of subject" />
+              <div class="validation"></div>
+            </div>
+          
+            <div class="form-group">
+              <!-- re-enter password -->
+              <input type="password" class="form-control" name="re-password" id="re-password" placeholder="Enter re-enter your password" data-rule="minlen:8" data-msg="Please enter at least 10 chars of subject" />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+            <!-- contactnumber -->
+            <input type="number" class="form-control" name="mobile number" id="mobile" placeholder="Enter contact number" data-rule="minlen:10" data-msg="Please enter at least 10 chars of subject" />
+            <div class="validation"></div>
+          </div>
+          
+          <div class="form-group " style="background-color: white;">
+              <!-- village /  -->
+              <input type="text" list ="villagelist"class="form-control" name="village" id="village" placeholder="Enter your village"  data-msg="Please enter your village" />
+              <datalist id="villagelist">
+                  <option value="North solapur">North solapur</option>
+                  <option value="South Solapur">South Solapur</option>
+                  <option value="Barshi">Barshi</option>
+                  <option value="Mohol">Mohol</option>
+                  <option value="North solapur"></option>
+                  <option value="North solapur"></option>
+              </datalist>
+              <div class="validation"></div>
+            </div>
+          
+          
+                       <br>
+                        <div class="text-center "><button style="color: mintcream" type="submit">Register </button></div>
+        </form>
+      </div>
+      </div>
+      </div>
+      </div>
+
+
+</body>
+</html>

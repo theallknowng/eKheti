@@ -7,6 +7,7 @@ var session = require('express-session');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var user = require('./services/services.js')
 
 var app = express();
 
@@ -14,7 +15,6 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
-var user = require('./services/services.js')
 
 // app.use(logger('combined'));
 app.use(logger('dev'));
@@ -23,11 +23,14 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+
+
 app.use(session({
 	secret: "MAAIDLTIOHSKIHLESH",
 	resave: true,
   saveUninitialized: true
 	}));
+
 
 
 app.use('/', indexRouter);
@@ -37,6 +40,7 @@ app.use('/',user);
 app.use(function(req, res, next) {
   next(createError(404));
 });
+
 
 
 
