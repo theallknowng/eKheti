@@ -43,92 +43,12 @@
 </head>
 
 <body data-spy="scroll" data-target="#navbar-example">
-
-  <div id="preloader"></div>
-
-  <header>
-    <!-- header-area start -->
-    <div id="sticker" class="header-area">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 col-sm-12">
-
-            <!-- Navigation -->
-            <nav class="navbar navbar-default">
-              <!-- Brand and toggle get grouped for better mobile display -->
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".bs-example-navbar-collapse-1" aria-expanded="false">
-										<span class="sr-only">Toggle navigation</span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-									</button>
-                <!-- Brand -->
-                <a class="navbar-brand page-scroll sticky-logo" href="/">
-                  <h1><span>e</span>KHETI</h1>
-                  <!-- Uncomment below if you prefer to use an image logo -->
-                  <!-- <img src="img/logo.png" alt="" title=""> -->
-								</a>
-              </div>
-              <!-- Collect the nav links, forms, and other content for toggling -->
-              <div class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1" id="navbar-example">
-                <ul class="nav navbar-nav navbar-right">
-                  <li class="active">
-                    <a class="page-scroll" href="#home">Home</a>
-                  </li>
-                  <li>
-                    <a class="page-scroll" href="#about">About</a>
-                  </li>
-                  <li>
-                    <a class="page-scroll" href="#services">Services</a>
-                  </li>
-                  <li>
-                    <a class="page-scroll" href="#weather">Weather</a>
-                  </li>
-                  <li>
-                    <a class="page-scroll" href="#articles">Articles</a>
-                  </li>
-                  <li>
-                    <a class="page-scroll" href="#contact">Health Card</a>
-                  </li>
-                  <li>
-                    <a class="page-scroll" href="#team">Team</a>
-                  </li>
-                 
-                  <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                    <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      <%if(login=="false"){%>
-                      <li><a href="/login">Log in</a></li>
-                      <li><a href="Signup.html">Register </a></li>
-                        <%} else {%>
-                        <li><a><%=name%></a></li>
-                        <li><a href="/logout">Log out</a></li>
-                        <%}%>
-                        </ul>
-                  </li>
-                  <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Translate
-                    <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      <li class="active"><a href="#" >English</a></li>
-                      <li><a href="#">Marathi </a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-              <!-- navbar-collapse -->
-            </nav>
-            <!-- END: Navigation -->
-          </div>
-        </div>
-      </div>
+  <div>
+    <%- include('nav'); %>
     </div>
-    <!-- header-area end -->
-  </header>
-  <!-- header end -->
 
+
+  
   <!-- Start Slider Area -->
   <div id="home" class="slider-area">
     <div class="bend niceties preview-2">
@@ -153,10 +73,15 @@
                   <h1 class="title2">We're In The Business Of Helping to Your Crop Business</h1>
                 </div>
                 <!-- layer 3 -->
-                <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                  <a class="ready-btn right-btn page-scroll" href="#services">SUGGEST CROP</a>
-                  <a class="ready-btn page-scroll" href="#about">Optimum Conditions</a>
-                </div>
+                
+					<% if (login == 'true') { %>
+						<div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+              <a class="ready-btn right-btn page-scroll" href="#services">SUGGEST CROP</a>
+              <a class="ready-btn page-scroll" href="#about">Optimum Conditions</a>
+            </div>
+	
+					<% } %>
+                
               </div>
             </div>
           </div>
@@ -178,10 +103,13 @@
                       <h1 class="title2">We're In The Business Of Helping to Your Crop Business</h1>
                     </div>
                     <!-- layer 3 -->
-                    <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                      <a class="ready-btn right-btn page-scroll" href="#services">SUGGEST CROP</a>
-                      <a class="ready-btn page-scroll" href="#about">Optimum Conditions</a>
-                    </div>
+                    <% if (login == 'true') { %>
+                      <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+                        <a class="ready-btn right-btn page-scroll" href="#services">SUGGEST CROP</a>
+                        <a class="ready-btn page-scroll" href="#about">Optimum Conditions</a>
+                      </div>
+            
+                    <% } %>
                   </div>
             </div>
           </div>
@@ -203,10 +131,13 @@
                       <h1 class="title2">We're In The Business Of Helping to Your Crop Business</h1>
                     </div>
                     <!-- layer 3 -->
-                    <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                      <a class="ready-btn right-btn page-scroll" href="#services">SUGGEST CROP</a>
-                      <a class="ready-btn page-scroll" href="#about">Optimum Conditions</a>
-                    </div>
+                    <% if (login == 'true') { %>
+                      <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+                        <a class="ready-btn right-btn page-scroll" href="#services">SUGGEST CROP</a>
+                        <a class="ready-btn page-scroll" href="#about">Optimum Conditions</a>
+                      </div>
+            
+                    <% } %>
                   </div>
             </div>
           </div>
@@ -560,6 +491,18 @@
         <a href="https://www.accuweather.com/en/in/solapur/204849/weather-forecast/204849" target="_blank" class="ready-btn">Know more</a>
       </div>
     </div>
+
+    <a class="weatherwidget-io" href="https://forecast7.com/en/19d0872d88/mumbai/" data-label_1="MUMBAI" data-label_2="WEATHER" data-font="Roboto Slab" data-icons="Climacons Animated" data-theme="dark" >MUMBAI WEATHER</a>
+    <script>
+    !function(d,s,id)
+    {var js,fjs=d.getElementsByTagName(s)[0];
+    if(!d.getElementById(id))
+    {js=d.createElement(s);
+    js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';
+    fjs.parentNode.insertBefore(js,fjs);}}
+    (document,'script','weatherwidget-io-js');
+    </script>
+    
   </div>
   <!-- weather fore cast-->
 
@@ -908,41 +851,7 @@
           </div>
         </div>
       </div>
-      <!-- <div class="row">
-        <div class="team-top">
-          <div class="col-md-3 col-sm-3 col-xs-12">
-            <div class="single-team-member">
-              <div class="team-img">
-                <a href="#">
-										<img src="img/team/Nileshsir.JPG" alt="">
-									</a>
-                <div class="team-social-icon text-center">
-                  <ul>
-                    <li>
-                      <a href="#">
-													<i class="fa fa-facebook"></i>
-												</a>
-                    </li>
-                    <li>
-                      <a href="#">
-													<i class="fa fa-twitter"></i>
-												</a>
-                    </li>
-                    <li>
-                      <a href="#">
-													<i class="fa fa-instagram"></i>
-												</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="team-content text-center">
-                <h4>Nilesh Sir</h4>
-                <p>Project Guide</p>
-              </div>
-            </div>
-          </div> -->
-          <!-- End column -->
+
           <div class="col-md-3 col-sm-3 col-xs-12" style="height: 200px;">
             <div class="single-team-member">
               <div class="team-img">
@@ -1159,15 +1068,3 @@
 
 
 
-
-<!-- <!DOCTYPE html>
-<html>
-  <head>
-    <title><%=// title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%=// title %></h1>
-    <p>Welcome to <%= //title %></p>
-  </body>
-</html> -->

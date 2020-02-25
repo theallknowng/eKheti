@@ -4,9 +4,9 @@ var router = express.Router();
 /* GET home page. */
 router.get('/', function(req, res, next) {
   if(req.session.email)
-    res.render('nav', { login: 'true', name: req.session.email });
+    res.render('index', { login: 'true', name: req.session.name });
   else  
-    res.render('nav', { login: 'false',name:'' });
+    res.render('index', { login: 'false',name:'' });
 });
 
 router.get('/login', function(req, res, next) {
@@ -22,7 +22,7 @@ router.get('/signup', function(req, res ,next) {
 
 
 router.get('/cropSuggestion',function(req,res,next){
-  res.render('cropsuggestion')
+  res.render('cropsuggestion',{success:'false',result:''})
 })
 
 module.exports = router;

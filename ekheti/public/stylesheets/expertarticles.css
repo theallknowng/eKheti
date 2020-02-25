@@ -1,0 +1,68 @@
+/*!
+ * Start Bootstrap - Shop Homepage (https://startbootstrap.com/template-overviews/shop-homepage)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-shop-homepage/blob/master/LICENSE)
+ */
+body {
+  padding-top: 56px;
+  padding-right: 0%;
+}
+
+
+div#speedbump {
+  display: none;
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #eeeeee;
+}
+#speedbump h4.modal-title {
+  text-align: center;
+  text-transform: uppercase;
+  color: #004795;
+  font-size:2.5em;	
+}
+.modal-body p {
+  text-align:center;
+  font-size: 1em;
+}
+button.btn-modal:hover {
+  cursor: pointer;
+}
+button.btn-modal.btn-continue {
+  background-color: #8bc63e;
+  border: 0px;
+  margin: 1% 0;
+}
+button.btn-modal.btn-close {
+  background-color: inherit;
+  border: 1px solid #030000;
+  color: #030000;
+  font-weight: 400;
+}
+.modal-header .close {
+  font-size: 3.5em;
+}
+
+.newsbox {
+  background-color: rgb(123, 211, 238);
+  margin-top: 50px;
+    
+}
+.newsboxtitle {
+  border-bottom: rgb(87, 87, 87) solid 3px; 
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  font-size: 20px ;
+  font-style: bold;
+}
+
+.content {
+  padding: 10px;;
+}
+.list-group-bg{
+background-color: tomato;
+}

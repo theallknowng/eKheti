@@ -12,7 +12,7 @@ function getUser (email, password, cb) {
   }
   
   function newUser (values, cb) {
-    var sql = 'INSERT INTO `users`(`email_id`, `password`, `home_location_lat`, `home_location_long`, `name`) VALUES(?)'
+    var sql = 'INSERT INTO `users`(`email`,`firstname`,`lastname`,`contact`,`region`, `password`, `irrigation`) VALUES(?)'
     conn.query(sql, [values], function (err, result) {
       cb(err, result)
     })
@@ -28,7 +28,7 @@ function getUser (email, password, cb) {
     var process = spawn('python3',["./model.py", JSON.stringify(data[0]) ]); 
   
     process.stdout.on('data', function(err,data) { 
-      console.log(data)
+      // console.log(data)
       cb(err,data)
       }) 
     })
@@ -42,14 +42,23 @@ function getUser (email, password, cb) {
     var spawn = require("child_process").spawn; 
     var process = spawn('python3',["./model.py", JSON.stringify(result[0]) ]);   
     process.stdout.on('data', function(data,err) { 
-      console.log(data)
+      console.log(data.toString())
       cb(err,data)
       }) 
     })
   }
 
 
-
+  function getMarkets (lat, long, crop_name, cb) {
+    var sql = 'SELECT markets.id,markets.name,markets.market_lat, markets.market_long, market_crop_rel.crop_name,market_crop_rel.crop_price, ( 3959 * acos( cos( radians(' + lat + ') ) * cos( radians( market_lat ) ) \
+  * cos( radians( market_long ) - radians(' + long + ') ) + sin( radians(' + lat + ') ) * sin(radians(market_lat)) ) ) AS distance \
+  FROM markets , market_crop_rel where markets.id = market_crop_rel.market_id and market_crop_rel.crop_name = "' + crop_name + '"\
+   ORDER BY distance asc'
+    conn.query(sql, function (err, markets) {
+      cb(err, markets)
+    })
+  }
+  
 
 
 function weather(req,res){  //isme update ke zarurat hai like location tag wagera aur response yehi se jara hai use services se bhejna hoga
@@ -70,4 +79,4 @@ function weather(req,res){  //isme update ke zarurat hai like location tag wager
     })
   }
   
-  module.exports = { getUser, newUser,withoutHealthCard }
+  module.exports = { getUser, newUser, getMarkets, withoutHealthCard }

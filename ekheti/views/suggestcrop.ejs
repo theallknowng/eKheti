@@ -101,17 +101,43 @@
       <div class="row" style="padding-top: 2%">
         <div class="col-md-12 col-sm-12 col-xs-12">
           <div class="section-headline text-center">
-            <form action="/suggestCrops" method="post">
-              <div class="text-center "><button class="ready-btn" type="submit"><h2> Suggest Crop  </h2></button>  </div>
-            </form>
+            <h2>Suggested Crops</h2>
             
           </div>
         </div>
       </div>
-      <br>
-      <div class="row" style="align-items: center;">
-          <div class="col-md-12 col-sm-12 col-xs-12 container-fluid" >
-          <h2 >CLICK ABOVE TO GET SUGGESTION        
+      <div class="row" >
+          <div class="col-md-12 col-sm-12 col-xs-12 container-fluid">
+            <%if(1){%>
+                <table class="table table-hover" >
+                        <thead >
+                          <tr>
+                            <th scope="col">Priority number</th>
+                            <th scope="col">Crop Name</th>
+                            <th scope="col"> Probability</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td scope="row">1</td>
+                            <td> <%=result.Crop1%></td>
+                            <td>70%</td>
+                            
+                          </tr>
+                          <tr>
+                            <td scope="row">2</td>
+                            <td><%=result.Crop2%></td>
+                            <td>50%</td>
+                            
+                          </tr>
+                          <tr>
+                            <td scope="row">3</t>
+                            <td ><%=result.Crop3%></td>
+                            <td>20%</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <%}%>
           </div>
       </div>
 </div>
