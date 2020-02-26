@@ -16,6 +16,9 @@ import com.android.volley.toolbox.Volley;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.net.URL;
+import static com.example.cropad.Constants.*;
+
 public class edithealthcard extends AppCompatActivity {
 
 
@@ -139,7 +142,7 @@ public class edithealthcard extends AppCompatActivity {
                 final String requestBody = jsonObject.toString();
                 HttpsTrustManager.allowAllSSL();
 
-                ConnectionManager.sendData(requestBody, requestQueue, "https://192.168.43.32:3000/user/healthCard", new ConnectionManager.VolleyCallback() {
+                ConnectionManager.sendData(requestBody, requestQueue, URL+"/healthCard", new ConnectionManager.VolleyCallback() {
                     @Override
                     public void onSuccessResponse(String result) {
 

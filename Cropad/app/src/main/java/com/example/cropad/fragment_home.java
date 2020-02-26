@@ -45,7 +45,7 @@ public class fragment_home extends Fragment {
     public Button add_market;
     public Button Healthcards;
     public Button inputform;
-    public Button marketplace;
+    public Button suggest_crops;
     public Button expertarticles;
     private static final String PREF_NAME = "LOGIN";
 
@@ -82,6 +82,19 @@ public class fragment_home extends Fragment {
             public void onClick(View view) {
                 Intent ip = new Intent(getContext(), Inputform.class);
                 startActivity(ip);
+            }
+
+
+
+
+        });
+
+        suggest_crops = view.findViewById(R.id.suggestcrops);
+        suggest_crops.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent sc = new Intent(getContext(), suggest_crops.class);
+                startActivity(sc);
             }
         });
 

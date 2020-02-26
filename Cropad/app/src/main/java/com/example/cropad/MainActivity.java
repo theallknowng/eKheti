@@ -14,6 +14,7 @@ import android.text.TextPaint;
 import android.text.method.LinkMovementMethod;
 import android.text.style.ClickableSpan;
 import android.text.style.ForegroundColorSpan;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -36,8 +37,7 @@ public class MainActivity extends AppCompatActivity {
     String passvalue;
     String url="http://10.0.4.248:5656/user/login";
     private EditText user,p;
-    private static final String PREF_NAME = "LOGIN";
-
+    private static final String PREF_NAME = "LOGIN",PREF_EMAIL="EMAIL",PREF_IRRIGATION="IRRIGATION", PREF_HEALTHID="HEALTHID", PREF_REGION="REGION";
 
     public void firstpag(){
         Intent fp = new Intent(MainActivity.this, first_page.class);
@@ -127,35 +127,51 @@ public class MainActivity extends AppCompatActivity {
                 RequestQueue requestQueue = Volley.newRequestQueue(MainActivity.this);
                 JSONObject jsonObject = new JSONObject();
                 try{
-                    jsonObject.put("email_id",username);
-                    jsonObject.put("password",Password);
+                    jsonObject.put("email",username);
+                    jsonObject.put("pass",Password);
                 }
                 catch(Exception e){
                     e.printStackTrace();
                 }
                 final String requestBody = jsonObject.toString();
+                HttpsTrustManager.allowAllSSL();
                 ConnectionManager.sendData(requestBody, requestQueue, URL+"/login", new ConnectionManager.VolleyCallback() {
                     @Override
                     public void onSuccessResponse(String result) {
 
-                        JSONObject jsonObject= null;
+                        JSONObject jsonObject= null,users= null;
                         try {
                             jsonObject = new JSONObject(result);
+                            users=jsonObject.getJSONObject("user");
+                            System.out.println(jsonObject);
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
 
-                        String success= null;
+                        String success= null,irrigation=null,email=null,healthid=null,region=null;
                         try {
                             success = jsonObject.getString("success");
+                            irrigation = users.getString("irrigation");
+                            email = users.getString("email");
+                            healthid = users.getString("healthID");
+                            region = users.getString("region");
+
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
 
                         if(success.equals("true")){
                             SharedPreferences.Editor editor = sharedpreferences.edit();
-                            editor.putString(PREF_NAME,username);
-                            editor.apply();
+                            editor.putString(PREF_EMAIL,email);
+                            editor.putString(PREF_IRRIGATION,irrigation);
+                            editor.putString(PREF_HEALTHID,healthid);
+                            editor.putString(PREF_REGION,region);
+//                            editor.apply();
+                            editor.commit();
+//                            String test = sharedpreferences.getString(PREF_EMAIL, null);
+//                            Log.d("SharedPref test",test );
+//                            System.out.println("Alok");
+//                            System.out.println(email);
                             firstpag();
                             finish();
                         }

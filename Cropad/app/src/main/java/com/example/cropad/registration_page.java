@@ -18,6 +18,8 @@ import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.android.volley.RequestQueue;
@@ -36,7 +38,8 @@ import static com.example.cropad.Constants.*;
 public class registration_page extends AppCompatActivity {
 
     public Button regisd;
-    private EditText name,email,p,cp,hT;
+    private EditText firstname,lastname,email,p,cp,hT,contact,healthid;
+    private RadioGroup rg;
 
     public void login(){
         Intent regis =  new Intent(this, MainActivity.class);
@@ -47,12 +50,16 @@ public class registration_page extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration_page);
-        name=findViewById(R.id.name);
+        firstname=findViewById(R.id.firstname);
+        lastname=findViewById(R.id.lastname);
         email=findViewById((R.id.email_id));
         p=findViewById(R.id.password);
         cp=findViewById(R.id.confirm_password);
         hT=findViewById(R.id.hometown);
+        contact=findViewById(R.id.contact);
+        healthid=findViewById(R.id.Hid);
         regisd = (Button) findViewById(R.id.register);
+        rg=(RadioGroup)findViewById(R.id.irrigationyesno);
 
 
         if (Build.VERSION.SDK_INT>= Build.VERSION_CODES.M && checkSelfPermission(Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED){
@@ -65,29 +72,38 @@ public class registration_page extends AppCompatActivity {
             final Location location = locationManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
             String city=hereLocation(location.getLatitude(),location.getLongitude());
             Log.i("ALok-city",city);
-            hT.setText(city);
-            hT.setEnabled(false);
+//            hT.setText(city);
+         //   hT.setEnabled(false);
             regisd.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
 
                     if (checkDataEntered()) {
-                        final String Name = name.getText().toString();
+                        final String FirstName = firstname.getText().toString();
+                        final  String irrigation= ((RadioButton)findViewById(rg.getCheckedRadioButtonId())).getText().toString();
+                        final String LastName = lastname.getText().toString();
                         final String Email = email.getText().toString();
                         final String Hometown = hT.getText().toString();
                         final String Password = p.getText().toString();
+                        final String Contact= contact.getText().toString();
+                        final String HealthID = healthid.getText().toString();
                         RequestQueue requestQueue = Volley.newRequestQueue(registration_page.this);
                         JSONObject jsonObject = new JSONObject();
                         try {
-                            jsonObject.put("name", Name);
+                            jsonObject.put("firstname", FirstName);
+                            jsonObject.put("lastname", LastName);
                             jsonObject.put("email_id", Email);
                             jsonObject.put("password", Password);
-                            jsonObject.put("home_lat", location.getLatitude());
-                            jsonObject.put("home_long", location.getLongitude());
+                            jsonObject.put("contact",Contact);
+                            jsonObject.put("region", Hometown);
+                            jsonObject.put("irrigation", irrigation);
+
+                           // jsonObject.put("home_long", location.getLongitude());
                         } catch (Exception e) {
                             e.printStackTrace();
                         }
                         final String requestBody = jsonObject.toString();
+                        HttpsTrustManager.allowAllSSL();
                         ConnectionManager.sendData(requestBody, requestQueue, URL+"/register", new ConnectionManager.VolleyCallback() {
                             @Override
                             public void onSuccessResponse(String result) {
@@ -172,11 +188,17 @@ public class registration_page extends AppCompatActivity {
 
     boolean checkDataEntered() {
         int c=1;
-        if (isEmpty(name)) {
-            Toast t = Toast.makeText(this, "You must enter name to register!", Toast.LENGTH_SHORT);
+        if (isEmpty(firstname)) {
+            Toast t = Toast.makeText(this, "You must enter first name to register!", Toast.LENGTH_SHORT);
             t.show();
             c=0;
         }
+        if (isEmpty(lastname)) {
+            Toast t = Toast.makeText(this, "You must enter last name to register!", Toast.LENGTH_SHORT);
+            t.show();
+            c=0;
+        }
+
 
         if (isEmail(email) == false) {
             email.setError("Enter valid email!");

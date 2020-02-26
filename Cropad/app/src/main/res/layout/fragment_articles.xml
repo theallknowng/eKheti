@@ -27,17 +27,17 @@
         android:textSize="30dp" />
 
 
-    <Button
-        android:id="@+id/favoritearticles"
-        android:layout_width="360dp"
-        android:layout_height="102dp"
-
-        android:layout_marginLeft="26dp"
-        android:layout_marginTop="550dp"
-
-        android:background="@drawable/roundbut"
-        android:text="My favorite articles"
-        android:textColor="#fafafa"
-        android:textSize="30dp" />
+<!--    <Button-->
+<!--        android:id="@+id/favoritearticles"-->
+<!--        android:layout_width="360dp"-->
+<!--        android:layout_height="102dp"-->
+<!---->
+<!--        android:layout_marginLeft="26dp"-->
+<!--        android:layout_marginTop="550dp"-->
+<!---->
+<!--        android:background="@drawable/roundbut"-->
+<!--        android:text="My favorite articles"-->
+<!--        android:textColor="#fafafa"-->
+<!--        android:textSize="30dp" />-->
 
 </RelativeLayout>

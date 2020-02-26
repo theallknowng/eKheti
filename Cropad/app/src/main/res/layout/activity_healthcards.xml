@@ -18,19 +18,19 @@
         app:srcCompat="@drawable/soilhealth"
         android:layout_marginTop="55dp"/>
 
-    <Button
-        android:id="@+id/currenthealthcard"
-        android:layout_width="wrap_content"
-        android:layout_height="116dp"
-        android:layout_marginStart="26dp"
-        android:layout_marginLeft="26dp"
-        android:layout_marginTop="500dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:background="@drawable/roundbut"
-        android:text="View current health card"
-        android:textColor="#fafafa"
-        android:textSize="30dp" />
+<!--    <Button-->
+<!--        android:id="@+id/currenthealthcard"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="116dp"-->
+<!--        android:layout_marginStart="26dp"-->
+<!--        android:layout_marginLeft="26dp"-->
+<!--        android:layout_marginTop="500dp"-->
+<!--        android:layout_marginEnd="8dp"-->
+<!--        android:layout_marginRight="8dp"-->
+<!--        android:background="@drawable/roundbut"-->
+<!--        android:text="View current health card"-->
+<!--        android:textColor="#fafafa"-->
+<!--        android:textSize="30dp" />-->
 
 
     <Button
