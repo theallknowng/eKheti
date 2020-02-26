@@ -1,11 +1,11 @@
 var mysql = require('mysql')
 
-var connection = mysql.createConnection({
-  host: '127.0.0.1',
-  user: 'root',
-  password: 'rahul',
-  database: 'ekheti'
-})
+ var connection //= mysql.createConnection({
+//   host: '127.0.0.1',
+//   user: 'root',
+//   password: 'rahul',
+//   database: 'ekheti'
+// })
 
 // var connection = mysql.createConnection({
 //   host: 'shareddb-s.hosting.stackcp.net',
