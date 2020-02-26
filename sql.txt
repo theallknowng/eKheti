@@ -1,0 +1,48 @@
+CREATE TABLE users (
+email VARCHAR(50) PRIMARY KEY,
+firstname VARCHAR(30) NOT NULL,
+lastname VARCHAR(30) NOT NULL,
+contact VARCHAR(20) NOT NULL,
+region varchar(25),
+password varchar(30),
+irrigation varchar(20) NOT NULL,
+healthID varchar(50),
+reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP.
+FOREIGN KEY (healthID) REFERENCES healthCard(healthID)
+)Engine InnoDB;
+
+CREATE TABLE healthCard (
+healthID VARCHAR(50) PRIMARY KEY,
+email VARCHAR(50),
+pHMin decimal(4,2)	 NOT NULL,
+pHMax decimal(4,2)	 NOT NULL,
+nitrogenMin decimal(4,2)	 NOT NULL,
+nitrogenMax decimal(4,2)	 NOT NULL,
+phosphorusMin decimal(4,2)	 NOT NULL,
+phosphorusMax	 decimal(4,2)	 NOT NULL,
+potassiumMin decimal(4,2)	 NOT NULL,
+potassiumMax decimal(4,2)	 NOT NULL,
+calciumMin decimal(4,2)	 NOT NULL,
+calciumMax decimal(4,2)	 NOT NULL,
+magnesiumMin decimal(4,2)	 NOT NULL,
+magnesiumMax decimal(4,2)	 NOT NULL,
+sulphurMin decimal(4,2)	 NOT NULL,
+sulphurMax decimal(4,2)	 NOT NULL,
+ironMin decimal(4,2)	 NOT NULL,
+ironMax decimal(4,2)	 NOT NULL,
+zincMin decimal(4,2)	 NOT NULL,
+zincMax decimal(4,2)	 NOT NULL,
+manganeseMin decimal(4,2)	 NOT NULL,
+manganeseMax decimal(4,2)	 NOT NULL,
+copperMin decimal(4,2)	 NOT NULL,
+copperMax decimal(4,2)	 NOT NULL,
+boronMin decimal(4,2)	 NOT NULL,
+boronMax decimal(4,2)	 NOT NULL,
+temperatureMin decimal(4,2)	 NOT NULL,
+temperatureMax decimal(4,2)	 NOT NULL,
+precipitationMin decimal(4,2)	 NOT NULL,
+precipitationMax decimal(4,2)	 NOT NULL,
+irrigation VARCHAR(20)	 NOT NULL,
+date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+FOREIGN KEY (email) REFERENCES users(email)
+)Engine InnoDB;

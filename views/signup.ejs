@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Sign Up</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="images/favicon.png" rel="icon">
+  <link href="images/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/nivo-slider/css/nivo-slider.css" rel="stylesheet">
+  <link href="lib/owlcarousel/owl.carousel.css" rel="stylesheet">
+  <link href="lib/owlcarousel/owl.transitions.css" rel="stylesheet">
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/venobox/venobox.css" rel="stylesheet">
+
+  <!-- Nivo Slider Theme -->
+  <link href="stylesheets/nivo-slider-theme.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="stylesheets/style.css" rel="stylesheet">
+ 
+  <!-- Responsive Stylesheet File -->
+  <link href="stylesheets/responsive.css" rel="stylesheet">
+
+  <style> 
+  label{ color: black; padding-left: 15px; font-size: medium;}
+  </style>
+
+</head>
+<body >
+    <div>
+    <%- include('nav'); %>
+    </div>
+
+    <div id="contact" class="contact-area" style="background-color: rgb(50, 51, 51)">
+      <div class="contact-inner area-padding">
+        <div class="contact-overly"></div>
+        <div class="container ">
+          <div class="row" style="padding-top: 2%">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="section-headline text-center">
+                <h2 style="color: mintcream"> Register  </h2>
+              </div>
+            </div>
+          </div>
+    <div class="form contact-form" >
+      <div id="sendmessage">Your message has been sent. Thank you!</div>
+      <div id="errormessage"></div>
+
+      <form action="/register" method="post" role="form" class="contactForm">
+        <div class="form-group" style="background-color: white;">
+          <!--First Name -->
+          <label >Enter first name</label > 
+          <input type="text" class="form-control" name="FName" id="FName" placeholder="Enter your first name"  data-msg="Please enter your first name" />
+          <div class="validation"></div>
+        </div>
+
+        <div class="form-group" style="background-color: white;">
+          <!--last Name -->
+          <label >Enter Last name</label > 
+          <input type="text" class="form-control" name="LName" id="LName" placeholder="Enter your last name"  data-msg="Please enter your last name" />
+          <div class="validation"></div>
+        </div>
+
+        <div class="form-group" style="background-color: white;">
+            <!-- email -->
+            <label >Enter your email</label > 
+            <input type="email" class="form-control" name="email_id" id="email_id" placeholder="Enter your email id"  data-msg="Please enter correct email id" />
+            <div class="validation"></div>
+          </div>
+    
+          <div class="form-group" style="background-color: white;">
+            <!-- password -->
+            <label >Enter Password</label > 
+            <input type="password" class="form-control" name="password" id="password" placeholder="Enter your password" data-rule="minlen:8" data-msg="Please enter at least 10 chars of subject" />
+            <div class="validation"></div>
+          </div>
+        
+          <div class="form-group" style="background-color: white;">
+              <!-- re-enter password -->
+              <label >Re-enter your password</label> 
+            <input type="password" class="form-control" name="re-password" id="re-password" placeholder="Enter re-enter your password" data-rule="minlen:8" data-msg="Please enter at least 10 chars of subject" />
+            <div class="validation"></div>
+          </div>
+
+          <div class="form-group" style="background-color: white;">
+          <!-- contactnumber -->
+          <label>Enter your contact number</label>
+          <input type="number" class="form-control" name="contact" id="contact" placeholder="Enter contact number" data-rule="minlen:10" data-msg="Please enter your contact number" />
+          <div class="validation"></div>
+        </div>
+        
+        <div class="form-group " style="background-color: white;">
+            <!-- village /  -->
+            <label >Select your village name</label > 
+            <input type="text" list ="villagelist" class="form-control" name="village" id="village" placeholder="Enter your village"  data-msg="Please enter your village" />
+            <datalist id="villagelist">
+                <option value="north solapur" >North solapur</option>
+                <option value="south Solapur">South Solapur</option>
+                <option value="barshi">Barshi</option>
+                <option value="mohol">Mohol</option>
+                <option value="katmala">Katmala</option>
+                <option value="pandharpur">Pandharpur</option>
+                <option value="madha">Madha</option>
+                <option value="akkalkoth"> Akkalkoth</option>
+                <option value="mangalwedha"> Mangalwedha</option>
+                <option value="malshiras">Malshiras</option>
+                <option value="sangola">Sangola</option>
+
+            </datalist>
+            <div class="validation"></div>
+          </div>
+      
+          <div class="form-group " style="background-color: white;">
+            <!-- village /  -->
+            <label >Do you have irrigation? Enter Yes or No</label > 
+            <input type="text" list ="irrigation" class="form-control" name="irrigation" id="irrigation" placeholder="Do you have irrigation"  data-msg="Do you have irrigation" />
+            <datalist id="irrigation">
+                <option value="yes" >yes</option>
+                <option value="no">no</option>
+                
+            </datalist>
+            <div class="validation"></div>
+          </div>
+<!--         
+          <div class="form-group" style="background-color: white;">
+          
+            <label  >Enter your Healthcard number</label  > 
+            <input type="healthcardnumber" class="form-control" name="healthcardnumber" id="healthcardnumber" placeholder="Enter healthcardnumber" data-rule="minlen:10" data-msg="Please enter your healthcard" />
+            <div class="validation"></div>
+          </div>
+        
+         -->
+                     <br>
+                      <div class="text-center "><button style="color: mintcream" type="submit">Register </button></div>
+      </form>
+    </div>
+    </div>
+    </div>
+    </div>
+        
+
+</body>
+</html>
