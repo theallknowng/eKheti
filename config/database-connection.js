@@ -7,10 +7,17 @@ var connection = mysql.createConnection({
   database: 'ekheti'
 })
 
-connection.connect(function (err) {
-  if (err) {
-    throw err
-  }
-})
+// var connection = mysql.createConnection({
+//   host: 'shareddb-s.hosting.stackcp.net',
+//   user: 'cropadv-313235f557',
+//   password: 'CropAdv#20',
+//   database: 'ekheti'
+// })
+
+// connection.connect(function (err) {
+//   if (err) {
+//     throw err
+//   }
+// })
 
 module.exports = connection
