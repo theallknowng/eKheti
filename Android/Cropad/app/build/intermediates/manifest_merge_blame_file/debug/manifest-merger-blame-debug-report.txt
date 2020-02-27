@@ -1,0 +1,95 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.cropad"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="14"
+8-->/home/adish/Desktop/Final_YP/Android/Cropad/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->/home/adish/Desktop/Final_YP/Android/Cropad/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+11-->/home/adish/Desktop/Final_YP/Android/Cropad/app/src/main/AndroidManifest.xml:32:5-79
+11-->/home/adish/Desktop/Final_YP/Android/Cropad/app/src/main/AndroidManifest.xml:32:22-76
+12    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+12-->/home/adish/Desktop/Final_YP/Android/Cropad/app/src/main/AndroidManifest.xml:33:5-81
+12-->/home/adish/Desktop/Final_YP/Android/Cropad/app/src/main/AndroidManifest.xml:33:22-78
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->/home/adish/Desktop/Final_YP/Android/Cropad/app/src/main/AndroidManifest.xml:34:5-67
+13-->/home/adish/Desktop/Final_YP/Android/Cropad/app/src/main/AndroidManifest.xml:34:22-64
+14    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+14-->/home/adish/Desktop/Final_YP/Android/Cropad/app/src/main/AndroidManifest.xml:36:5-79
+14-->/home/adish/Desktop/Final_YP/Android/Cropad/app/src/main/AndroidManifest.xml:36:22-76
+15
+16    <application
+16-->/home/adish/Desktop/Final_YP/Android/Cropad/app/src/main/AndroidManifest.xml:5:5-31:19
+17        android:allowBackup="true"
+17-->/home/adish/Desktop/Final_YP/Android/Cropad/app/src/main/AndroidManifest.xml:6:9-35
+18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+18-->[androidx.core:core:1.1.0] /home/adish/.gradle/caches/transforms-2/files-2.1/7f6c41cc2a14c0fbaa8d0166c17dc544/core-1.1.0/AndroidManifest.xml:24:18-86
+19        android:debuggable="true"
+20        android:icon="@drawable/logo1"
+20-->/home/adish/Desktop/Final_YP/Android/Cropad/app/src/main/AndroidManifest.xml:7:9-39
+21        android:label="@string/app_name"
+21-->/home/adish/Desktop/Final_YP/Android/Cropad/app/src/main/AndroidManifest.xml:8:9-41
+22        android:roundIcon="@mipmap/ic_launcher_round"
+22-->/home/adish/Desktop/Final_YP/Android/Cropad/app/src/main/AndroidManifest.xml:9:9-54
+23        android:supportsRtl="true"
+23-->/home/adish/Desktop/Final_YP/Android/Cropad/app/src/main/AndroidManifest.xml:10:9-35
+24        android:testOnly="true"
+25        android:theme="@style/AppTheme"
+25-->/home/adish/Desktop/Final_YP/Android/Cropad/app/src/main/AndroidManifest.xml:11:9-40
+26        android:usesCleartextTraffic="true" >
+26-->/home/adish/Desktop/Final_YP/Android/Cropad/app/src/main/AndroidManifest.xml:12:9-44
+27        <activity android:name="com.example.cropad.suggest_crops" />
+27-->/home/adish/Desktop/Final_YP/Android/Cropad/app/src/main/AndroidManifest.xml:13:9-60
+27-->/home/adish/Desktop/Final_YP/Android/Cropad/app/src/main/AndroidManifest.xml:13:19-48
+28        <activity android:name="com.example.cropad.edithealthcard" />
+28-->/home/adish/Desktop/Final_YP/Android/Cropad/app/src/main/AndroidManifest.xml:14:9-52
+28-->/home/adish/Desktop/Final_YP/Android/Cropad/app/src/main/AndroidManifest.xml:14:19-49
+29        <activity android:name="com.example.cropad.Healthcards" />
+29-->/home/adish/Desktop/Final_YP/Android/Cropad/app/src/main/AndroidManifest.xml:15:9-49
+29-->/home/adish/Desktop/Final_YP/Android/Cropad/app/src/main/AndroidManifest.xml:15:19-46
+30        <activity android:name="com.example.cropad.Market_list" />
+30-->/home/adish/Desktop/Final_YP/Android/Cropad/app/src/main/AndroidManifest.xml:16:9-49
+30-->/home/adish/Desktop/Final_YP/Android/Cropad/app/src/main/AndroidManifest.xml:16:19-46
+31        <activity android:name="com.example.cropad.marketplace" />
+31-->/home/adish/Desktop/Final_YP/Android/Cropad/app/src/main/AndroidManifest.xml:17:9-49
+31-->/home/adish/Desktop/Final_YP/Android/Cropad/app/src/main/AndroidManifest.xml:17:19-46
+32        <activity android:name="com.example.cropad.expertadvice" />
+32-->/home/adish/Desktop/Final_YP/Android/Cropad/app/src/main/AndroidManifest.xml:18:9-50
+32-->/home/adish/Desktop/Final_YP/Android/Cropad/app/src/main/AndroidManifest.xml:18:19-47
+33        <activity android:name="com.example.cropad.weather_forecast" />
+33-->/home/adish/Desktop/Final_YP/Android/Cropad/app/src/main/AndroidManifest.xml:19:9-54
+33-->/home/adish/Desktop/Final_YP/Android/Cropad/app/src/main/AndroidManifest.xml:19:19-51
+34        <activity android:name="com.example.cropad.Inputform" />
+34-->/home/adish/Desktop/Final_YP/Android/Cropad/app/src/main/AndroidManifest.xml:20:9-47
+34-->/home/adish/Desktop/Final_YP/Android/Cropad/app/src/main/AndroidManifest.xml:20:19-44
+35        <activity android:name="com.example.cropad.add_market" />
+35-->/home/adish/Desktop/Final_YP/Android/Cropad/app/src/main/AndroidManifest.xml:21:9-48
+35-->/home/adish/Desktop/Final_YP/Android/Cropad/app/src/main/AndroidManifest.xml:21:19-45
+36        <activity android:name="com.example.cropad.first_page" />
+36-->/home/adish/Desktop/Final_YP/Android/Cropad/app/src/main/AndroidManifest.xml:22:9-48
+36-->/home/adish/Desktop/Final_YP/Android/Cropad/app/src/main/AndroidManifest.xml:22:19-45
+37        <activity android:name="com.example.cropad.registration_page" />
+37-->/home/adish/Desktop/Final_YP/Android/Cropad/app/src/main/AndroidManifest.xml:23:9-55
+37-->/home/adish/Desktop/Final_YP/Android/Cropad/app/src/main/AndroidManifest.xml:23:19-52
+38        <activity android:name="com.example.cropad.MainActivity" >
+38-->/home/adish/Desktop/Final_YP/Android/Cropad/app/src/main/AndroidManifest.xml:24:9-30:20
+38-->/home/adish/Desktop/Final_YP/Android/Cropad/app/src/main/AndroidManifest.xml:24:19-47
+39            <intent-filter>
+39-->/home/adish/Desktop/Final_YP/Android/Cropad/app/src/main/AndroidManifest.xml:25:13-29:29
+40                <action android:name="android.intent.action.MAIN" />
+40-->/home/adish/Desktop/Final_YP/Android/Cropad/app/src/main/AndroidManifest.xml:26:17-69
+40-->/home/adish/Desktop/Final_YP/Android/Cropad/app/src/main/AndroidManifest.xml:26:25-66
+41
+42                <category android:name="android.intent.category.LAUNCHER" />
+42-->/home/adish/Desktop/Final_YP/Android/Cropad/app/src/main/AndroidManifest.xml:28:17-77
+42-->/home/adish/Desktop/Final_YP/Android/Cropad/app/src/main/AndroidManifest.xml:28:27-74
+43            </intent-filter>
+44        </activity>
+45    </application>
+46
+47</manifest>
