@@ -1,23 +1,26 @@
 var mysql = require('mysql')
-
-var connection = mysql.createConnection({
-  host: '127.0.0.1',
-  user: 'root',
-  password: 'rahul',
-  database: 'ekheti'
-})
+const dotenv = require('dotenv');
+dotenv.config();
 
 // var connection = mysql.createConnection({
-//   host: 'shareddb-s.hosting.stackcp.net',
-//   user: 'cropadv-313235f557',
-//   password: 'CropAdv#20',
-//   database: 'ekheti'
+//   host: process.env.host,
+//   user: process.env.user,
+//   password: process.env.password,
+//   database: process.env.database
 // })
 
-// connection.connect(function (err) {
-//   if (err) {
-//     throw err
-//   }
-// })
+var connection = mysql.createConnection({
+  host: process.env.hostAWS,
+  user: process.env.userAWS,
+  password: process.env.passwordAWS,
+  port: '3306',
+  database: process.env.dbAWS
+})
+
+connection.connect(function (err) {
+  if (err) {
+    throw err
+  }
+})
 
 module.exports = connection
