@@ -46,9 +46,10 @@ router.post('/suggestCrops', (req,res)=>{
   if(req.session.email){
     if(req.session.healthID==null){
       database.withoutHealthCard(req.session.region,req.session.irrigation, function(err, data){
-        data=data.toString().slice(1,-2)
+        data=data.toString().slice(1,-1)
  
         dataArray=data.split(" ")
+        console.log(dataArray)
 
         result={"Crop1":getCrop(dataArray[6]),"Crop2":getCrop(dataArray[5]),"Crop3":getCrop(dataArray[4]),"Crop4":getCrop(dataArray[3]),"Crop5":getCrop(dataArray[2]),"Crop6":getCrop(dataArray[1]),"Crop7":getCrop(dataArray[0]),}
         console.log(result)
@@ -64,6 +65,17 @@ router.post('/suggestCrops', (req,res)=>{
 
   }
 })
+
+
+
+// router.post('/suggest', (req,res)=>{           // For testing purpose
+//   database.callName("barshi","yes",(err , data)=>{
+//     console.log(data.slice(1,-1))
+//     dataarr=data.slice(1,-1).split(" ")
+//     console.log(dataarr)
+//     res.send(data)
+//   });
+// })
 
 function getCrop(code){
   switch(code) {
@@ -117,7 +129,7 @@ router.post('/user/login', function (req, res) {
 
 router.post('/user/withoutHealthCard', function (req,res){
     database.withoutHealthCard("barshi","yes", function(err, data){
-    data=data.toString().slice(1,-2)
+    data=data.toString().slice(1,-1)
 
     dataArray=data.split(" ")
     console.log(dataArray)

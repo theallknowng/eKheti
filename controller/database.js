@@ -1,6 +1,7 @@
 var conn = require('../config/database-connection')
 var request = require('request-promise');
-
+const dotenv = require('dotenv');
+dotenv.config();
 
 
 
@@ -19,33 +20,61 @@ function getUser (email, password, cb) {
   }
 
 
-  function callName(req, cb) { 
-    var sql = 'select * from `TABLE 1` where region ="' + req.body.region + '" and irrigation ="' + req.body.irrigation + '"'
-    conn.query(sql, function (err, data) {
-    console.log(JSON.stringify(data))
-    var spawn = require("child_process").spawn; 
-  
-    var process = spawn('python3',["./model.py", JSON.stringify(data[0]) ]); 
-  
-    process.stdout.on('data', function(err,data) { 
-      // console.log(data)
-      cb(err,data)
-      }) 
+  function callName(region, irrigation,cb ) {
+    var sql = 'select * from `actualConditions` where region ="' + region + '" and irrigation ="' + irrigation + '"'
+    conn.query(sql, function ( err , result){
+    console.log(JSON.stringify(result[0]))
+    var options = {
+      method: 'POST',
+      uri: process.env.hostPython,
+      form: {
+          data: JSON.stringify(result[0]),
+      }
+  };
+    request(options)
+    .then(function (body) {
+      cb(err, body)
     })
-  }
+    .catch(function (err){
+      console.log
+    })
+
+  
+   
+  })
+}
   ///home/rahul/Desktop/eKheti/ekheti/controller
 
   function withoutHealthCard(region, irrigation, cb){
     var sql = 'select * from `actualConditions` where region ="' + region + '" and irrigation ="' + irrigation + '"'
     conn.query(sql, function ( err , result){
     console.log(JSON.stringify(result[0]))
-    var spawn = require("child_process").spawn; 
-    var process = spawn('python3',["./model.py", JSON.stringify(result[0]) ]);   
-    process.stdout.on('data', function(data,err) { 
-      console.log(data.toString())
-      cb(err,data)
-      }) 
+    var options = {
+      method: 'POST',
+      uri: process.env.hostPython,
+      form: {
+          data: JSON.stringify(result[0]),
+      }
+  };
+    request(options)
+    .then(function (body) {
+      cb(err, body)
     })
+    .catch(function (err){
+    })
+
+  
+  })
+    // var sql = 'select * from `actualConditions` where region ="' + region + '" and irrigation ="' + irrigation + '"'
+    // conn.query(sql, function ( err , result){
+    // console.log(JSON.stringify(result[0]))
+    // var spawn = require("child_process").spawn; 
+    // var process = spawn('python3',["./model.py", JSON.stringify(result[0]) ]);   
+    // process.stdout.on('data', function(data,err) { 
+    //   console.log(data.toString())
+    //   cb(err,data)
+    //   }) 
+    // })
   }
 
 
@@ -79,4 +108,4 @@ function weather(req,res){  //isme update ke zarurat hai like location tag wager
     })
   }
   
-  module.exports = { getUser, newUser, getMarkets, withoutHealthCard }
+  module.exports = { getUser, newUser, getMarkets, withoutHealthCard ,callName}
