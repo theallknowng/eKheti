@@ -2,15 +2,18 @@
 <html lang="en">
 <head>
   <title>eKheti</title>
+  <link rel = "icon" type = "image/x-icon" href = "/images/icon.png">
+  <!-- For apple devices -->
+  <link rel = "apple-touch-icon" type = "image/x-icon" href = "/images/icon.png"/>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
   <link rel="stylesheet" href="stylesheets/navbar.css">
-<style>
-nav {position: fixed;}
-</style>
+  <link rel = "icon" type = "image/x-icon" href = "/images/icon.png">
+    <!-- For apple devices -->
+    <link rel = "apple-touch-icon" type = "image/x-icon" href = "/images/icon.png"/>
 </head>
 <body>
 
@@ -24,7 +27,7 @@ nav {position: fixed;}
         <span class="icon-bar"></span>                        
       </button>
       <div></div>
-      <a class="navbar-brand" href="/">e<span>Kheti</span></a>
+      <a class="navbar-brand page-scroll sticky-logo" href="/"><h1><span>e</span>KHETI</h1></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
@@ -59,4 +62,16 @@ nav {position: fixed;}
   </div>
 </nav>
 </body>
+
+<script>
+
+$(window).scroll(function () {
+if ($(window).scrollTop() >= 50) {
+$('.navbar').css('background','#444444');
+} else {
+$('.navbar').css('background','transparent');
+}
+});
+
+</script>
 </html>
