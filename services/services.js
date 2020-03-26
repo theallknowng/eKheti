@@ -46,7 +46,7 @@ router.post('/suggestCrops', (req,res)=>{
   if(req.session.email){
     if(req.session.healthID==null){
       database.withoutHealthCard(req.session.region,req.session.irrigation, function(err, data){
-        data=data.toString().slice(1,-1)
+        data=data.toString().slice(1,-2)
  
         dataArray=data.split(" ")
         console.log(dataArray)
@@ -54,7 +54,7 @@ router.post('/suggestCrops', (req,res)=>{
         result={"Crop1":getCrop(dataArray[6]),"Crop2":getCrop(dataArray[5]),"Crop3":getCrop(dataArray[4]),"Crop4":getCrop(dataArray[3]),"Crop5":getCrop(dataArray[2]),"Crop6":getCrop(dataArray[1]),"Crop7":getCrop(dataArray[0]),}
         console.log(result)
         res.render('suggestcrop',{success:'true',result: result})
-
+        // res.render('test',{success:'true',result: result,login: 'true',name: req.session.name})
       })
     }
     else {
@@ -63,6 +63,9 @@ router.post('/suggestCrops', (req,res)=>{
     }
 
 
+  }
+  else{
+    res.redirect('/login')
   }
 })
 
