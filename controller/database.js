@@ -46,35 +46,35 @@ function getUser (email, password, cb) {
   ///home/rahul/Desktop/eKheti/ekheti/controller
 
   function withoutHealthCard(region, irrigation, cb){
-  //   var sql = 'select * from `actualConditions` where region ="' + region + '" and irrigation ="' + irrigation + '"'
-  //   conn.query(sql, function ( err , result){
-  //   console.log(JSON.stringify(result[0]))
-  //   var options = {
-  //     method: 'POST',
-  //     uri: process.env.hostPython,
-  //     form: {
-  //         data: JSON.stringify(result[0]),
-  //     }
-  // };
-  //   request(options)
-  //   .then(function (body) {
-  //     cb(err, body)
-  //   })
-  //   .catch(function (err){
-  //   })
-
-  
-  // })
     var sql = 'select * from `actualConditions` where region ="' + region + '" and irrigation ="' + irrigation + '"'
     conn.query(sql, function ( err , result){
     console.log(JSON.stringify(result[0]))
-    var spawn = require("child_process").spawn; 
-    var process = spawn('python3',["./model.py", JSON.stringify(result[0]) ]);   
-    process.stdout.on('data', function(data,err) { 
-      console.log(data.toString())
-      cb(err,data)
-      }) 
+    var options = {
+      method: 'POST',
+      uri: process.env.hostPython,
+      form: {
+          data: JSON.stringify(result[0]),
+      }
+  };
+    request(options)
+    .then(function (body) {
+      cb(err, body)
     })
+    .catch(function (err){
+    })
+
+  
+  })
+    // var sql = 'select * from `actualConditions` where region ="' + region + '" and irrigation ="' + irrigation + '"'
+    // conn.query(sql, function ( err , result){
+    // console.log(JSON.stringify(result[0]))
+    // var spawn = require("child_process").spawn; 
+    // var process = spawn('python3',["./model.py", JSON.stringify(result[0]) ]);   
+    // process.stdout.on('data', function(data,err) { 
+    //   console.log(data.toString())
+    //   cb(err,data)
+    //   }) 
+    // })
   }
 
 

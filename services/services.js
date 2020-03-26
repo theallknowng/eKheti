@@ -46,7 +46,7 @@ router.post('/suggestCrops', (req,res)=>{
   if(req.session.email){
     if(req.session.healthID==null){
       database.withoutHealthCard(req.session.region,req.session.irrigation, function(err, data){
-        data=data.toString().slice(1,-2)
+        data=data.toString().slice(1,-1)
  
         dataArray=data.split(" ")
         console.log(dataArray)
