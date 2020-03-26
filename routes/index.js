@@ -25,6 +25,13 @@ router.get('/cropSuggestion',function(req,res,next){
   res.render('cropsuggestion',{success:'false',result:''})
 })
 
+router.get('/articles', function(req, res, next){
+  if(req.session.email)
+    res.render('articles', { login: 'true',name:req.session.name })
+  else
+    res.render('articles', { login: 'false',name:'' })
+})
+
 router.get('/Jowar', function(req, res, next) {
   if(req.session.email)
     res.render('Jowar',{ login: 'true',name:req.session.name })
