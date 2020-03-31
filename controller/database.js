@@ -5,7 +5,7 @@ dotenv.config();
 
 
 
-function getUser (email, password, cb) {
+  function getUser (email, password, cb) {
     var sql = 'select * from users where email ="' + email + '" and password ="' + password + '"'
     conn.query(sql, function (err, user) {
       cb(err, user[0])
@@ -14,6 +14,13 @@ function getUser (email, password, cb) {
   
   function newUser (values, cb) {
     var sql = 'INSERT INTO `users`(`email`,`firstname`,`lastname`,`contact`,`region`, `password`, `irrigation`) VALUES(?)'
+    conn.query(sql, [values], function (err, result) {
+      cb(err, result)
+    })
+  }
+
+  function newHealthCard (values, cb) {
+    var sql = 'INSERT INTO `healthCard`(`healthID`, `email`, `pHMin`, `pHMax`, `nitrogenMin`, `nitrogenMax`, `phosphorusMin`, `phosphorusMax`, `potassiumMin`, `potassiumMax`, `calciumMin`, `calciumMax`, `magnesiumMin`, `magnesiumMax`, `sulphurMin`, `sulphurMax`, `ironMin`, `ironMax`, `zincMin`, `zincMax`, `manganeseMin`, `manganeseMax`, `copperMin`, `copperMax`, `boronMin`, `boronMax`, `temperatureMin`, `temperatureMax`, `precipitationMin`, `precipitationMax`, `irrigation`, `region`) VALUES(?)'
     conn.query(sql, [values], function (err, result) {
       cb(err, result)
     })
@@ -30,7 +37,7 @@ function getUser (email, password, cb) {
       form: {
           data: JSON.stringify(result[0]),
       }
-  };
+    };
     request(options)
     .then(function (body) {
       cb(err, body)
@@ -55,7 +62,7 @@ function getUser (email, password, cb) {
       form: {
           data: JSON.stringify(result[0]),
       }
-  };
+    };
     request(options)
     .then(function (body) {
       cb(err, body)
@@ -75,6 +82,29 @@ function getUser (email, password, cb) {
     //   cb(err,data)
     //   }) 
     // })
+  }
+
+  function withHealthCard( healthID ,cb){
+    var sql= 'select `pHMin`, `pHMax`, `nitrogenMin`, `nitrogenMax`, `phosphorusMin`, `phosphorusMax`, `potassiumMin`, `potassiumMax`, `calciumMin`, `calciumMax`, `magnesiumMin`, `magnesiumMax`, `sulphurMin`, `sulphurMax`, `ironMin`, `ironMax`, `zincMin`, `zincMax`, `manganeseMin`, `manganeseMax`, `copperMin`, `copperMax`, `boronMin`, `boronMax`, `temperatureMin`, `temperatureMax`, `precipitationMin`, `precipitationMax`, `irrigation`, `region` from `healthCard` where healthID ="' + healthID +'" LIMIT 1'
+    conn.query(sql, function ( err , result){
+      console.log(JSON.stringify(result[0]))
+      var options = {
+        method: 'POST',
+        uri: process.env.hostPython,
+        form: {
+            data: JSON.stringify(result[0]),
+        }
+      };
+      request(options)
+      .then(function (body) {
+        cb(err, body)
+      })
+      .catch(function (err){
+      })
+  
+    })
+
+
   }
 
 
@@ -108,4 +138,4 @@ function weather(req,res){  //isme update ke zarurat hai like location tag wager
     })
   }
   
-  module.exports = { getUser, newUser, getMarkets, withoutHealthCard ,callName}
+  module.exports = { getUser, newUser, getMarkets, withoutHealthCard , callName, withHealthCard, newHealthCard }

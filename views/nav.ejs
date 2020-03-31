@@ -26,14 +26,16 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <div></div>
-      <a class="navbar-brand page-scroll sticky-logo" href="/"><h1><span>e</span>KHETI</h1></a>
+      <!-- <h1><span>e</span>KHETI</h1></a> -->
+     <div style="padding-left: 25px;"> <a class="navbar-brand page-scroll sticky-logo" style="padding-top: 0%;" href="/"><img src="images/navlogo.png" style="width: 100px;"></a> </div>
     </div>
+    <form id="cropSuggest" action="/suggestCrops" method="post"></form>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li class="active"><a href="/">Home</a></li>
         <%if(login == "true"){%>
-          <li><a href="/cropSuggestion">Crop Suggest</a></li>
+          <li><a onclick=dialog()  >Crop Suggest</a></li>
+          <!-- <li><a href="/cropSuggestion">Crop Suggest</a></li> -->
         <%}%>
                 
         
@@ -72,6 +74,24 @@ $('.navbar').css('background','#444444');
 $('.navbar').css('background','rgba(0, 0, 0, 0.5)');
 }
 });
+
+function dialog(){
+  var healthID= '<%= healthID %>'
+  console.log(healthID)
+  if(!healthID){
+    var ans = window.confirm("You have not submitted health Card details... Would you like to update it ?")
+    if(ans){
+      window.location.href = "/healthcard";
+    }
+    else{
+      document.getElementById('cropSuggest').submit();
+    }
+  }
+  else{
+    document.getElementById('cropSuggest').submit();
+  }
+    
+}
 
 </script>
 </html>

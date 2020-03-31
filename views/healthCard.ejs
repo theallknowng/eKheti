@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>healthcard</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <!-- <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/nivo-slider/css/nivo-slider.css" rel="stylesheet">
+  <link href="lib/owlcarousel/owl.carousel.css" rel="stylesheet">
+  <link href="lib/owlcarousel/owl.transitions.css" rel="stylesheet">
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/venobox/venobox.css" rel="stylesheet">
+
+  <!-- Nivo Slider Theme -->
+  <link href="stylesheets/nivo-slider-theme.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="stylesheets/style.css" rel="stylesheet">
+
+  <!-- Responsive Stylesheet File -->
+  <link href="stylesheets/responsive.css" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: eBusiness
+    Theme URL: https://bootstrapmade.com/ebusiness-bootstrap-corporate-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+</head>
+
+<body data-spy="scroll" data-target="#navbar-example">
+
+    <div>
+        <%- include('nav'); %>
+    </div>
+
+<div id="contact" class="contact-area" style="background-color: rgb(31, 36, 30)">
+  <div class="contact-inner area-padding">
+    <div class="contact-overly"></div>
+    <div class="container ">
+      <div class="row" style="padding-top: 2%">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="section-headline text-center">
+            <h2 style="color: mintcream"> HEALTH CARD </h2>
+          </div>
+        </div>
+      </div>
+<div class="form contact-form" style="background-color:transparent">
+  <div id="sendmessage">Your message has been sent. Thank you!</div>
+  <div id="errormessage"></div>
+
+  <form action="/healthcard" method="post">
+    
+    <div><h5 style="color:white; padding-left: 15px;">Health card number</h5></div>
+    <div class="form-group">
+      <!-- Health card number -->
+      <input type="number" class="form-control" name="health_card_number" id="health_card_number" placeholder="Enter Health card number"  data-msg="Please enter the Nmber" />
+      <div class="validation"></div>
+    </div>
+
+    <div><h5 style="color:white; padding-left: 15px;">Contact number</h5></div>
+    <div class="form-group ">
+      <!-- contactnumber -->
+      <input type="number" class="form-control" name="mobile number" id="mobile" placeholder="Enter contact number" data-rule="minlen:10" data-msg="Please enter at least 10 chars of subject" />
+      <div class="validation"></div>
+    </div>
+    <!-- Lat Long -->
+    <div><h5 style="color:white; padding-left: 15px;">Latitude & Longitude</h5></div>
+    <div class="form-group col-sm-6">
+        <input type="number " class="form-control" name="lat" id="lat" placeholder="Latitude" data-rule="" data-msg="Give Access to Location"/>
+        <div class="validation"></div>
+      </div>
+      <div class="form-group col-sm-6">
+        <input type="number " class="form-control" name="long"  id="long" placeholder="Longitude" data-rule="" data-msg="GIve Access to Location"/>
+        <div class="validation"></div>
+      </div>
+
+<!-- Healthcard-pH -->
+      <div><h5 style="color:white; padding-left: 15px;">pH of Soil</h5></div>      
+    <div class="form-group col-sm-6 ">
+      <input type="number " class="form-control" id="" name="pH_min" placeholder="pH min" data-rule="min:0" data-rule="maximum:14" data-msg="Enter VAlid pH"/>
+      <div class="validation"></div>
+    </div>
+    <div class="form-group col-sm-6 ">
+      <input type="number " class="form-control" id="" name="pH_max" placeholder="pH max" data-rule="min:0" data-rule="maximum:14" data-msg="Enter VAlid pH"/>
+      <div class="validation"></div>
+    </div>
+    
+    <!-- Healthcard N-->
+    <div><h5 style="color:white; padding-left: 15px;">Nitrogen</h5></div>
+      <div class="form-group col-sm-6">
+          <input type="number " class="form-control" id="" name="N_min" placeholder="Nitrogen min" data-rule=""  data-msg="Enter VAlid N"/>
+          <div class="validation"></div>
+        </div>
+        <div class="form-group col-sm-6">
+          <input type="number " class="form-control" id="" name="N_max" placeholder="Nitrogen max" data-rule=""  data-msg="Enter VAlid N"/>
+          <div class="validation"></div>
+        </div>
+        
+    <!-- Healthcard Phosphorous-->
+    <div><h5 style="color:white; padding-left: 15px;">Phosphorous</h5></div>
+        <div class="form-group col-sm-6">
+          <input type="number " class="form-control" id="" name="Phosphorous_min" placeholder="Phosphorous min" data-rule=""  data-msg="Enter VAlid Phosphorous"/>
+          <div class="validation"></div>
+        </div>
+        <div class="form-group col-sm-6">
+          <input type="number " class="form-control" id="" name="Phosphorous_max" placeholder="Phosphorous max" data-rule=""  data-msg="Enter VAlid Phosphorous"/>
+          <div class="validation"></div>
+        </div>
+
+    <!-- Healthcard Potassium-->
+    <div><h5 style="color:white; padding-left: 15px;">Potassium</h5></div>
+        <div class="form-group col-sm-6">
+          <input type="number " class="form-control" id="" name="K_min" placeholder="K or Potassium min " data-rule=""  data-msg="Enter VAlid Potassium"/>
+          <div class="validation"></div>
+        </div>
+        <div class="form-group col-sm-6">
+          <input type="number " class="form-control" id="" name="K_max" placeholder="K or Potassium max" data-rule=""  data-msg="Enter VAlid Potassium"/>
+          <div class="validation"></div>
+        </div>
+
+    <!-- Healthcard  Calcium-->        
+    <div><h5 style="color:white; padding-left: 15px;">Calcium</h5></div>
+        <div class="form-group col-sm-6">
+          <input type="number " class="form-control" id="" name="Ca_min" placeholder="Ca or Calcium min" data-rule=""  data-msg="Enter valid value of Calcium"/>
+          <div class="validation"></div>
+        </div>
+        <div class="form-group col-sm-6">
+          <input type="number " class="form-control" id="" name="Ca_max" placeholder="Ca or Calcium max" data-rule=""  data-msg="Enter valid value of Calcium"/>
+          <div class="validation"></div>
+        </div>
+
+        <!-- Healthcard  Magnesium-->
+        <div><h5 style="color:white; padding-left: 15px;">Magnesium</h5></div>
+        <div class="form-group col-sm-6">
+          <input type="number " class="form-control" id="" name="Mg_min" placeholder="Mg or Magnesium min" data-rule=""  data-msg="Enter valid value of Magnesium"/>
+          <div class="validation"></div>
+        </div>
+        <div class="form-group col-sm-6">
+          <input type="number " class="form-control" id="" name="Mg_max" placeholder="Mg or Magnesium max" data-rule=""  data-msg="Enter valid value of Magnesium"/>
+          <div class="validation"></div>
+        </div>
+
+<!-- Healthcard  Sulphur-->
+<div><h5 style="color:white; padding-left: 15px;">Sulphur</h5></div>
+        <div class="form-group col-sm-6">
+          <input type="number " class="form-control" id="" name="sulphur_min" placeholder="sulphur min" data-rule=""  data-msg="Enter valid value of sulphur"/>
+          <div class="validation"></div>
+        </div>
+        <div class="form-group col-sm-6">
+          <input type="number " class="form-control" id="" name="sulphur_max" placeholder="sulphur max" data-rule=""  data-msg="Enter valid value of sulphur"/>
+          <div class="validation"></div>
+        </div>
+
+<!-- Healthcard  Iron-->
+<div><h5 style="color:white; padding-left: 15px;">Iron</h5></div>
+        <div class="form-group col-sm-6">
+          <input type="number " class="form-control" id="" name="Fe_min" placeholder="Fe or Iron min" data-rule=""  data-msg="Enter valid value of Iron"/>
+          <div class="validation"></div>
+        </div>
+        <div class="form-group col-sm-6">
+          <input type="number " class="form-control" id="" name="Fe_max" placeholder="Fe or Iron max" data-rule=""  data-msg="Enter valid value of Iron"/>
+          <div class="validation"></div>
+        </div>
+
+<!-- Healthcard  Zinc-->
+<div><h5 style="color:white; padding-left: 15px;">Zinc</h5></div>
+        <div class="form-group col-sm-6">
+          <input type="number " class="form-control" id="" name="Zn_min" placeholder="Zn or Zinc min" data-rule=""  data-msg="Enter valid value of Zinc"/>
+          <div class="validation"></div>
+        </div>
+        <div class="form-group col-sm-6">
+          <input type="number " class="form-control" id="" name="Zn_max" placeholder="Zn or Zinc max" data-rule=""  data-msg="Enter valid value of Zinc"/>
+          <div class="validation"></div>
+        </div>
+
+<!-- Healthcard  Manganese-->
+<div><h5 style="color:white; padding-left: 15px;">Manganese</h5></div>
+        <div class="form-group col-sm-6">
+          <input type="number " class="form-control" id="" name="Mn_min" placeholder="Mn or Manganese min" data-rule=""  data-msg="Enter valid value of Manganese"/>
+          <div class="validation"></div>
+        </div>
+        <div class="form-group col-sm-6">
+          <input type="number " class="form-control" id="" name="Mn_max" placeholder="Mn or Manganese max" data-rule=""  data-msg="Enter valid value of Manganese"/>
+          <div class="validation"></div>
+        </div>
+
+        <!-- Healthcard  Copper -->
+        <div><h5 style="color:white; padding-left: 15px;">Copper</h5></div>
+        <div class="form-group col-sm-6">    
+          <input type="number " class="form-control" id="" name="Cu_min" placeholder="Cu or Copper min" data-rule=""  data-msg="Enter valid value of Copper"/>
+          <div class="validation"></div>
+        </div>
+        <div class="form-group col-sm-6">    
+          <input type="number " class="form-control" id="" name="Cu_max" placeholder="Cu or Copper max" data-rule=""  data-msg="Enter valid value of Copper"/>
+          <div class="validation"></div>
+        </div>
+
+        <!-- Healthcard  Boron -->
+        <div><h5 style="color:white; padding-left: 15px;">Boron</h5></div>
+        <div class="form-group col-sm-6">    
+          <input type="number " class="form-control" id="" name="B_min" placeholder="B or Boron min" data-rule=""  data-msg="Enter valid value of Boron"/>
+          <div class="validation"></div>
+        </div>
+        <div class="form-group col-sm-6">    
+          <input type="number " class="form-control" id="" name="B_max" placeholder="B or Boron max" data-rule=""  data-msg="Enter valid value of Boron"/>
+          <div class="validation"></div>
+        </div>
+
+        <!-- Tempreature -->
+        <div><h5 style="color:white; padding-left: 15px;">Tempreature</h5></div>
+        <div class="form-group col-sm-6">    
+          <input type="number " class="form-control" id="" name="Temp_min" placeholder="Tempreature min" />
+          <div class="validation"></div>
+        </div>
+        <div class="form-group col-sm-6">    
+          <input type="number " class="form-control" id="" name="Temp_max" placeholder="Tempreature max"  />
+          <div class="validation"></div>
+        </div>
+
+        <!-- Precipitation -->
+        <div><h5 style="color:white; padding-left: 15px;">Precipitation</h5></div>
+        <div class="form-group col-sm-6">    
+          <input type="number " class="form-control" id="" name="ppt_min" placeholder="Precipitation min" />
+          <div class="validation"></div>
+        </div>
+        <div class="form-group col-sm-6">    
+          <input type="number " class="form-control" id="" name="ppt_max" placeholder="Precipitation max"  />
+          <div class="validation"></div>
+        </div>
+        <!-- irrigation -->
+        <div class="form-group " style="background-color: white;">
+            <!-- village /  -->
+            <label >Do you have irrigation? Enter Yes or No</label > 
+            <input type="text" list ="irrigation" class="form-control" name="irrigation" id="irrigation" placeholder="Do you have irrigation"  data-msg="Do you have irrigation" />
+            <datalist id="irrigation">
+                <option value="yes" >yes</option>
+                <option value="no">no</option>
+                
+            </datalist>
+            <div class="validation"></div>
+          </div>
+        
+                  <div class="text-center "><button  type="submit" ><a style="color: white;" ">Submit Health Card</button></div>
+  </form>
+</div>
+</div>
+</div>
+</div>
+
+<!--helath card form end-->
+<div>
+    <%- include('footer'); %>
+  </div>
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/venobox/venobox.min.js"></script>
+  <script src="lib/knob/jquery.knob.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/parallax/parallax.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/nivo-slider/js/jquery.nivo.slider.js" type="text/javascript"></script>
+  <script src="lib/appear/jquery.appear.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <script src="javascripts/main.js"></script>
+</body>
+
+</html>

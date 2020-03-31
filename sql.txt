@@ -43,6 +43,8 @@ temperatureMax decimal(4,2)	 NOT NULL,
 precipitationMin decimal(4,2)	 NOT NULL,
 precipitationMax decimal(4,2)	 NOT NULL,
 irrigation VARCHAR(20)	 NOT NULL,
+region VARCHAR(25) NOT NULL
 date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
 FOREIGN KEY (email) REFERENCES users(email)
+FOREIGN KEY (region) REFERENCES users(region)
 )Engine InnoDB;
