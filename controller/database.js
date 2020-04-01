@@ -11,6 +11,14 @@ dotenv.config();
       cb(err, user[0])
     })
   }
+
+  // function temp(values){
+  //   var sql= 'UPDATE `users` SET healthID ="' +values[0]+ '" where email ="' +values[1]+ '"'
+  //   conn.query(sql, function(err, result){
+  //     if (err) throw err;
+  //     console.log(result)
+  //   })
+  // }
   
   function newUser (values, cb) {
     var sql = 'INSERT INTO `users`(`email`,`firstname`,`lastname`,`contact`,`region`, `password`, `irrigation`) VALUES(?)'
