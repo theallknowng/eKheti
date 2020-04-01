@@ -49,8 +49,9 @@ mysql> \q;
 ```
 Running the server
 ```
-$ node start
+$ nodemon start
 ```
+Open the browser and type http://localhost:3000
 
 ## Technology stack
 1.  Bootstrap
