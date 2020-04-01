@@ -1,4 +1,13 @@
-# EventMania
+<div align="center">
+  
+![eKheti]()
 
-A mobile and web platform for organisations to arrange events, find volunteers and raise funds for events.
-The application has 3 main entities:
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
+
+</div>
+
+# eKheti
+
+A mobile and web platform for farmers to get the most suitable crops prediction for their land based on soil and climatic
+factors using Deep Neural Networks
