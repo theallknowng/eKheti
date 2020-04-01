@@ -1,6 +1,6 @@
 <div align="center">
   
-![eKheti]((https://i.imgur.com/wxpB6ru.png)
+![eKheti](https://i.imgur.com/wxpB6ru.png)
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
