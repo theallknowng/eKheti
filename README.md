@@ -1,6 +1,6 @@
 <div align="center">
   
-![eKheti](https://imgur.com/wxpB6ru)
+![eKheti]((https://i.imgur.com/wxpB6ru.png)
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
@@ -19,7 +19,7 @@ Installing NodeJs
 $ sudo apt-get install nodejs npm
 ```
 Installing [Android Studio](https://developer.android.com/studio/)
-
+s
 Cloning the repo
 ```
 $ git clone https://github.com/theallknowng/eKheti.git
