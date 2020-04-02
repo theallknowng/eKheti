@@ -24,4 +24,5 @@ connection.connect(function (err) {
   console.log('AWSDB Connected')
 })
 
+
 module.exports = connection
