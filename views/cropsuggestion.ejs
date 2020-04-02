@@ -3,16 +3,13 @@
 <head>
   <meta charset="utf-8">
   <title>Crop Suggestion</title>
-  <link rel = "icon" type = "image/x-icon" href = "/images/icon.png">
-  <!-- For apple devices -->
-  <link rel = "apple-touch-icon" type = "image/x-icon" href = "/images/icon.png"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
 
   <!-- Favicons -->
-  <link href="img/icon.png" rel="icon">
-  <link href="img/icon.png" rel="apple-touch-icon">
+  <!-- <link href="img/icon.png" rel="icon">
+  <link href="img/icon.png" rel="apple-touch-icon"> -->
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900" rel="stylesheet">
@@ -33,9 +30,11 @@
 
   <!-- Main Stylesheet File -->
   <link href="stylesheets/style.css" rel="stylesheet">
-  <link href="stylesheets/graph.css" rel="stylesheet">
+  <link href="stylesheets/table_cropsuggest.css" rel="stylesheet">
   <!-- Responsive Stylesheet File -->
   <link href="stylesheets/responsive.css" rel="stylesheet">
+  <link href="stylesheets/loader.css" rel="stylesheet">
+
 
   <!-- =======================================================
     Theme Name: eBusiness
@@ -43,57 +42,67 @@
     Author: BootstrapMade.com
     License: https://bootstrapmade.com/license/
   ======================================================= -->
+
+  <style>
+    .column01{
+        text-align: center;
+        width: 20%;
+    }
+    .column02{
+        text-align: center;
+        width: 40%;
+    }
+    .column03{
+        text-align: center;
+        width: 40%;
+    }
+    /* .column04{
+        text-align: center;
+        width: 15%;
+    }
+    .column05{
+        text-align: center;
+        width: 15%;
+    }
+    .column06{
+        text-align: center;
+        width: 10%;
+    }
+    .column07{
+        text-align: center;
+        width: 20%;
+    } */
+    </style>
+
+<script>
+   var myVar;
+
+  function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+  }
+
+  function showPage() {
+  document.getElementById("loader1").style.display = "none";
+  document.getElementById("crop_suggest").style.display = "block";
+  }
+  </script>
+
 </head>
 
-<body data-spy="scroll" data-target="#navbar-example">
+<body data-spy="scroll" data-target="#navbar-example" onload="myFunction()" style="margin:0;">
 
-  <div id="preloader"></div>
-
-  <header>
-    <!-- header-area start -->
-    <div id="sticker" class="header-area">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 col-sm-12">
-
-            <!-- Navigation -->
-            <nav class="navbar navbar-default fixed-top">
-              <!-- Brand and toggle get grouped for better mobile display -->
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".bs-example-navbar-collapse-1" aria-expanded="false">
-										<span class="sr-only">Toggle navigation</span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-									</button>
-                <!-- Brand -->
-                <a class="navbar-brand page-scroll sticky-logo" href="/">
-                  <h1><span>e</span>KHETI</h1>
-                  <!-- Uncomment below if you prefer to use an image logo -->
-                  <!-- <img src="img/logo.png" alt="" title=""> -->
-								</a>
-              </div>
-              <!-- Collect the nav links, forms, and other content for toggling -->
-              <div class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1" id="navbar-example">
-                <ul class="nav navbar-nav navbar-right">
-                  <li class="active">
-                    <a class="page-scroll" href="/">Home</a>
-                  </li>
-                </ul>
-              </div>
-              <!-- navbar-collapse -->
-            </nav>
-            <!-- END: Navigation -->
-          </div>
-        </div>
-      </div>
+  <div class="preloader-wrapper" id="loader1">
+    <div class="preloader" >
+       <h3>Loading...<br/>
+       We are fetching crops for your  Region </h3>
     </div>
-    <!-- header-area end -->
-  </header>
-  <!-- header end -->
+  </div>
 
-  <!-- END Header -->
+  <div>
+    <%- include('nav'); %>
+    </div>
 
+  
 
 <!--markets table start -->
 
@@ -104,111 +113,103 @@
       <div class="row" style="padding-top: 2%">
         <div class="col-md-12 col-sm-12 col-xs-12">
           <div class="section-headline text-center">
-            <form action="/suggestCrops" method="post">
-              <div class="text-center "><button class="ready-btn" type="submit"><h2> Suggest Crop  </h2></button>  </div>
-            </form>
-            
+            <h2 > Suggested Crops</h2>
           </div>
         </div>
       </div>
-      <br>
-      <div class="row" style="align-items: center;">
-          <div class="col-md-12 col-sm-12 col-xs-12 container-fluid" >
-          <h2 >CLICK ABOVE TO GET SUGGESTION        
-          </div>
+      <!-- <button onclick="myFunction()">Try it</button> -->
+      <div style="text-align: center; padding-bottom: 2%;">
+        <h3>The below results are for <strong><%=result.region%></strong> region</h3>
       </div>
+      
+      <div class="table100 ver1 m-b-110" id="myDIV">
+        <div class="table100-head">
+          <table>
+            <thead style="text-align: center;">
+              <tr class="row100 head">
+                <th class="cell100 column01"><b>Sr. No.</b></th>
+                <th class="cell100 column02"><b>Name of Crop</b></th>
+                <th class="cell100 column03"><b>View Life Cycle</b></th>
+                
+              </tr>
+            </thead>
+          </table>
+        </div>
+
+        <div class="table100-body js-pscroll">
+          <table>
+            <tbody style="text-align: center;">
+              <tr class="row100 body">
+                <td class="cell100 column01">1</td>
+                <td class="cell100 column02"><%=result.Crop1%></td>
+                <td class="cell100 column03"><a href="<%=result.Crop1%>">Click here</a></td>
+                
+                
+              </tr>
+
+              <tr class="row100 body">
+                <td class="cell100 column01">2</td>
+                <td class="cell100 column02"><%=result.Crop2%></td>
+                <td class="cell100 column03"><a href="<%=result.Crop2%>">Click here</a></td>
+              </tr>
+
+              <tr class="row100 body">
+                <td class="cell100 column01">3</td>
+                <td class="cell100 column02"><%=result.Crop3%></td>
+                <td class="cell100 column03"><a href="<%=result.Crop3%>">Click here</a></td>
+              </tr>
+
+
+
+            </tbody>
+          </table>
+
+        </div>
+      </div>
+
+
+<!--       
+      <div class="row" >
+          <div class="col-md-12 col-sm-12 col-xs-12 container-fluid">
+                <table class="table table-hover" >
+                        <thead >
+                          <tr>
+                            <th scope="col">Priority number</th>
+                            <th scope="col">Crop Name</th>
+                            <th scope="col"> Probability</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td> Jowar</td>
+                            <td>70%</td>
+                            
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Wheat</td>
+                            <td>50%</td>
+                            
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td >Sugarcane</td>
+                            <td>20%</td>
+                          </tr>
+                        </tbody>
+                      </table>
+          </div>
+      </div> -->
 </div>
 </div>
 </div>
 
 <!--markets table end-->
-
-<!-- Suggestion -->
-<div class="suggestion">
-    <div class="form-control"></div>
+<div>
+  <%- include('footer'); %>
 </div>
 
-<!-- Start Footer bottom Area -->
-  <footer>
-    <div class="footer-area">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 col-sm-4 col-xs-12">
-            <div class="footer-content">
-              <div class="footer-head">
-                <div class="footer-logo">
-                  <h2><span>e</span>KHETI</h2>
-                </div>
-
-                <p>This data is depend on the data provided to us by the e-mandi web portal. All the values are dependent on the updates the e-mandi website.
-                  <div class="footer-icons">
-                  <ul>
-                    <li>
-                      <a href="#"><i class="fa fa-facebook"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-twitter"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-google"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-pinterest"></i></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- end single footer -->
-          <div class="col-md-4 col-sm-4 col-xs-12">
-            <div class="footer-content">
-              <div class="footer-head">
-                <h4>information</h4>
-                <p>
-                  </p>
-                <div class="footer-contacts">
-                  <p><span></span> </p>
-                  <p><span>Email:</span> contact@example.com</p>
-                  <p><span>Working Hours:</span> 9am-5pm</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- end single footer -->
-          <div class="col-md-4 col-sm-4 col-xs-12">
-            <div class="footer-content">
-              <div class="footer-head">
-                <h4>Instagram</h4>
-                <div class="flicker-img">
-                  <a href="#"><img src="img/portfolio/1.jpg" alt=""></a>
-                  <a href="#"><img src="img/portfolio/2.jpg" alt=""></a>
-                  <a href="#"><img src="img/portfolio/3.jpg" alt=""></a>
-                  <a href="#"><img src="img/portfolio/4.jpg" alt=""></a>
-                  <a href="#"><img src="img/portfolio/5.jpg" alt=""></a>
-                  <a href="#"><img src="img/portfolio/6.jpg" alt=""></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="footer-area-bottom">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="copyright text-center">
-              <p>
-                &copy; Copyright <strong></strong>
-              </p>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
 
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
@@ -227,14 +228,13 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
   
   <!-- Graph -->
-  <script src="javascripts/flot/jquery.flot.min.js"></script>
-  <script src="javascripts/graphdata.js"></script>
+  <!-- <script src="js/flot/jquery.flot.min.js"></script>
+  <script src="js/graphdata.js"></script> -->
 
   <!-- Contact Form JavaScript File -->
   <script src="contactform/contactform.js"></script>
 
   <script src="javascripts/main.js"></script>
-  <script src="javascripts/loginpopup.js"></script>
 </body>
 
 </html>

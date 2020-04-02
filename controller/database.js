@@ -12,14 +12,6 @@ dotenv.config();
     })
   }
 
-  // function temp(values){
-  //   var sql= 'UPDATE `users` SET healthID ="' +values[0]+ '" where email ="' +values[1]+ '"'
-  //   conn.query(sql, function(err, result){
-  //     if (err) throw err;
-  //     console.log(result)
-  //   })
-  // }
-  
   function newUser (values, cb) {
     var sql = 'INSERT INTO `users`(`email`,`firstname`,`lastname`,`contact`,`region`, `password`, `irrigation`) VALUES(?)'
     conn.query(sql, [values], function (err, result) {
@@ -27,9 +19,20 @@ dotenv.config();
     })
   }
 
-  function newHealthCard (values, cb) {
+   async function exactHealthCard(values){
     var sql = 'INSERT INTO `healthCard`(`healthID`, `email`, `pHMin`, `pHMax`, `nitrogenMin`, `nitrogenMax`, `phosphorusMin`, `phosphorusMax`, `potassiumMin`, `potassiumMax`, `calciumMin`, `calciumMax`, `magnesiumMin`, `magnesiumMax`, `sulphurMin`, `sulphurMax`, `ironMin`, `ironMax`, `zincMin`, `zincMax`, `manganeseMin`, `manganeseMax`, `copperMin`, `copperMax`, `boronMin`, `boronMax`, `temperatureMin`, `temperatureMax`, `precipitationMin`, `precipitationMax`, `irrigation`, `region`) VALUES(?)'
     conn.query(sql, [values], function (err, result) {
+      if (err) throw err;
+
+    })
+    
+  }
+  
+
+  function newHealthCard (values, cb) {
+    exactHealthCard(values)
+    var sql= 'UPDATE `users` SET healthID ="' +values[0]+ '" where email ="' +values[1]+ '"'
+    conn.query(sql, function(err, result){
       cb(err, result)
     })
   }

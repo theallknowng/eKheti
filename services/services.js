@@ -70,9 +70,9 @@ router.post('/suggestCrops', (req,res)=>{
         dataArray=data.split(" ")
         console.log(dataArray)
 
-        result={"Crop1":getCrop(dataArray[6]),"Crop2":getCrop(dataArray[5]),"Crop3":getCrop(dataArray[4]),"Crop4":getCrop(dataArray[3]),"Crop5":getCrop(dataArray[2]),"Crop6":getCrop(dataArray[1]),"Crop7":getCrop(dataArray[0]),}
+        result={"region":req.session.region,"Crop1":getCrop(dataArray[6]),"Crop2":getCrop(dataArray[5]),"Crop3":getCrop(dataArray[4]),"Crop4":getCrop(dataArray[3]),"Crop5":getCrop(dataArray[2]),"Crop6":getCrop(dataArray[1]),"Crop7":getCrop(dataArray[0]),}
         console.log(result)
-        res.render('suggestcrop',{success:'true',login: 'true', name: req.session.name,healthID: req.session.healthID,result: result})
+        res.render('cropsuggestion',{success:'true',login: 'true', name: req.session.name,healthID: req.session.healthID,result: result})
         // res.render('test',{success:'true',result: result,login: 'true',name: req.session.name})
       })
     }
@@ -83,9 +83,9 @@ router.post('/suggestCrops', (req,res)=>{
         dataArray=data.split(" ")
         console.log(dataArray)
 
-        result={"Crop1":getCrop(dataArray[6]),"Crop2":getCrop(dataArray[5]),"Crop3":getCrop(dataArray[4]),"Crop4":getCrop(dataArray[3]),"Crop5":getCrop(dataArray[2]),"Crop6":getCrop(dataArray[1]),"Crop7":getCrop(dataArray[0]),}
+        result={"region":req.session.region,"Crop1":getCrop(dataArray[6]),"Crop2":getCrop(dataArray[5]),"Crop3":getCrop(dataArray[4]),"Crop4":getCrop(dataArray[3]),"Crop5":getCrop(dataArray[2]),"Crop6":getCrop(dataArray[1]),"Crop7":getCrop(dataArray[0]),}
         console.log(result)
-        res.render('suggestcrop',{success:'true',login: 'true', name: req.session.name,healthID: req.session.healthID,result: result})
+        res.render('cropsuggestion',{success:'true',login: 'true', name: req.session.name,healthID: req.session.healthID,result: result})
 
       })
 

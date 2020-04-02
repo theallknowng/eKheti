@@ -22,7 +22,7 @@ router.get('/login', function(req, res, next) {
 
 // GET signup page
 router.get('/signup', function(req, res ,next) {
-  res.render('signup',{login: 'false'})
+  res.render('signup',{login: 'false',name:'',healthID:''})
 })
 
 // GET healthcard
@@ -34,9 +34,10 @@ router.get('/healthcard', function(req, res , next) {
     res.redirect('/')
 })
 
-// router.get('/cropSuggestion',function(req,res,next){
-//   res.render('cropsuggestion',{success:'false',result:''})
-// })
+router.get('/cropSuggestion',function(req,res,next){
+  // res.render('cropsuggestion',{success:'false',result:''})
+  res.status(403).send('Forbidden!!!')
+})
 
 // GET articles
 router.get('/articles', function(req, res, next){

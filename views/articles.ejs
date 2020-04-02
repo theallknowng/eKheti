@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Expert Articles</title>
+  <title>Expert Articles ADMIN</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
@@ -29,12 +29,13 @@
 
   <!-- Main Stylesheet File -->
   <link href="stylesheets/style.css" rel="stylesheet">
+  <!-- <link href="stylesheets/graph.css" rel="stylesheet"> -->
   
   <!-- Responsive Stylesheet File -->
   <link href="stylesheets/responsive.css" rel="stylesheet">
 
 <!-- Expert articles CSS -->
-<link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <link href="stylesheets/expertarticles.css" rel="stylesheet">
 
 
@@ -48,11 +49,89 @@
 
 <body data-spy="scroll" data-target="#navbar-example">
 
-    <div>
-        <%- include('nav'); %>
+
+  <div>
+    <%- include('nav'); %>
     </div>
 
-<!--markets table start -->
+<!-- Modal -->
+<div class="modal fade" id="addarticle" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h4 class="modal-title" id="details_of_article">Add Details of Article</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" >
+            <p style="text-align: left;"> * The photo needs to be in the size of 400px*500px and in jpg format.<br>
+            * Url should be mentioned. <br>
+            * The Describtion should be within 50 words.
+            </p>
+            <form action="" method="post" role="form" class="contactForm">
+                <div class="form-group">
+                  <!-- article title -->
+                  <input type="text" class="form-control" name="article_title" id="article_title" placeholder="Enter title of the article."  data-msg="Please enter the Title" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                    <!-- url -->
+                    <input type="url" class="form-control" name="article_url" id="article_url" placeholder="Enter URL/Link of the article."  data-msg="Please enter the valid url" />
+                    <div class="validation"></div>
+                  </div>
+
+                  <div class="form-group">
+                    <!-- article description -->
+                    <input type="text" class="form-control" name="article_description" id="article_description" placeholder="Enter Description of the article."  data-msg="Please enter the Nmber" data-rule="words=50;" />
+                    <div class="validation"></div>
+                  </div>
+                  
+                  <div class="form-group">
+                    <!-- article description -->
+                    <span>Upload the image here !</span><br>
+                    <input type="file" class="form-control" name="article_img_real" id="article_img_real" placeholder="add the file"  hidden="hidden"/>
+                    <button class="btn btn-primary " id="custom_imgbutton">Upload image</button>
+                    <span id="custom_text">No file chosen yet !</span>
+                    <div class="validation"></div>
+                  </div>
+
+                  <!-- Upload image script  -->
+<script type="text/javascript">
+const realuploadbtn =  document.getElementById("article_img_real");
+const imgbutton = document.getElementById("custom_imgbutton");
+const text = document.getElementById("custom_text");
+
+imgbutton.addEventListener("click", function(){
+    realuploadbtn.click();
+});
+
+realuploadbtn.addEventListener("change", function(){
+
+    if(realuploadbtn.value){
+        text.innerHTML = realuploadbtn.value;
+    }
+    else {
+        text.innerHTML = "No file chosen"
+    }
+
+});
+</script>
+                  
+                <div class="text-center "><button style="color: mintcream" type="submit" ><a href="artilcles_admin.html">Submit article</a href="main page.html"></button></div>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <p>Please add correct Details !</p>
+            <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <a type="button" href="healthcard.html" class="btn btn-primary" target="_blank">Edit</a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
 <div class="container" >
   <style>
     @media (min-width: 1200px) {
@@ -60,17 +139,23 @@
       max-width:100%;
       
   }
+  @media (min-width: 700px){
+    .container{
+      max-width: 100% ;
+    }
+  }
 }
 
 </style>
 
   <div class="row" >
 
-    <div class="col-lg-3" style="background-color: rgb(187, 248, 197);"  >
+    <div class="col-lg-3" style="background-color: rgb(224, 228, 228);"  >
 
       <h1 class="my-4">Crop Name</h1>
-      <div class="dropdown">
-        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      <div class="dropdown" style="width: inherit;">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-tog        text.innerHTML = realuploadbtn.value;
+        gle="dropdown" style="width: inherit; font-size: 20px; background-color: rgb(39, 39, 39);">
           Select Crop
         </button>
         <div class="dropdown-menu">
@@ -79,26 +164,30 @@
           <a class="dropdown-item" href="#">Wheat</a>
         </div>
       </div>
+
       <!-- NEWS BOX -->
-      <div class="container newsbox rounded"  style="opacity: 0.6;">
-        <div class=" newsboxtitle" style="text-align: center;">
+      <div class="container newsbox rounded" >
+        <div class=" newsboxtitle" >
           <strong>NEWS</strong>
           </div>
-          <div class="content " style="text-align: center;" >
-            <ol >
+          <div class="content " style="padding-left: 25px; " >
+            <ul style = " list-style-type:disc; ">
               <li><a target="_blank" href="https://www.lokmat.com/topics/agriculture/news/" style="color: black;">news 1</a></li>
               <li><a href="#" style="color: black;">Second item</a></li>
               <li><a href="#" style="color: black;">Third item</a></li>
-            </ol>
+              <li><a target="_blank" href="https://www.lokmat.com/topics/agriculture/news/" style="color: black;">news 1</a></li>
+              <li><a href="#" style="color: black;">Second item</a></li>
+              <li><a href="#" style="color: black;">Third item</a></li>
+            </ul>
           </div>
       </div>
-
+<br><br>
     </div>
     <!-- /.col-lg-3 -->
 
     <div class="col-lg-9">
 
-      <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel" style="width:fit-content;">
+      <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel" style="padding: 0px;">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -128,13 +217,12 @@
       <div class="row">
 
         <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="images/blog/02.jpg" alt=""></a>
+          <div class="card h-100" style="box-shadow:5px 10px 10px black;">
+            <a href="#"><img class="card-img-top" src="images/articlecards/jowar.jpg" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
                 <a target="_blank" href="https://www.richmillet.com/blog/cat/Jowar/post/abc-of-jowar-cultivation-in-india/">ABC of Jowar Cultivavtion</a>
-                <a href="https://www.solodev.com" class="btn btn-info btn-lg cta-open">External Link</a> <a href="https://www.richmillet.com/blog/cat/Jowar/post/abc-of-jowar-cultivation-in-india/" class="btn btn-info btn-lg cta-open">Internal Link</a>
-              </h4>
+                             </h4>
               <h5>Date</h5>
               <p class="card-text">Sorghum  are popularly known as Jowar is an important food crop grown across Indian continent. </p>
             </div>
@@ -147,7 +235,7 @@
 
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="images/blog/03.jpg" alt=""></a>
+            <a href="#"><img class="card-img-top" src="images/articlecards/bajra.jpg" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
                 <a target="_blank" href="https://www.richmillet.com/blog/cat/Bajra/post/bajra-The-potential-health-cure/">
@@ -164,7 +252,7 @@
 
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+            <a href="#"><img class="card-img-top" src="images/articlecards/budget.jpg" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
                 <a href="#">Item Three</a>
@@ -258,11 +346,9 @@
 
 	</div>
 </div>
-<!--end modal-->
-  <!-- Start Footer bottom Area -->
-  <div>
-    <%- include('footer'); %>
-  </div>
+<div>
+  <%- include('footer'); %>
+</div>
 
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
