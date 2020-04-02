@@ -37,7 +37,12 @@ dotenv.config();
     })
   }
 
-
+  function getHealth (healthID, cb) {
+    var sql= 'select * from `healthCard` where healthID = "' +healthID+ '"'
+    conn.query(sql, function (err, healthCard) {
+      cb(err, healthCard[0])
+    })
+  }
   function callName(region, irrigation,cb ) {
     var sql = 'select * from `actualConditions` where region ="' + region + '" and irrigation ="' + irrigation + '"'
     conn.query(sql, function ( err , result){
@@ -149,4 +154,4 @@ function weather(req,res){  //isme update ke zarurat hai like location tag wager
     })
   }
   
-  module.exports = { getUser, newUser, getMarkets, withoutHealthCard , callName, withHealthCard, newHealthCard }
+  module.exports = { getUser, newUser, getMarkets, withoutHealthCard , callName, withHealthCard, newHealthCard, getHealth }

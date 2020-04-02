@@ -205,4 +205,17 @@ router.post('/user/healthCard', (req,res)=>{
 
 
 
+// AJAX Routes
+
+router.post('/ajax/fetch', (req, res)=>{
+  database.getHealth(req.body.query, (err, healthCard)=> {
+    if(healthCard){
+      res.json({ success: 'true', health: healthCard})
+    } else {
+      res.json({ success: 'false' })
+    }
+  })
+})
+
+
   module.exports= router;

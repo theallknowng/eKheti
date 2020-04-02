@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Expert Articles ADMIN</title>
+  <title>Expert Articles user</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
 
   <!-- Favicons -->
-  <link href="images/icon.png" rel="icon">
-  <link href="images/icon.png" rel="apple-touch-icon">
+  <link href="images/logo/navlogo_foot.png" rel="icon" >
+  <link href="images/logo/navlogo_foot.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900" rel="stylesheet">
@@ -29,7 +29,6 @@
 
   <!-- Main Stylesheet File -->
   <link href="stylesheets/style.css" rel="stylesheet">
-  <!-- <link href="stylesheets/graph.css" rel="stylesheet"> -->
   
   <!-- Responsive Stylesheet File -->
   <link href="stylesheets/responsive.css" rel="stylesheet">
@@ -54,83 +53,10 @@
     <%- include('nav'); %>
     </div>
 
+
 <!-- Modal -->
-<div class="modal fade" id="addarticle" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header text-center">
-          <h4 class="modal-title" id="details_of_article">Add Details of Article</h4>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body" >
-            <p style="text-align: left;"> * The photo needs to be in the size of 400px*500px and in jpg format.<br>
-            * Url should be mentioned. <br>
-            * The Describtion should be within 50 words.
-            </p>
-            <form action="" method="post" role="form" class="contactForm">
-                <div class="form-group">
-                  <!-- article title -->
-                  <input type="text" class="form-control" name="article_title" id="article_title" placeholder="Enter title of the article."  data-msg="Please enter the Title" />
-                  <div class="validation"></div>
-                </div>
-                <div class="form-group">
-                    <!-- url -->
-                    <input type="url" class="form-control" name="article_url" id="article_url" placeholder="Enter URL/Link of the article."  data-msg="Please enter the valid url" />
-                    <div class="validation"></div>
-                  </div>
 
-                  <div class="form-group">
-                    <!-- article description -->
-                    <input type="text" class="form-control" name="article_description" id="article_description" placeholder="Enter Description of the article."  data-msg="Please enter the Nmber" data-rule="words=50;" />
-                    <div class="validation"></div>
-                  </div>
-                  
-                  <div class="form-group">
-                    <!-- article description -->
-                    <span>Upload the image here !</span><br>
-                    <input type="file" class="form-control" name="article_img_real" id="article_img_real" placeholder="add the file"  hidden="hidden"/>
-                    <button class="btn btn-primary " id="custom_imgbutton">Upload image</button>
-                    <span id="custom_text">No file chosen yet !</span>
-                    <div class="validation"></div>
-                  </div>
-
-                  <!-- Upload image script  -->
-<script type="text/javascript">
-const realuploadbtn =  document.getElementById("article_img_real");
-const imgbutton = document.getElementById("custom_imgbutton");
-const text = document.getElementById("custom_text");
-
-imgbutton.addEventListener("click", function(){
-    realuploadbtn.click();
-});
-
-realuploadbtn.addEventListener("change", function(){
-
-    if(realuploadbtn.value){
-        text.innerHTML = realuploadbtn.value;
-    }
-    else {
-        text.innerHTML = "No file chosen"
-    }
-
-});
-</script>
-                  
-                <div class="text-center "><button style="color: mintcream" type="submit" ><a href="artilcles_admin.html">Submit article</a href="main page.html"></button></div>
-              </form>
-        </div>
-        <div class="modal-footer">
-          <p>Please add correct Details !</p>
-            <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <a type="button" href="healthcard.html" class="btn btn-primary" target="_blank">Edit</a> -->
-        </div>
-      </div>
-    </div>
-  </div>
-  
-
+<!-- MAin BODy -->
 
 <div class="container" >
   <style>
@@ -145,23 +71,31 @@ realuploadbtn.addEventListener("change", function(){
     }
   }
 }
-
+a{
+  color:rgb(41, 138, 2);
+}
 </style>
 
-  <div class="row" >
+<div class="container" style="padding: 0%;">
+
+
+<div class="row" >
 
     <div class="col-lg-3" style="background-color: rgb(224, 228, 228);"  >
 
       <h1 class="my-4">Crop Name</h1>
       <div class="dropdown" style="width: inherit;">
-        <button type="button" class="btn btn-primary dropdown-toggle" data-tog        text.innerHTML = realuploadbtn.value;
-        gle="dropdown" style="width: inherit; font-size: 20px; background-color: rgb(39, 39, 39);">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" style="width: inherit; font-size: 20px; background-color: rgb(39, 39, 39);">
           Select Crop
         </button>
         <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">Jowar</a>
-          <a class="dropdown-item" href="#">Bajra</a>
-          <a class="dropdown-item" href="#">Wheat</a>
+          <a class="dropdown-item" href="/Jowar">Jowar</a>
+          <a class="dropdown-item" href="/Maize">Maize</a>
+          <a class="dropdown-item" href="/Wheat">Wheat</a>
+          <a class="dropdown-item" href="/Sugarcane">Sugarcane</a>
+          <a class="dropdown-item" href="/Oilseeds">Oilseeds</a>
+          <a class="dropdown-item" href="/Pulses">Pulses</a>
+          <a class="dropdown-item" href="/Grapes">Grapes</a>
         </div>
       </div>
 
@@ -217,13 +151,11 @@ realuploadbtn.addEventListener("change", function(){
       <div class="row">
 
         <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card h-100" style="box-shadow:5px 10px 10px black;">
+          <div class="card h-100" style="box-shadow:5px 10px 10px rgb(48, 47, 47);">
             <a href="#"><img class="card-img-top" src="images/articlecards/jowar.jpg" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
-                <a target="_blank" href="https://www.richmillet.com/blog/cat/Jowar/post/abc-of-jowar-cultivation-in-india/">ABC of Jowar Cultivavtion</a>
-                             </h4>
-              <h5>Date</h5>
+                <a target="_blank" href="https://www.richmillet.com/blog/cat/Jowar/post/abc-of-jowar-cultivation-in-india/">Jowar Cultivavtion</a>                           </h4>
               <p class="card-text">Sorghum  are popularly known as Jowar is an important food crop grown across Indian continent. </p>
             </div>
             <div class="card-footer">
@@ -234,14 +166,14 @@ realuploadbtn.addEventListener("change", function(){
         </div>
 
         <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card h-100">
+          <div class="card h-100" style="box-shadow:5px 10px 10px rgb(48, 47, 47);">
             <a href="#"><img class="card-img-top" src="images/articlecards/bajra.jpg" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
                 <a target="_blank" href="https://www.richmillet.com/blog/cat/Bajra/post/bajra-The-potential-health-cure/">
                 Bajra - The potential health cure</a>
               </h4>
-              <h5>Date</h5>
+              <!-- <h5>Date</h5> -->
               <p class="card-text"> Traditionally Bajra or Pearl Millet was (and still is) considered the basic staple for households in the poorest countries and among the poorest people.</p>
             </div>
             <div class="card-footer">
@@ -251,65 +183,66 @@ realuploadbtn.addEventListener("change", function(){
         </div>
 
         <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="images/articlecards/budget.jpg" alt=""></a>
+          <div class="card h-100" style="box-shadow:5px 10px 10px rgb(48, 47, 47);">
+            <a href="#"><img class="card-img-top" src="images/articlecards/maize.jpg" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">Item Three</a>
+                <a href="#">Life-cycle of Maize</a>
               </h4>
-              <h5>$24.99</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
-            </div>
+              <!-- <h5>$24.99</h5> -->
+              <p class="card-text">Maize (Zea mays L.) is one of the most versatile emerging crop shaving wider adaptability 
+                under varied agro-climatic conditions.</div>
             <div class="card-footer">
-              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+              <a target="_blank" href="lifecycle_maize.html">Read More</a>
             </div>
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+          <div class="card h-100" style="box-shadow:5px 10px 10px rgb(48, 47, 47);">
+            <a href="#"><img class="card-img-top" src="images/articlecards/wheat.jpg" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">Item Four</a>
+                <a href="lifecycle_wheat.html">Life-cycle of Wheat </a>
               </h4>
-              <h5>$24.99</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
-            </div>
+              <!-- <h5>$24.99</h5> -->
+              <p class="card-text">Wheat (Triticum spp.) occupies the prime position among the 
+                food crops in the world. </div>
             <div class="card-footer">
-              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+              <a target="_blank" href="lifecycle_wheat.html">Read More</a>
             </div>
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+          <div class="card h-100" style="box-shadow:5px 10px 10px rgb(48, 47, 47);">
+            <a href="#"><img class="card-img-top" src="images/articlecards/grapes.jpg" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">Item Five</a>
+                <a href="#">Life-cycle of Grape</a>
               </h4>
-              <h5>$24.99</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
-            </div>
+              
+              <p class="card-text">The grape is the most important crop grown in the world. Mostly it grown for making wines and 
+                preparation of raisin and then as a table fresh fruit.
+                </div>
             <div class="card-footer">
-              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+              <a target="_blank" href="lifecycle_grapes.html">Read More</a>
             </div>
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+          <div class="card h-100" style="box-shadow:5px 10px 10px rgb(48, 47, 47);">
+            <a href="#"><img class="card-img-top" src="images/articlecards/sugarcane.jpg" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">Item Six</a>
+                <a href="#">Life-cycle of Sugarcane</a>
               </h4>
-              <h5>$24.99</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
-            </div>
+              <!-- <h5>$24.99</h5> -->
+              <p class="card-text">Sugarcane, or Saccharum officinarum, is a tropical grass that is the source of about 75 percent 
+                of the world’s sugar supply.</div>
             <div class="card-footer">
-              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+              <a target="_blank" href="lifecycle_sugarcane.html">Read More</a> 
             </div>
           </div>
         </div>
@@ -346,10 +279,12 @@ realuploadbtn.addEventListener("change", function(){
 
 	</div>
 </div>
-<div>
+<!--end modal-->
+  <!-- Start Footer bottom Area -->
+  <div>
   <%- include('footer'); %>
 </div>
-
+ 
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
   <!-- JavaScript Libraries -->

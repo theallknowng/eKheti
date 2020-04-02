@@ -1,57 +1,613 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <link rel = "icon" type = "image/x-icon" href = "/images/icon.png">
-        <!-- For apple devices -->
-        <link rel = "apple-touch-icon" type = "image/x-icon" href = "/images/icon.png"/>
-        
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-      </head>
+<head>
+  <meta charset="utf-8">
+  <title>eKheti</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
 
-    <body>
-       <div> <%include('nav')%> </div>
-        <div class="container"></div>
-        <h2>Carousel Example</h2>  
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-          </ol>
-      
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner">
-            <div class="item active">
-              <img src="la.jpg" alt="Los Angeles" style="width:100%;">
-            </div>
-      
-            <div class="item">
-              <img src="chicago.jpg" alt="Chicago" style="width:100%;">
-            </div>
-          
-            <div class="item">
-              <img src="ny.jpg" alt="New york" style="width:100%;">
+  <!-- Favicons -->
+  <link href="images/logo/navlogo_foot.png" rel="icon">
+  <link href="images/logo/navlogo_foot.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/nivo-slider/css/nivo-slider.css" rel="stylesheet">
+  <link href="lib/owlcarousel/owl.carousel.css" rel="stylesheet">
+  <link href="lib/owlcarousel/owl.transitions.css" rel="stylesheet">
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/venobox/venobox.css" rel="stylesheet">
+
+  <!-- Nivo Slider Theme -->
+  <link href="stylesheets/nivo-slider-theme.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="stylesheets/style.css" rel="stylesheet">
+
+  <!-- Responsive Stylesheet File -->
+  <link href="stylesheets/responsive.css" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: eBusiness
+    Theme URL: https://bootstrapmade.com/ebusiness-bootstrap-corporate-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+  
+  <script type="text/javascript">
+    $(window).load(function(){
+      $("#popup").modal('show');
+    });
+  </script>
+</head>
+
+<body data-spy="scroll" data-target="#navbar-example">
+
+  <div id="preloader"></div>
+
+  <div>
+    <%- include('nav'); %>
+    </div>
+
+
+
+  <!-- Start Slider Area -->
+  <div id="home" class="slider-area">
+    <div class="bend niceties preview-2">
+      <div id="ensign-nivoslider" class="slides" style="height:100%;">
+        <img src="images/slider/05.jpg" alt="" title="#slider-direction-1" />
+        <img src="images/slider/03.jpg" alt="" title="#slider-direction-2" />
+        <img src="images/slider/04.jpg" alt="" title="#slider-direction-3" />
+        <img src="images/slider/06.jpg" alt="" title="#slider-direction-3" />
+      </div>
+
+      <!-- direction 1 -->
+      <div id="slider-direction-1" class="slider-direction slider-one">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="slider-content">
+                <!-- layer 1 -->
+                <div class="layer-1-1 hidden-xs wow slideInDown" data-wow-duration="2s" data-wow-delay=".2s">
+                  <h2 class="title1">The Best Crop Information </h2>
+                </div>
+                <!-- layer 2 -->
+                <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
+                  <h1 class="title2">We're In The Business Of Helping to Your Crop Business</h1>
+                </div>
+                <!-- layer 3 -->
+                <% if (login == 'true') { %>
+                <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+                  <!-- <a class="ready-btn right-btn page-scroll" href="cropsuggestion.html">SUGGEST CROP</a> -->
+                  <button type="button" class="ready-btn right-btn page-scroll" data-toggle="modal"  <% if(!healthID) { %> data-target="#popup" <%} else {%> onclick="document.getElementById('cropSuggest').submit();" <%}%> >
+                    Suggest Crop
+                  </button>
+                  <% if (healthID) { %>                    
+                  <button id="health" type="button" class="ready-btn page-scroll" style="background: transparent;" data-toggle="modal" data-target="#healthcarddata">
+                    View your Healthcard
+                  </button>  
+                  <% } %>
+
+                </div>
+                <% } %>
+
+              </div>
             </div>
           </div>
-      
-          <!-- Left and right controls -->
-          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-            <span class="sr-only">Next</span>
-          </a>
         </div>
+      </div>
+
+      <!-- direction 2 -->
+      <div id="slider-direction-2" class="slider-direction slider-two">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="slider-content">
+                    <!-- layer 1 -->
+                    <div class="layer-1-1 hidden-xs wow slideInDown" data-wow-duration="2s" data-wow-delay=".2s">
+                      <h2 class="title1">The Best Crop Information </h2>
+                    </div>
+                    <!-- layer 2 -->
+                    <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
+                      <h1 class="title2">We're In The Business Of Helping to Your Crop Business</h1>
+                    </div>
+                    <!-- layer 3 -->
+                    <% if (login == 'true') { %>
+                    <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+                      <!-- <a class="ready-btn right-btn page-scroll" href="cropsuggestion.html">SUGGEST CROP</a> -->
+                      <button type="button" class="ready-btn right-btn page-scroll" data-toggle="modal"  <% if(!healthID) { %> data-target="#popup" <%} else {%> onclick="document.getElementById('cropSuggest').submit();" <%}%> >
+                        Suggest Crop
+                      </button>
+                      <% if (healthID) { %>                    
+                      <button id="health" type="button" class="ready-btn page-scroll" style="background: transparent;" data-toggle="modal" data-target="#healthcarddata">
+                        View your Healthcard
+                      </button>
+                      <% } %>
+
+                       
+                    </div>
+                    <% } %>
+
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- direction 3 -->
+      <div id="slider-direction-3" class="slider-direction slider-two">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="slider-content">
+                    <!-- layer 1 -->
+                    <div class="layer-1-1 hidden-xs wow slideInDown" data-wow-duration="2s" data-wow-delay=".2s">
+                      <h2 class="title1">The Best Crop Information </h2>
+                    </div>
+                    <!-- layer 2 -->
+                    <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
+                      <h1 class="title2">We're In The Business Of Helping to Your Crop Business</h1>
+                    </div>
+                    <% if (login == 'true') { %>
+                    <!-- layer 3 -->
+                    <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+                      <!-- <a class="ready-btn right-btn page-scroll" href="cropsuggestion.html">SUGGEST CROP</a> -->
+                      <button type="button" class="ready-btn right-btn page-scroll" data-toggle="modal"  <% if(!healthID) { %> data-target="#popup" <%} else {%> onclick="document.getElementById('cropSuggest').submit();" <%}%> >
+                        Suggest Crop
+                      </button>
+                      <% if (healthID) { %>                    
+                      <button type="button" class="ready-btn page-scroll" style="background: transparent;" data-toggle="modal" data-target="#healthcarddata">
+                        View your Healthcard
+                      </button>
+                      <% } %>
+
+                    </div>
+                    <% } %>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- End Slider Area -->
+
+  <!-- Crop suggest popup -->
+  <div class="modal fade" id="popup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true" >
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+
+          <h2 class="modal-title" id="exampleModalLongTitle">Note</h2>
+          <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"> -->
+            <!-- <span aria-hidden="true">&times;</span> -->
+          </button> 
+        </div>
+        <div class="modal-body" style="text-align: center;">
+            <h5>Please enter your health card details for more accuracy</h5>
+            <br>
+        </div>
+        <div class="modal-footer">
+          <!-- <a type="button" href="main page.html" class="btn btn-secondary" >Skip</a> -->
+          <button type="button" class="btn btn-secondary" onclick="document.getElementById('cropSuggest').submit();" >Skip</a></button>
+          <a type="button" href="/healthcard" class="btn btn-primary">Fill now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+  <!-- Start About area -->
+  <div id="about" class="about-area area-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="section-headline text-center">
+            <h2>About eKheti</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <!-- single-well start-->
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <div class="well-left">
+            <div class="single-well">
+              <a href="#">
+								  <img src="images/about/0.jpg" alt="">
+								</a>
+            </div>
+          </div>
+        </div>
+        <!-- single-well end-->
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <div class="well-middle">
+            <div class="single-well">
+              <a href="#">
+                <h4 class="sec-head">Our Aim</h4>
+              </a>
+              <p>
+                Our main Objective is to help farmers gain maximum profit from what they grow. Currently farmers follow the
+                traditional way which was followed by the forefathers , but the climatic conditions have changed due to which farmers
+                also need to upgarde themselves.<br>
+                We suggest farmers crops which can also be grown in that region . Also if we are provided with the Health Card data of 
+                their land we can suggest accordingly.
+              </p>
+              <ul>
+                <li>
+                  <i class="fa fa-check"></i> Suggesting a List of Crops
+                </li>
+                <li>
+                  <i class="fa fa-check"></i> Giving Optimum conditions for the crop
+                </li>
+                <li>
+                  <i class="fa fa-check"></i> Weather Forecast of the region
+                </li>
+                <li>
+                  <i class="fa fa-check"></i> Provding Expert Articles on crop 
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- End col-->
+      </div>
+    </div>
+  </div>
+  <!-- End About area -->
+
+  <!-- Start Service area -->
+  <div id="services" class="services-area area-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="section-headline services-head text-center">
+            <h2>Our Services</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="services-contents">
+          <!-- Start Left services -->
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="about-move">
+              <div class="services-details">
+                <div class="single-services">
+                  <a class="services-icon" href="articles.html" target="_blank">
+                  <h4>Expert Articles</h4>
+                </a>
+                  <p>
+                    Expert artiles on various crops will be updated daily . We get to Know their research
+                  </p>
+                </div>
+              </div>
+              <!-- end about-details -->
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="about-move">
+              <div class="services-details">
+                <div class="single-services">
+                  <a class="services-icon" href="cropsuggestion.html" target="_blank">
+											
+                  <h4>Crop Suggestion</h4>
+                </a>
+                  <p>
+                    We will be suggesting you crop to grow which will be beneficial to you as compared to the crops which you
+                  were growing till now.</p>
+                </div>
+              </div>
+              <!-- end about-details -->
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <!-- end col-md-4 -->
+            <div class=" about-move">
+              <div class="services-details">
+                <div class="single-services">
+                  <a class="services-icon" href="#weather" target="_blank">
+                  <h4>Weather Forecast</h4>
+                </a>
+                  <p>
+                    Providing daily weatere forecast , so that farmers can plan their farming activities accordingly in order to ...............</p>
+                </div>
+              </div>
+              <!-- end about-details -->
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <!-- end col-md-4 -->
+            <div class=" about-move">
+              <div class="services-details">
+                <div class="single-services">
+                  <a class="services-icon" href="#" target="_blank" >	
+                  <h4>Lifecycle</h4>
+                </a>
+                  <p>
+                   You will be knowing the lifecycle of various crops along with other details about that crop</div>
+              </div>
+              <!-- end about-details -->
+            </div>
+          </div>
+          <!-- End Left services -->
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <!-- end col-md-4 -->
+            <div class=" about-move">
+              <div class="services-details">
+                <div class="single-services">
+                  <a class="services-icon" href="markets.html" target="_blank">
+                  <h4>Locate nearby markets</h4>
+                </a>
+                  <p>
+                    We will be helping you to locate markets near to your location. This feature is currently working on app.</p>
+                </div>
+              </div>
+              <!-- end about-details -->
+            </div>
+          </div>
+          <!-- End Left services -->
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <!-- end col-md-4 -->
+            <div class=" about-move">
+              <div class="services-details">
+                <div class="single-services">
+                  <a class="services-icon" href="#" target="_blank">
+                  <h4>24/7 Support</h4></a>
+                  <p>
+                    will have to make sure the prototype looks finished by inserting text or photo.make sure the prototype looks finished by.
+                  </p>
+                </div>
+              </div>
+              <!-- end about-details -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Service area -->
+
+    <!-- About the system -->
+<div id="contact" class="contact-area">
+  <div class="contact-inner area-padding">
+    <div class="contact-overly"></div>
+    <div class="container ">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="section-headline text-center">
+            <h2>About the System </h2>
+          </div>
+          </div>
       </div>
 
 
 
-    </body>
+
+
+<!-- DAata -->
+<div class="col-md-6 col-sm-6 col-xs-12">
+  <div class="form contact-form">
+    <div id="sendmessage">Your message has been sent. Thank you!</div>
+    <div id="errormessage"></div>
+    <p style="font-size: medium;">Alok about the sytem and it's woking</p>
+
+  </div>
+</div>
+<!-- Data -->
+        <!-- Neural network video -->
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <!-- Start Map -->
+          <img src="images/article/heathcard.png" width="100%" height="380" frameborder="0" style="border:0" allowfullscreen>
+          <!-- End Map -->
+        </div>
+        <!-- DNN video -->
+
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ABOUT SYSTEM -->
+
+  <!-- weather fore cast-->
+  <div id="weather"class="reviews-area hidden-xs">
+    <div class="work-us" >
+      <div class="work-left-text">
+        <a target="_blank" href="https://www.accuweather.com/en/in/solapur/204849/weather-forecast/204849">
+						<img src="images/about/0.jpg" alt="">
+					</a>
+      </div>
+      <div class="work-right-text text-center">
+        <h2>Weather Forecast</h2>
+        <h5><h6 style="color: white;">Know the Latest weather forecast of the region which you live in ..</h6>
+          <h5> Sunny </h5>
+          <h5>Temperature - Min - Max</h5>
+          
+        </h5>
+        
+        <a href="https://www.accuweather.com/en/in/solapur/204849/weather-forecast/204849" target="_blank" class="ready-btn">Know more</a>
+      </div>
+    </div>
+    <a class="weatherwidget-io" href="https://forecast7.com/en/19d0872d88/mumbai/" data-label_1="MUMBAI" data-label_2="WEATHER" data-font="Roboto Slab" data-icons="Climacons Animated" data-theme="dark" >MUMBAI WEATHER</a>
+    <script>
+    !function(d,s,id)
+    {var js,fjs=d.getElementsByTagName(s)[0];
+    if(!d.getElementById(id))
+    {js=d.createElement(s);
+    js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';
+    fjs.parentNode.insertBefore(js,fjs);}}
+    (document,'script','weatherwidget-io-js');
+    </script>
+      </div>
+  <!-- weather fore cast-->
+
+ 
+  <!-- Start Suscrive Area -->
+  <!-- <div class="suscribe-area">
+    <div class="container">
+      <a target="_blank" href="articles.html"><div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs=12">
+          <div class="suscribe-text text-center">
+            <h3>Read more articles here </h3>
+            
+          </div>
+        </div>
+      </div></a>
+    </div>
+  </div> -->
+  <!-- End Suscrive Area -->
+
+
+  <!-- ENTER HEALTH CARD DATA -->
+<div id="contact" class="contact-area">
+  <div class="contact-inner area-padding">
+    <div class="contact-overly"></div>
+    <div class="container ">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="section-headline text-center">
+            <h2>HEALTH CARD </h2>
+          </div>
+          </div>
+      </div>
+
+ <% if (login == 'true') { %>
+  <% if (healthID) { %>                    
+
+<!-- Button trigger modal -->
+<div class="container" >
+  <div class=" row text-center">
+      <div class="" >
+          <button type="button" class="btn btn-primary ready-btn" data-toggle="modal" data-target="#healthcarddata">
+              View your Healthcard
+            </button>  
+            <br>
+            <br>        
+      </div>  
+  </div>
+</div>
+<% }%>
+
+<% }%>
+
+
+<!-- Modal -->
+<div class="modal fade" id="healthcarddata" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title" id="exampleModalLongTitle">Your Health Card</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+         <!-- Dynamic content -->
+      </div>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <a type="button" href="/healthcard" class="btn btn-primary" >Edit</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!--END health card data-->
+
+        <!-- Start Google Map -->
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <!-- Start Map -->
+          <img src="images/article/heathcard.png" width="100%" height="380" frameborder="0" style="border:0" allowfullscreen>
+          <!-- End Map -->
+        </div>
+        <!-- End Google Map -->
+
+        <!-- Start  contact -->
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <div class="form contact-form">
+            <div id="sendmessage">Your message has been sent. Thank you!</div>
+            <div id="errormessage"></div>
+            <p style="font-size: medium;">Soil Health Card Scheme is a scheme launched by the Government of India in 19 February 2015.Under the 
+              scheme, the government plans to issue soil cards to farmers which will carry crop-wise recommendations of 
+              nutrients and fertilisers required for the individual farms to help farmers to improve productivity through 
+              judicious use of inputs. All soil samples are to be tested in various soil testing labs across the country.
+              Thereafter the experts will analyse the strength and weaknesses (micro-nutrients deficiency) 
+              of the soil and suggest measures to deal with it. The result and suggestion will be displayed in the cards.
+            </p>
+              <p style="font-size: medium;">The scheme aims at promoting soil test based and balanced use of fertilisers to enable farmers to realise 
+              higher yields at lower cost.[3] also the main objective is to aware 
+              growers about the appropriate amount of nutrients for the concerned crop depending on the quality of soil.</p>
+
+          </div>
+        </div>
+        <!-- End Left contact -->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END HEALTH CARD -->
+
+<div>
+  <%- include('footer'); %>
+</div>
+
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/venobox/venobox.min.js"></script>
+  <script src="lib/knob/jquery.knob.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/parallax/parallax.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/nivo-slider/js/jquery.nivo.slider.js" type="text/javascript"></script>
+  <script src="lib/appear/jquery.appear.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <script src="javascripts/main.js"></script>
+</body>
+
+
+<script>
+
+$('#health').on('click', function(){
+  $.ajax({
+		url:"/ajax/fetch",
+		method:"POST",
+		data:{query:'<%=healthID%>'},
+	   success:function(data)
+	    {
+			//  console.log("success");
+      //  console.log(data.health);
+       var card= ' <h5>TimeStamp :  '+data.health.date+'</h5>  <h5>Name  : <%=name%></h5><h5>Health Card number - '+data.health.healthID+' </h5> <h5>Location  : '+data.health.region+'</h5> <div class="col-sm-6 col-md-6 col-xs-12"> <h5>pH min :  '+data.health.pHMin+'   </h5><h5>Nitrogen min :  '+data.health.nitrogenMin+' </h5><h5>Phosphorous min : '+data.health.phosphorusMin+' </h5><h5>Potassium min : '+data.health.potassiumMin+' </h5><h5>Calcium min : '+data.health.calciumMin+' </h5><h5>Magnesium min :  '+data.health.magnesiumMin+' </h5><h5>Sulphur min :  '+data.health.sulphurMin+'  </h5><h5>Iron min :  '+data.health.ironMin+' </h5><h5>Zinc min : '+data.health.zincMin+' </h5><h5>Manganese min : '+data.health.manganeseMin+' </h5><h5>Copper min : '+data.health.copperMin+' </h5><h5>Boron min : '+data.health.boronMin+' </h5><h5>Temperature min : '+data.health.temperatureMin+' </h5><h5> Precipitation min : '+data.health.precipitationMin+' </h5></div><div class="col-sm-6 col-md-6 col-xs-12"><h5>pH max :   '+data.health.pHMax+'  </h5><h5>Nitrogen max :  '+data.health.nitrogenMax+'</h5><h5>Phosphorous max :  '+data.health.phosphorusMax+'</h5> <h5>Potassium max :  '+data.health.potassiumMax+'</h5><h5>Calcium max :  '+data.health.calciumMax+'</h5><h5>Magnesium max :  '+data.health.magnesiumMax+'</h5><h5>Sulphur max : '+data.health.sulphurMax+' </h5><h5>Iron max : '+data.health.ironMax+' </h5><h5>Zinc max : '+data.health.zincMax+' </h5><h5>Manganese max : '+data.health.manganeseMax+' </h5><h5>Copper max : '+data.health.copperMax+' </h5><h5>Boron max :  '+data.health.boronMax+'</h5><h5>Temperature max :  '+data.health.temperatureMax+' </h5><h5> Precipitation max : '+data.health.precipitationMax+'  </h5></div>'
+
+
+			 $('.modal-body').html(card);
+		},
+ 		error: function(jqXHR, textStatus, errorThrown){
+ 				console.log(textStatus, errorThrown);
+ 			}
+
+	  });
+})
+
+
+</script>
+
 </html>

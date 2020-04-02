@@ -34,7 +34,8 @@
       <ul class="nav navbar-nav navbar-right">
         <li class="active"><a href="/">Home</a></li>
         <%if(login == "true"){%>
-          <li><a onclick=dialog()  >Crop Suggest</a></li>
+          <li><a data-toggle="modal"  <% if(!healthID) { %> data-target="#popup" <%} else {%> onclick="document.getElementById('cropSuggest').submit();" <%}%>  >Crop Suggest</a></li>
+          <!-- <li><a onclick="dialog()"  >Crop Suggest</a></li> -->
           <!-- <li><a href="/cropSuggestion">Crop Suggest</a></li> -->
         <%}%>
                 
@@ -53,10 +54,10 @@
               <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
               <li><a href="/signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
               <li><a href="#">Page 1-3</a></li>
-              <li><a href="http://free-website-translation.com/" id="ftwtranslation_button" hreflang="en" title="" style="border:0;"><img src="http://free-website-translation.com/img/fwt_button_en.gif" id="ftwtranslation_image" alt="FWT Homepage Translator" style="border:0;"/></a> <script type="text/javascript" src="http://free-website-translation.com/scripts/fwt.js" /></script></li>
+              <!-- <li><a href="http://free-website-translation.com/" id="ftwtranslation_button" hreflang="en" title="" style="border:0;"><img src="http://free-website-translation.com/img/fwt_button_en.gif" id="ftwtranslation_image" alt="FWT Homepage Translator" style="border:0;"/></a> <script type="text/javascript" src="http://free-website-translation.com/scripts/fwt.js" /></script></li> -->
             <%}else {%>
                <li><a> <%=name%> </a></li>
-               <li><a href="http://free-website-translation.com/" id="ftwtranslation_button" hreflang="en" title="" style="border:0;"><img src="http://free-website-translation.com/img/fwt_button_en.gif" id="ftwtranslation_image" alt="FWT Homepage Translator" style="border:0;"/></a> <script type="text/javascript" src="http://free-website-translation.com/scripts/fwt.js" /></script></li>
+               <!-- <li><a href="http://free-website-translation.com/" id="ftwtranslation_button" hreflang="en" title="" style="border:0;"><img src="http://free-website-translation.com/img/fwt_button_en.gif" id="ftwtranslation_image" alt="FWT Homepage Translator" style="border:0;"/></a> <script type="text/javascript" src="http://free-website-translation.com/scripts/fwt.js" /></script></li> -->
                <li><a href="/logout"class="glyphicon glyphicon-log-out" > Logout </a></li>
             <%}%>
             </ul>
@@ -65,6 +66,32 @@
     </div>
   </div>
 </nav>
+
+
+  <!-- Crop suggest popup -->
+  <div class="modal fade" id="popup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true" >
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+
+          <h2 class="modal-title" id="exampleModalLongTitle">Note</h2>
+          <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"> -->
+            <!-- <span aria-hidden="true">&times;</span> -->
+          </button> 
+        </div>
+        <div class="modal-body" style="text-align: center;">
+            <h5>Please enter your health card details for more accuracy</h5>
+            <br>
+        </div>
+        <div class="modal-footer">
+          <!-- <a type="button" href="main page.html" class="btn btn-secondary" >Skip</a> -->
+          <button type="button" class="btn btn-secondary" onclick="document.getElementById('cropSuggest').submit();" >Skip</a></button>
+          <a type="button" href="/healthcard" class="btn btn-primary">Fill now</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 <script>
@@ -77,23 +104,23 @@ $('.navbar').css('background','rgba(0, 0, 0, 0.5)');
 }
 });
 
-function dialog(){
-  var healthID= '<%= healthID %>'
-  console.log(healthID)
-  if(!healthID){
-    var ans = window.confirm("You have not submitted health Card details... Would you like to update it ?")
-    if(ans){
-      window.location.href = "/healthcard";
-    }
-    else{
-      document.getElementById('cropSuggest').submit();
-    }
-  }
-  else{
-    document.getElementById('cropSuggest').submit();
-  }
+// function dialog(){
+//   var healthID= '<%= healthID %>'
+//   console.log(healthID)
+//   if(!healthID){
+//     var ans = window.confirm("You have not submitted health Card details... Would you like to update it ?")
+//     if(ans){
+//       window.location.href = "/healthcard";
+//     }
+//     else{
+//       document.getElementById('cropSuggest').submit();
+//     }
+//   }
+//   else{
+//     document.getElementById('cropSuggest').submit();
+//   }
     
-}
+// }
 
 </script>
 </html>

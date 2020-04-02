@@ -4,9 +4,9 @@ var router = express.Router();
 /* GET home page. */
 router.get('/', function(req, res, next) {
   if(req.session.email)
-    res.render('index', { login: 'true', name: req.session.name, healthID: req.session.healthID });
+    res.render('home', { login: 'true', name: req.session.name, healthID: req.session.healthID });
   else  
-    res.render('index', { login: 'false',name:'', healthID:'' });
+    res.render('home', { login: 'false',name:'', healthID:'' });
 });
 
 
@@ -28,15 +28,22 @@ router.get('/signup', function(req, res ,next) {
 // GET healthcard
 
 router.get('/healthcard', function(req, res , next) {
-  if(req.session.email)
-    res.render('healthCard',{ login: 'true',name:req.session.name, healthID: req.session.healthID })
+  if(req.session.email){
+    if(req.session.healthID)
+      res.status(403).render('error403',{ login: 'true',name:req.session.name, healthID: req.session.healthID })
+    else
+      res.render('healthCard',{ login: 'true',name:req.session.name, healthID: req.session.healthID })
+  }
   else
     res.redirect('/')
 })
 
 router.get('/cropSuggestion',function(req,res,next){
   // res.render('cropsuggestion',{success:'false',result:''})
-  res.status(403).send('Forbidden!!!')
+  if(req.session.email)
+    res.status(403).render('error403', { login: 'true',name:req.session.name, healthID: req.session.healthID })
+  else
+    res.status(403).render('error403', { login: 'false',name:'' , healthID: ''})
 })
 
 // GET articles
