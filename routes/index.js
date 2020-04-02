@@ -25,8 +25,14 @@ router.get('/signup', function(req, res ,next) {
   res.render('signup',{login: 'false',name:'',healthID:''})
 })
 
-// GET healthcard
+// GET profile page
+router.get('/profile', function(req, res ,next) {
+  if(req.session.email)
+    res.render('profile',{login: 'true',name: req.session.name,healthID:req.session.healthID, profile: req.session})
+})
 
+
+// GET healthcard
 router.get('/healthcard', function(req, res , next) {
   if(req.session.email){
     if(req.session.healthID)

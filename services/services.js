@@ -9,6 +9,7 @@ router.post('/login', function (req, res) {
          req.session.name=user.firstname+' '+user.lastname
          req.session.email=user.email
          req.session.region=user.region
+         req.session.contact=user.contact
          req.session.healthID=user.healthID
          req.session.irrigation=user.irrigation
          console.log(req.session)
