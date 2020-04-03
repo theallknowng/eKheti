@@ -2,6 +2,8 @@ var conn = require('../config/database-connection')
 var request = require('request-promise');
 const dotenv = require('dotenv');
 dotenv.config();
+const url=process.env.url
+var propertiesObject = { apikey:process.env.api ,metric:'true' };
 
 
 
@@ -136,13 +138,13 @@ dotenv.config();
   
 
 
-function weather(req,res){  //isme update ke zarurat hai like location tag wagera aur response yehi se jara hai use services se bhejna hoga
+function weather(cb){  //isme update ke zarurat hai like location tag wagera aur response yehi se jara hai use services se bhejna hoga
     var data=1;
     request({url:url, qs:propertiesObject}, function(err, response, body) {
       
       // var data=[]
       if(err) { console.log(err); return; }
-      console.log("Get response: " + response.statusCode);
+      // console.log("Get response: " + response.statusCode);
       // data=[{"body":body}]
       // console.log("data")
       data=JSON.parse(body);
@@ -150,8 +152,9 @@ function weather(req,res){  //isme update ke zarurat hai like location tag wager
     .then(()=>{
     // console.log(data)
     // res.send(data)
-    res.send({'minTemp':data.DailyForecasts[0].Temperature.Minimum.Value,'maxTemp':data.DailyForecasts[0].Temperature.Maximum.Value, 'text':data.Headline.Text })
-    })
+    result={'minTemp':data.DailyForecasts[0].Temperature.Minimum.Value,'maxTemp':data.DailyForecasts[0].Temperature.Maximum.Value, 'text':data.Headline.Text }
+    cb(result)
+  })
   }
   
-  module.exports = { getUser, newUser, getMarkets, withoutHealthCard , callName, withHealthCard, newHealthCard, getHealth }
+  module.exports = { getUser, newUser, getMarkets, withoutHealthCard , callName, withHealthCard, newHealthCard, getHealth, weather }

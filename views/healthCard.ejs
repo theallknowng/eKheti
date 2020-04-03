@@ -81,11 +81,11 @@
     <!-- Lat Long -->
     <div><h5 style="color:white; padding-left: 15px;">Latitude & Longitude</h5></div>
     <div class="form-group col-sm-6">
-        <input type="number " class="form-control" name="lat" id="lat" placeholder="Latitude" data-rule="" data-msg="Give Access to Location"/>
+        <input type="number " class="form-control" name="lat" id="lat" readonly placeholder="Latitude" data-rule="" data-msg="Give Access to Location"/>
         <div class="validation"></div>
       </div>
       <div class="form-group col-sm-6">
-        <input type="number " class="form-control" name="long"  id="long" placeholder="Longitude" data-rule="" data-msg="GIve Access to Location"/>
+        <input type="number " class="form-control" name="long"  id="long" readonly placeholder="Longitude" data-rule="" data-msg="GIve Access to Location"/>
         <div class="validation"></div>
       </div>
 
@@ -224,11 +224,11 @@
         <!-- Tempreature -->
         <div><h5 style="color:white; padding-left: 15px;">Tempreature</h5></div>
         <div class="form-group col-sm-6">    
-          <input type="number " class="form-control" id="" name="Temp_min" placeholder="Tempreature min" />
+          <input type="number " class="form-control" id="minTemp" readonly name="Temp_min" placeholder="Tempreature min" />
           <div class="validation"></div>
         </div>
         <div class="form-group col-sm-6">    
-          <input type="number " class="form-control" id="" name="Temp_max" placeholder="Tempreature max"  />
+          <input type="number " class="form-control" id="maxTemp" readonly name="Temp_max" placeholder="Tempreature max"  />
           <div class="validation"></div>
         </div>
 
@@ -242,18 +242,16 @@
           <input type="number " class="form-control" id="" name="ppt_max" placeholder="Precipitation max"  />
           <div class="validation"></div>
         </div>
-        <!-- irrigation -->
-        <div class="form-group " style="background-color: white;">
-            <!-- village /  -->
-            <label >Do you have irrigation? Enter Yes or No</label > 
-            <input type="text" list ="irrigation" class="form-control" name="irrigation" id="irrigation" placeholder="Do you have irrigation"  data-msg="Do you have irrigation" />
-            <datalist id="irrigation">
-                <option value="yes" >yes</option>
-                <option value="no">no</option>
-                
-            </datalist>
-            <div class="validation"></div>
-          </div>
+
+         <!-- Irrigation -->
+         <div><h5 style="color:white; padding-left: 15px;">Irrigation</h5></div>
+         <div class="form-group">    
+           <input type="number " class="form-control" id="" name="ppt_min" value="<%=irrigation%>" readonly placeholder="Irrigation" />
+           <div class="validation"></div>
+         </div>
+         
+
+  
         
                   <div class="text-center "><button  type="submit" ><a style="color: white;" ">Submit Health Card</button></div>
   </form>
@@ -287,5 +285,50 @@
 
   <script src="javascripts/main.js"></script>
 </body>
+
+<script type="text/javascript">
+  $(window).load(function(){
+
+    if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+    document.getElementById("lat").value  = "Geolocation is not supported by this browser.";
+    document.getElementById("long").value  = "Geolocation is not supported by this browser.";
+  }
+
+
+function showPosition(position) {
+
+  document.getElementById("lat").value = position.coords.latitude;
+  document.getElementById("long").value = position.coords.longitude;
+
+}
+
+$.ajax({
+		url:"/weather",
+		method:"POST",
+		data:{query:''},
+	   success:function(data)
+	    {
+			//  console.log("data");
+      //  console.log(data.health);
+      // var card= ' <h5>TimeStamp :  '+data.health.date+'</h5>  <h5>Name  : <%=name%></h5><h5>Health Card number - '+data.health.healthID+' </h5> <h5>Location  : '+data.health.region+'</h5> <div class="col-sm-6 col-md-6 col-xs-12"> <h5>pH min :  '+data.health.pHMin+'   </h5><h5>Nitrogen min :  '+data.health.nitrogenMin+' </h5><h5>Phosphorous min : '+data.health.phosphorusMin+' </h5><h5>Potassium min : '+data.health.potassiumMin+' </h5><h5>Calcium min : '+data.health.calciumMin+' </h5><h5>Magnesium min :  '+data.health.magnesiumMin+' </h5><h5>Sulphur min :  '+data.health.sulphurMin+'  </h5><h5>Iron min :  '+data.health.ironMin+' </h5><h5>Zinc min : '+data.health.zincMin+' </h5><h5>Manganese min : '+data.health.manganeseMin+' </h5><h5>Copper min : '+data.health.copperMin+' </h5><h5>Boron min : '+data.health.boronMin+' </h5><h5>Temperature min : '+data.health.temperatureMin+' </h5><h5> Precipitation min : '+data.health.precipitationMin+' </h5></div><div class="col-sm-6 col-md-6 col-xs-12"><h5>pH max :   '+data.health.pHMax+'  </h5><h5>Nitrogen max :  '+data.health.nitrogenMax+'</h5><h5>Phosphorous max :  '+data.health.phosphorusMax+'</h5> <h5>Potassium max :  '+data.health.potassiumMax+'</h5><h5>Calcium max :  '+data.health.calciumMax+'</h5><h5>Magnesium max :  '+data.health.magnesiumMax+'</h5><h5>Sulphur max : '+data.health.sulphurMax+' </h5><h5>Iron max : '+data.health.ironMax+' </h5><h5>Zinc max : '+data.health.zincMax+' </h5><h5>Manganese max : '+data.health.manganeseMax+' </h5><h5>Copper max : '+data.health.copperMax+' </h5><h5>Boron max :  '+data.health.boronMax+'</h5><h5>Temperature max :  '+data.health.temperatureMax+' </h5><h5> Precipitation max : '+data.health.precipitationMax+'  </h5></div>'
+      if(data.success){
+      var min= data.minTemp;
+      var max= data.maxTemp;
+
+      document.getElementById('minTemp').value=min;
+      document.getElementById('maxTemp').value=max;
+      }
+		},
+ 		error: function(jqXHR, textStatus, errorThrown){
+ 				console.log(textStatus, errorThrown);
+ 			}
+
+	  });
+
+
+  });
+</script>
 
 </html>

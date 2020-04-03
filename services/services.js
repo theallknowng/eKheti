@@ -30,7 +30,7 @@ router.get('/logout', (req,res)=>{
 
 
 router.post('/register', (req,res)=>{
-  var values = [req.body.email_id,req.body.FName,req.body.LName,req.body.contact,req.body.village, req.body.password, req.body.irrigation]
+  var values = [req.body.email_id,req.body.FName,req.body.LName,req.body.contact,req.body.village, req.body.password, req.body.irrigation.toLowerCase()]
   database.newUser(values,(err, result)=>{
     if (err){
       console.log(err)
@@ -141,7 +141,14 @@ function getCrop(code){
 }
 
 
-
+router.post('/weather', function (req,res){
+  database.weather(( result)=>{
+    if(result)
+      res.json({success:'true',minTemp:result.minTemp,maxTemp:result.maxTemp})
+    else
+      res.json({ success: 'false' })
+  })
+})
 
 
 

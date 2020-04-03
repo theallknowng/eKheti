@@ -38,7 +38,7 @@ router.get('/healthcard', function(req, res , next) {
     if(req.session.healthID)
       res.status(403).render('error403',{ login: 'true',name:req.session.name, healthID: req.session.healthID })
     else
-      res.render('healthCard',{ login: 'true',name:req.session.name, healthID: req.session.healthID })
+      res.render('healthCard',{ login: 'true',name:req.session.name, healthID: req.session.healthID,  irrigation:req.session.irrigation.toLowerCase() })
   }
   else
     res.redirect('/')
