@@ -65,7 +65,7 @@ router.get('/Jowar', function(req, res, next) {
   if(req.session.email)
     res.render('Jowar',{ login: 'true',name:req.session.name, healthID: req.session.healthID })
   else
-    res.redirect('/')
+    res.render('Jowar',{ login: 'false',name:req.session.name, healthID: req.session.healthID })
 });
 
 
@@ -73,7 +73,7 @@ router.get('/Wheat', function(req, res, next) {
   if(req.session.email)
     res.render('Wheat',{ login: 'true',name:req.session.name, healthID: req.session.healthID })
   else
-    res.redirect('/')
+    res.render('Wheat',{ login: 'false',name:req.session.name, healthID: req.session.healthID })
 });
 
 
@@ -81,7 +81,7 @@ router.get('/Maize', function(req, res, next) {
   if(req.session.email)
     res.render('Maize',{ login: 'true',name:req.session.name, healthID: req.session.healthID })
   else
-    res.redirect('/')
+    res.render('Maize',{ login: 'false',name:req.session.name, healthID: req.session.healthID })
 });
 
 
@@ -89,7 +89,7 @@ router.get('/Oilseeds', function(req, res, next) {
   if(req.session.email)
     res.render('OilSeeds',{ login: 'true',name:req.session.name, healthID: req.session.healthID })
   else
-    res.redirect('/')
+    res.render('OilSeeds',{ login: 'false',name:req.session.name, healthID: req.session.healthID })
 });
 
 
@@ -97,7 +97,7 @@ router.get('/Pulses', function(req, res, next) {
   if(req.session.email)
     res.render('Pulses',{ login: 'true',name:req.session.name, healthID: req.session.healthID })
   else
-    res.redirect('/')
+    res.render('Pulses',{ login: 'true',name:req.session.name, healthID: req.session.healthID })
 });
 
 
@@ -105,7 +105,7 @@ router.get('/Grapes', function(req, res, next) {
   if(req.session.email)
     res.render('Grapes',{ login: 'true',name:req.session.name, healthID: req.session.healthID })
   else
-    res.redirect('/')
+    res.render('Grapes',{ login: 'false',name:req.session.name, healthID: req.session.healthID })
 });
 
 
@@ -113,7 +113,7 @@ router.get('/Sugarcane', function(req, res, next) {
   if(req.session.email)
     res.render('Sugarcane',{ login: 'true',name:req.session.name, healthID: req.session.healthID })
   else
-    res.redirect('/')
+    res.render('Sugarcane',{ login: 'false',name:req.session.name, healthID: req.session.healthID })
 });
 
 

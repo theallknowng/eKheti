@@ -205,44 +205,44 @@ router.post('/user/healthCard', (req,res)=>{
 })
 
 
-// GET Crops
-router.post('/user/Jowar', function(req, res, next) {
-    res.render('Jowar',{ login: 'false',name:'', healthID: '' })
-});
+// // GET Crops
+// router.get('/user/Jowar', function(req, res, next) {
+//     res.render('Jowar',{ login: 'false',name:'', healthID: '' })
+// });
 
 
-router.post('/user/Wheat', function(req, res, next) {
-    res.render('Wheat',{ login: 'false',name:'', healthID: '' })
-});
+// router.get('/user/Wheat', function(req, res, next) {
+//     res.render('Wheat',{ login: 'false',name:'', healthID: '' })
+// });
 
 
-router.post('/user/Maize', function(req, res, next) {
-    res.render('Maize',{ login: 'false',name:'', healthID: '' })
+// router.get('/user/Maize', function(req, res, next) {
+//     res.render('Maize',{ login: 'false',name:'', healthID: '' })
 
-});
-
-
-router.post('/user/Oilseeds', function(req, res, next) {
-    res.render('OilSeeds',{ login: 'false',name:'', healthID: '' })
-});
+// });
 
 
-router.post('/user/Pulses', function(req, res, next) {
-    res.render('Pulses',{ login: 'false',name:'', healthID: '' })
+// router.get('/user/Oilseeds', function(req, res, next) {
+//     res.render('OilSeeds',{ login: 'false',name:'', healthID: '' })
+// });
+
+
+// router.get('/user/Pulses', function(req, res, next) {
+//     res.render('Pulses',{ login: 'false',name:'', healthID: '' })
   
-});
+// });
 
 
-router.post('/user/Grapes', function(req, res, next) {
-    res.render('Grapes',{ login: 'false',name:'', healthID: '' })
+// router.get('/user/Grapes', function(req, res, next) {
+//     res.render('Grapes',{ login: 'false',name:'', healthID: '' })
 
-});
+// });
 
 
-router.post('/user/Sugarcane', function(req, res, next) {
-    res.render('Sugarcane',{ login: 'false',name:'', healthID: '' })
+// router.get('/user/Sugarcane', function(req, res, next) {
+//     res.render('Sugarcane',{ login: 'false',name:'', healthID: '' })
 
-});
+// });
 
 
 // AJAX Routes
