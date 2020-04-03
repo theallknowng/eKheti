@@ -180,9 +180,10 @@ router.post('/user/withoutHealthCard', function (req,res){
 
 router.post('/user/withHealthCard', function (req, res){
   database.withHealthCard(req.body.healthID, function(err, data) {
+    data=data.toString().slice(1,-1)
+
     dataArray=data.split(" ")
     console.log(dataArray)
-
     result={"region":req.session.region,"Crop1":getCrop(dataArray[6]),"Crop2":getCrop(dataArray[5]),"Crop3":getCrop(dataArray[4]),"Crop4":getCrop(dataArray[3]),"Crop5":getCrop(dataArray[2]),"Crop6":getCrop(dataArray[1]),"Crop7":getCrop(dataArray[0]),}
     res.json({ success: 'true',result: result})
   })
