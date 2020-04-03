@@ -99,7 +99,7 @@ router.get('/Pulses', function(req, res, next) {
   if(req.session.email)
     res.render('Pulses',{ login: 'true',name:req.session.name, healthID: req.session.healthID })
   else
-    res.render('Pulses',{ login: 'true',name:req.session.name, healthID: req.session.healthID })
+    res.render('Pulses',{ login: 'false',name:req.session.name, healthID: req.session.healthID })
 });
 
 

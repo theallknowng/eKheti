@@ -279,8 +279,12 @@ router.post('/user/healthCard', (req,res)=>{
   res.json({ success: 'true' })
 })
 
+//test android
 
-
+router.post('/irrigationData', function(req, res){
+  
+      res.json({ success: 'true' })
+})
 
 // AJAX Routes
 
