@@ -151,10 +151,12 @@ public class MainActivity extends AppCompatActivity {
                         String success= null,irrigation=null,email=null,healthid=null,region=null;
                         try {
                             success = jsonObject.getString("success");
-                            irrigation = users.getString("irrigation");
-                            email = users.getString("email");
-                            healthid = users.getString("healthID");
-                            region = users.getString("region");
+                            if(success.equals("true")) {
+                                irrigation = users.getString("irrigation");
+                                email = users.getString("email");
+                                healthid = users.getString("healthID");
+                                region = users.getString("region");
+                            }
 
                         } catch (JSONException e) {
                             e.printStackTrace();

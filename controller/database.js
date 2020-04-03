@@ -135,6 +135,13 @@ var propertiesObject = { apikey:process.env.api ,metric:'true' };
       cb(err, markets)
     })
   }
+
+  function newMarket (values, cb) {
+    var sql = 'INSERT INTO `markets` (`name`, `market_lat`, `market_long`) VALUES(?)'
+    conn.query(sql, [values], function (err, result) {
+      cb(err, result)
+    })
+  }
   
 
 
@@ -157,4 +164,4 @@ function weather(cb){  //isme update ke zarurat hai like location tag wagera aur
   })
   }
   
-  module.exports = { getUser, newUser, getMarkets, withoutHealthCard , callName, withHealthCard, newHealthCard, getHealth, weather }
+  module.exports = { getUser, newUser, getMarkets, withoutHealthCard , callName, withHealthCard, newHealthCard, getHealth, weather, newMarket }
