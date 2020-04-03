@@ -54,7 +54,7 @@
       <img src="images/team/Mithilesh.jpeg" height="150" width="150">
     </div>
     <h2><%=profile.name%></h2>
-    <button class="button"> <a href="#" style="color: black; text-decoration: none;"> View your healthcard</a></button>
+    <button  id="health" class="button" data-toggle="modal" data-target="#healthcarddata" style="color: black; text-decoration: none;"> View your healthcard</button>
     <p><strong>Name : <%=profile.name%></strong>  </p>
     <p><strong>email-id : <%=profile.email%></strong>  </p>
     <p><strong>Contact number: <%=profile.contact%></strong>  </p>
@@ -65,6 +65,32 @@
     </div>
     
   </div>
+
+<!-- Modal -->
+<div class="modal fade" id="healthcarddata" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title" id="exampleModalLongTitle">Your Health Card</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+         <!-- Dynamic content -->
+      </div>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <a type="button" href="/healthcard" class="btn btn-primary" >Edit</a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
   <!-- JavaScript Libraries -->
@@ -84,6 +110,38 @@
   <script src="contactform/contactform.js"></script>
 
   <script src="javascripts/main.js"></script>
+
+
+
+
+
 </body>
+
+<script>
+
+  $('#health').on('click', function(){
+    $.ajax({
+      url:"/ajax/fetch",
+      method:"POST",
+      data:{query:'<%=healthID%>'},
+       success:function(data)
+        {
+        //  console.log("success");
+        //  console.log(data.health);
+         var card= ' <h5>TimeStamp :  '+data.health.date+'</h5>  <h5>Name  : <%=name%></h5><h5>Health Card number - '+data.health.healthID+' </h5> <h5>Location  : '+data.health.region+'</h5> <div class="col-sm-6 col-md-6 col-xs-12"> <h5>pH min :  '+data.health.pHMin+'   </h5><h5>Nitrogen min :  '+data.health.nitrogenMin+' </h5><h5>Phosphorous min : '+data.health.phosphorusMin+' </h5><h5>Potassium min : '+data.health.potassiumMin+' </h5><h5>Calcium min : '+data.health.calciumMin+' </h5><h5>Magnesium min :  '+data.health.magnesiumMin+' </h5><h5>Sulphur min :  '+data.health.sulphurMin+'  </h5><h5>Iron min :  '+data.health.ironMin+' </h5><h5>Zinc min : '+data.health.zincMin+' </h5><h5>Manganese min : '+data.health.manganeseMin+' </h5><h5>Copper min : '+data.health.copperMin+' </h5><h5>Boron min : '+data.health.boronMin+' </h5><h5>Temperature min : '+data.health.temperatureMin+' </h5><h5> Precipitation min : '+data.health.precipitationMin+' </h5></div><div class="col-sm-6 col-md-6 col-xs-12"><h5>pH max :   '+data.health.pHMax+'  </h5><h5>Nitrogen max :  '+data.health.nitrogenMax+'</h5><h5>Phosphorous max :  '+data.health.phosphorusMax+'</h5> <h5>Potassium max :  '+data.health.potassiumMax+'</h5><h5>Calcium max :  '+data.health.calciumMax+'</h5><h5>Magnesium max :  '+data.health.magnesiumMax+'</h5><h5>Sulphur max : '+data.health.sulphurMax+' </h5><h5>Iron max : '+data.health.ironMax+' </h5><h5>Zinc max : '+data.health.zincMax+' </h5><h5>Manganese max : '+data.health.manganeseMax+' </h5><h5>Copper max : '+data.health.copperMax+' </h5><h5>Boron max :  '+data.health.boronMax+'</h5><h5>Temperature max :  '+data.health.temperatureMax+' </h5><h5> Precipitation max : '+data.health.precipitationMax+'  </h5></div>'
+  
+  
+         $('.modal-body').html(card);
+      },
+       error: function(jqXHR, textStatus, errorThrown){
+           console.log(textStatus, errorThrown);
+         }
+  
+      });
+  })
+  
+  
+  </script>
+  
 
 </html>
