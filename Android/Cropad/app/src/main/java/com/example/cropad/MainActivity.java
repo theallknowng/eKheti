@@ -170,8 +170,8 @@ public class MainActivity extends AppCompatActivity {
                             editor.commit();
 //                            String test = sharedpreferences.getString(PREF_EMAIL, null);
 //                            Log.d("SharedPref test",test );
-//                            System.out.println("Alok");
-//                            System.out.println(email);
+                            System.out.println("Alok");
+                            System.out.println("Hi"+healthid);
                             firstpag();
                             finish();
                         }

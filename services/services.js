@@ -168,12 +168,22 @@ router.post('/user/login', function (req, res) {
 
 
 router.post('/user/withoutHealthCard', function (req,res){
-    database.withoutHealthCard("barshi","yes", function(err, data){
+    database.withoutHealthCard(req.body.region,req.body.irrigation, function(err, data){
     data=data.toString().slice(1,-1)
 
     dataArray=data.split(" ")
     console.log(dataArray)
     result={"Crop1":getCrop(dataArray[6]),"Crop2":getCrop(dataArray[5]),"Crop3":getCrop(dataArray[4]),"Crop4":getCrop(dataArray[3]),"Crop5":getCrop(dataArray[2]),"Crop6":getCrop(dataArray[1]),"Crop7":getCrop(dataArray[0]),}
+    res.json({ success: 'true',result: result})
+  })
+})
+
+router.post('/user/withHealthCard', function (req, res){
+  database.withHealthCard(req.body.healthID, function(err, data) {
+    dataArray=data.split(" ")
+    console.log(dataArray)
+
+    result={"region":req.session.region,"Crop1":getCrop(dataArray[6]),"Crop2":getCrop(dataArray[5]),"Crop3":getCrop(dataArray[4]),"Crop4":getCrop(dataArray[3]),"Crop5":getCrop(dataArray[2]),"Crop6":getCrop(dataArray[1]),"Crop7":getCrop(dataArray[0]),}
     res.json({ success: 'true',result: result})
   })
 })
@@ -212,44 +222,6 @@ router.post('/user/healthCard', (req,res)=>{
 })
 
 
-// // GET Crops
-// router.get('/user/Jowar', function(req, res, next) {
-//     res.render('Jowar',{ login: 'false',name:'', healthID: '' })
-// });
-
-
-// router.get('/user/Wheat', function(req, res, next) {
-//     res.render('Wheat',{ login: 'false',name:'', healthID: '' })
-// });
-
-
-// router.get('/user/Maize', function(req, res, next) {
-//     res.render('Maize',{ login: 'false',name:'', healthID: '' })
-
-// });
-
-
-// router.get('/user/Oilseeds', function(req, res, next) {
-//     res.render('OilSeeds',{ login: 'false',name:'', healthID: '' })
-// });
-
-
-// router.get('/user/Pulses', function(req, res, next) {
-//     res.render('Pulses',{ login: 'false',name:'', healthID: '' })
-  
-// });
-
-
-// router.get('/user/Grapes', function(req, res, next) {
-//     res.render('Grapes',{ login: 'false',name:'', healthID: '' })
-
-// });
-
-
-// router.get('/user/Sugarcane', function(req, res, next) {
-//     res.render('Sugarcane',{ login: 'false',name:'', healthID: '' })
-
-// });
 
 
 // AJAX Routes

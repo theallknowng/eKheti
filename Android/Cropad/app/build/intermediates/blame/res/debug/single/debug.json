@@ -1,742 +1,742 @@
 [
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/layout_activity_registration_page.xml.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/layout/activity_registration_page.xml"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_favorite_black_24dp.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_favorite_black_24dp.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-xhdpi_logo1__round.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/mipmap-xhdpi/logo1__round.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_market_24dp.xml.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_market_24dp.xml"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable_roundbut.xml.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/drawable/roundbut.xml"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_notifications_black_24dp.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-hdpi/ic_notifications_black_24dp.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_email_black_24dp.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_email_black_24dp.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_market_24dp.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_market_24dp.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_marketplace.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/mipmap-xxhdpi/ic_launcher_marketplace.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-hdpi_market.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/mipmap-hdpi/market.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_launcher_background.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_launcher_background.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/menu_bottom_navigation.xml.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/menu/bottom_navigation.xml"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_logo1_.xml.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/mipmap-anydpi-v26/logo1_.xml"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable_jowar.jpg.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/drawable/jowar.jpg"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_menu_black_24dp.xml.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_menu_black_24dp.xml"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable_page_gradient.xml.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/drawable/page_gradient.xml"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable_soilhealth.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/drawable/soilhealth.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_notifications_black_24dp.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-hdpi/ic_notifications_black_24dp.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_favorite_black_24dp.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-hdpi/ic_favorite_black_24dp.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_market.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/mipmap-hdpi/ic_launcher_market.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable_market2.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/drawable/market2.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-xhdpi_market_round.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/mipmap-xhdpi/market_round.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_logo1.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/mipmap-xhdpi/ic_launcher_logo1.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_launcher_background.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-ldpi/ic_launcher_background.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/layout/activity_main.xml"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable_logout_round.xml.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/drawable/logout_round.xml"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_launcher_background.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-hdpi/ic_launcher_background.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_logo1.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/mipmap-xxhdpi/logo1.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable_article2.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/drawable/article2.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_settings_black_24dp.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_settings_black_24dp.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-mdpi_market_round.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/mipmap-mdpi/market_round.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_lock_black_24dp.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-mdpi/ic_lock_black_24dp.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_settings_black_24dp.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_settings_black_24dp.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_logo1_.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/mipmap-xxxhdpi/logo1_.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-mdpi_logo1__round.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/mipmap-mdpi/logo1__round.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_market.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/mipmap-hdpi/ic_launcher_market.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/layout_market_item.xml.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/layout/market_item.xml"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-mdpi_logo1_.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/mipmap-mdpi/logo1_.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_logo1__round.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/mipmap-xxxhdpi/logo1__round.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/layout/activity_main.xml"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable_market.jpg.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/drawable/market.jpg"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable_weather.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/drawable/weather.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_launcher_background.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_launcher_background.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_expertarticles_black_24dp.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-hdpi/ic_expertarticles_black_24dp.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_marketplace.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/mipmap-xhdpi/ic_launcher_marketplace.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable_market.jpg.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/drawable/market.jpg"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_lock_black_24dp.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-hdpi/ic_lock_black_24dp.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/layout_activity_market_list.xml.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/layout/activity_market_list.xml"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/menu_bottom_navigation.xml.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/menu/bottom_navigation.xml"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_logo1_.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/mipmap-xxhdpi/logo1_.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable_roundbut.xml.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/drawable/roundbut.xml"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_expertarticles_black_24dp.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-ldpi/ic_expertarticles_black_24dp.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_menu_black_24dp.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_menu_black_24dp.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_email_black_24dp.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-ldpi/ic_email_black_24dp.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_market.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/mipmap-xhdpi/ic_launcher_market.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_settings_black_24dp.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-ldpi/ic_settings_black_24dp.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_market_24dp.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_market_24dp.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_notifications_black_24dp.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-ldpi/ic_notifications_black_24dp.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_expertarticles_black_24dp.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-ldpi/ic_expertarticles_black_24dp.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_email_black_24dp.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-hdpi/ic_email_black_24dp.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable_barley.jpg.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/drawable/barley.jpg"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_lock_black_24dp.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-mdpi/ic_lock_black_24dp.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_email_black_24dp.xml.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_email_black_24dp.xml"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/anim_slide_in_right.xml.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/anim/slide_in_right.xml"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_marketplace.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/mipmap-mdpi/ic_launcher_marketplace.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable_barley.jpg.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/drawable/barley.jpg"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_launcher_background.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-mdpi/ic_launcher_background.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_favorite_black_24dp.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-ldpi/ic_favorite_black_24dp.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_logo1__round.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/mipmap-xxhdpi/logo1__round.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/layout_toolbar.xml.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/layout/toolbar.xml"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_market_round.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/mipmap-xxhdpi/market_round.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_market_24dp.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-mdpi/ic_market_24dp.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable_peas.jpg.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/drawable/peas.jpg"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_market.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/mipmap-xxxhdpi/market.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_expertarticles_black_24dp.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_expertarticles_black_24dp.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable_vegetablemarket.jpg.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/drawable/vegetablemarket.jpg"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/layout_activity_suggest_crops.xml.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/layout/activity_suggest_crops.xml"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_launcher_background.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-mdpi/ic_launcher_background.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_email_black_24dp.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_email_black_24dp.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/layout_activity_expertadvice.xml.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/layout/activity_expertadvice.xml"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_settings_black_24dp.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_settings_black_24dp.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_market.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/mipmap-mdpi/ic_launcher_market.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_settings_black_24dp.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-mdpi/ic_settings_black_24dp.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/layout_activity_suggest_crops.xml.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/layout/activity_suggest_crops.xml"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_home_black_24dp.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_home_black_24dp.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/layout_activity_marketplace.xml.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/layout/activity_marketplace.xml"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_email_black_24dp.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_email_black_24dp.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/layout_fragment_settings.xml.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/layout/fragment_settings.xml"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable_page_gradient.xml.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/drawable/page_gradient.xml"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_launcher_background.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_launcher_background.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/drawable-v24/ic_launcher_foreground.xml"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_logo1_.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/mipmap-xxhdpi/ic_launcher_logo1_.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_logo1__round.xml.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/mipmap-anydpi-v26/logo1__round.xml"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_email_black_24dp.xml.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_email_black_24dp.xml"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_market_round.xml.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/mipmap-anydpi-v26/market_round.xml"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_settings_black_24dp.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-ldpi/ic_settings_black_24dp.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_marketplace.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/mipmap-xxxhdpi/ic_launcher_marketplace.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable_logo.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/drawable/logo.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/drawable-v24/ic_launcher_foreground.xml"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable_market1.jpg.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/drawable/market1.jpg"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_market.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/mipmap-xxxhdpi/ic_launcher_market.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-hdpi_logo1__round.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/mipmap-hdpi/logo1__round.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable_article2.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/drawable/article2.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_menu_black_24dp.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-mdpi/ic_menu_black_24dp.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_market_24dp.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-hdpi/ic_market_24dp.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/menu_menus.xml.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/menu/menus.xml"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_menu_black_24dp.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-hdpi/ic_menu_black_24dp.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_market.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/mipmap-xxhdpi/ic_launcher_market.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable_market1.jpg.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/drawable/market1.jpg"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/layout_market_item.xml.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/layout/market_item.xml"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable_wheat.jpg.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/drawable/wheat.jpg"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/layout_fragment_articles.xml.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/layout/fragment_articles.xml"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable_logo1.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/drawable/logo1.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_logo1_.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/mipmap-xxxhdpi/logo1_.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_logo1__round.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/mipmap-xxxhdpi/logo1__round.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_logo1.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/mipmap-xxhdpi/logo1.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_market_round.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/mipmap-xxxhdpi/market_round.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_market_24dp.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_market_24dp.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable_button_gradient.xml.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/drawable/button_gradient.xml"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_expertarticles_black_24dp.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_expertarticles_black_24dp.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_launcher_background.xml.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_launcher_background.xml"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/layout_activity_market_list.xml.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/layout/activity_market_list.xml"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_home_black_24dp.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-hdpi/ic_home_black_24dp.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/layout_activity_marketplace.xml.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/layout/activity_marketplace.xml"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_settings_black_24dp.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_settings_black_24dp.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-hdpi_logo1_.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/mipmap-hdpi/logo1_.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_market.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/mipmap-xxhdpi/ic_launcher_market.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_notifications_black_24dp.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_notifications_black_24dp.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_market_round.xml.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/mipmap-anydpi-v26/market_round.xml"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_market.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/mipmap-mdpi/ic_launcher_market.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_notifications_black_24dp.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_notifications_black_24dp.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_launcher_background.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_launcher_background.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-hdpi_logo1__round.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/mipmap-hdpi/logo1__round.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_market_24dp.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-ldpi/ic_market_24dp.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-hdpi_market_round.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/mipmap-hdpi/market_round.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_notifications_black_24dp.xml.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_notifications_black_24dp.xml"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_lock_black_24dp.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_lock_black_24dp.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_notifications_black_24dp.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_notifications_black_24dp.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-xhdpi_logo1_.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/mipmap-xhdpi/logo1_.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_lock_black_24dp.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_lock_black_24dp.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_notifications_black_24dp.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-mdpi/ic_notifications_black_24dp.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_marketplace.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/mipmap-hdpi/ic_launcher_marketplace.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_logo1_.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/mipmap-xhdpi/ic_launcher_logo1_.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_logo1_.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/mipmap-xxhdpi/ic_launcher_logo1_.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_home_black_24dp.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-mdpi/ic_home_black_24dp.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_lock_black_24dp.xml.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_lock_black_24dp.xml"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_logo1_.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/mipmap-mdpi/ic_launcher_logo1_.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable_logo1.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/drawable/logo1.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable_wheatt.jpg.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/drawable/wheatt.jpg"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_logo1.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/mipmap-hdpi/ic_launcher_logo1.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable_bottomline.xml.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/drawable/bottomline.xml"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_home_black_24dp.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_home_black_24dp.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_menu_black_24dp.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-hdpi/ic_menu_black_24dp.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_favorite_black_24dp.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_favorite_black_24dp.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable_searchbutton.jpg.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/drawable/searchbutton.jpg"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_logo1.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/mipmap-xhdpi/ic_launcher_logo1.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/layout_activity_edithealthcard.xml.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/layout/activity_edithealthcard.xml"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_notifications_black_24dp.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_notifications_black_24dp.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_logo1_.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/mipmap-xxxhdpi/ic_launcher_logo1_.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/anim_slide_out_left.xml.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/anim/slide_out_left.xml"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_email_black_24dp.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_email_black_24dp.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_launcher_background.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-hdpi/ic_launcher_background.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_logo1_.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/mipmap-xxhdpi/logo1_.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-hdpi_market.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/mipmap-hdpi/market.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_logo1_.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/mipmap-xhdpi/ic_launcher_logo1_.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_lock_black_24dp.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-hdpi/ic_lock_black_24dp.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_home_black_24dp.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-hdpi/ic_home_black_24dp.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable_wheatt.jpg.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/drawable/wheatt.jpg"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable_wheat.jpg.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/drawable/wheat.jpg"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_menu_black_24dp.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-mdpi/ic_menu_black_24dp.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-xhdpi_logo1__round.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/mipmap-xhdpi/logo1__round.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_market.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/mipmap-xxhdpi/market.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-hdpi_market_round.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/mipmap-hdpi/market_round.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_menu_black_24dp.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-ldpi/ic_menu_black_24dp.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable_jowar.jpg.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/drawable/jowar.jpg"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/menu_menus.xml.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/menu/menus.xml"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable_expertface.jpg.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/drawable/expertface.jpg"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_launcher_background.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_launcher_background.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable_logout_round.xml.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/drawable/logout_round.xml"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_lock_black_24dp.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_lock_black_24dp.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/layout_activity_registration_page.xml.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/layout/activity_registration_page.xml"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_settings_black_24dp.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-hdpi/ic_settings_black_24dp.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-xhdpi_market_round.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/mipmap-xhdpi/market_round.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/anim_slide_out_right.xml.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/anim/slide_out_right.xml"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_favorite_black_24dp.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_favorite_black_24dp.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/layout_activity_add_market.xml.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/layout/activity_add_market.xml"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_home_black_24dp.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-ldpi/ic_home_black_24dp.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_menu_black_24dp.xml.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_menu_black_24dp.xml"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable_sugar.jpg.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/drawable/sugar.jpg"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable_market2.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/drawable/market2.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/anim_slide_in_left.xml.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/anim/slide_in_left.xml"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_menu_black_24dp.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_menu_black_24dp.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable_crad_round.xml.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/drawable/crad_round.xml"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable_button_selector.xml.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/drawable/button_selector.xml"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_expertarticles_black_24dp.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_expertarticles_black_24dp.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/layout_fragment_articles.xml.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/layout/fragment_articles.xml"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-xhdpi_market.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/mipmap-xhdpi/market.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_logo1_.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/mipmap-mdpi/ic_launcher_logo1_.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_launcher_background.xml.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_launcher_background.xml"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_email_black_24dp.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_email_black_24dp.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-mdpi_market.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/mipmap-mdpi/market.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/layout_activity_first_page.xml.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/layout/activity_first_page.xml"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_market_24dp.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-mdpi/ic_market_24dp.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_logo1_.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/mipmap-xxxhdpi/ic_launcher_logo1_.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_menu_black_24dp.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-ldpi/ic_menu_black_24dp.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_market.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/mipmap-xhdpi/ic_launcher_market.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable_inside_pages.xml.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/drawable/inside_pages.xml"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/layout_expert_item1.xml.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/layout/expert_item1.xml"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_market.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/mipmap-xxhdpi/market.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_menu_black_24dp.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_menu_black_24dp.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/layout_activity_first_page.xml.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/layout/activity_first_page.xml"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable_round_button.xml.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/drawable/round_button.xml"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable_appbuttons.xml.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/drawable/appbuttons.xml"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable_peas.jpg.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/drawable/peas.jpg"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/layout_fragment_fragment_market.xml.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/layout/fragment_fragment_market.xml"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-hdpi_logo1_.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/mipmap-hdpi/logo1_.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/layout_fragment_home.xml.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/layout/fragment_home.xml"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable_searchbutton.jpg.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/drawable/searchbutton.jpg"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/layout_activity_expertadvice.xml.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/layout/activity_expertadvice.xml"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/mipmap-hdpi/ic_launcher.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_favorite_black_24dp.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_favorite_black_24dp.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/anim_slide_out_right.xml.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/anim/slide_out_right.xml"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/layout_activity_inputform.xml.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/layout/activity_inputform.xml"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/layout_fragment_settings.xml.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/layout/fragment_settings.xml"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_home_black_24dp.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_home_black_24dp.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_favorite_black_24dp.xml.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_favorite_black_24dp.xml"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_logo1__round.xml.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/mipmap-anydpi-v26/logo1__round.xml"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable_weather.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/drawable/weather.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_notifications_black_24dp.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-mdpi/ic_notifications_black_24dp.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_market_24dp.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-hdpi/ic_market_24dp.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_expertarticles_black_24dp.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-mdpi/ic_expertarticles_black_24dp.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-mdpi_logo1__round.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/mipmap-mdpi/logo1__round.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_settings_black_24dp.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_settings_black_24dp.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_logo1.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/mipmap-mdpi/ic_launcher_logo1.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/layout_fragment_home.xml.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/layout/fragment_home.xml"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-mdpi_market_round.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/mipmap-mdpi/market_round.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_favorite_black_24dp.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_favorite_black_24dp.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_expertarticles_black_24dp.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-mdpi/ic_expertarticles_black_24dp.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_marketplace.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/mipmap-mdpi/ic_launcher_marketplace.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable_button_gradient.xml.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/drawable/button_gradient.xml"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_logo1.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/mipmap-xxhdpi/ic_launcher_logo1.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_market.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/mipmap-xxxhdpi/ic_launcher_market.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_notifications_black_24dp.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_notifications_black_24dp.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/layout_activity_healthcards.xml.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/layout/activity_healthcards.xml"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_home_black_24dp.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-ldpi/ic_home_black_24dp.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/layout_activity_add_market.xml.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/layout/activity_add_market.xml"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_expertarticles_black_24dp.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_expertarticles_black_24dp.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/layout_toolbar.xml.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/layout/toolbar.xml"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_logo1.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/mipmap-mdpi/ic_launcher_logo1.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_favorite_black_24dp.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-ldpi/ic_favorite_black_24dp.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_notifications_black_24dp.xml.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_notifications_black_24dp.xml"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_home_black_24dp.xml.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_home_black_24dp.xml"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_logo1_.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/mipmap-hdpi/ic_launcher_logo1_.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/layout_activity_edithealthcard.xml.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/layout/activity_edithealthcard.xml"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_home_black_24dp.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-mdpi/ic_home_black_24dp.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/layout_fragment_fragment_market.xml.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/layout/fragment_fragment_market.xml"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_market.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/mipmap-xxxhdpi/market.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_marketplace.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/mipmap-xhdpi/ic_launcher_marketplace.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_email_black_24dp.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-hdpi/ic_email_black_24dp.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/layout_activity_healthcards.xml.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/layout/activity_healthcards.xml"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_market_24dp.xml.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_market_24dp.xml"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_email_black_24dp.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-ldpi/ic_email_black_24dp.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/anim_slide_in_left.xml.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/anim/slide_in_left.xml"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_logo1.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/mipmap-xxhdpi/ic_launcher_logo1.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_home_black_24dp.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_home_black_24dp.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/anim_slide_in_right.xml.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/anim/slide_in_right.xml"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable_sugar.jpg.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/drawable/sugar.jpg"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/anim_slide_out_left.xml.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/anim/slide_out_left.xml"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_favorite_black_24dp.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-hdpi/ic_favorite_black_24dp.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_lock_black_24dp.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-ldpi/ic_lock_black_24dp.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_logo1.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/mipmap-xxxhdpi/ic_launcher_logo1.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_expertarticles_black_24dp.xml.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_expertarticles_black_24dp.xml"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_lock_black_24dp.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-ldpi/ic_lock_black_24dp.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable_vegetablemarket.jpg.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/drawable/vegetablemarket.jpg"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_logo1_.xml.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/mipmap-anydpi-v26/logo1_.xml"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/mipmap-mdpi/ic_launcher.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/layout_fragment_market.xml.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/layout/fragment_market.xml"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/layout_activity_weather_forecast.xml.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/layout/activity_weather_forecast.xml"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable_bottomline.xml.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/drawable/bottomline.xml"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_menu_black_24dp.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_menu_black_24dp.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable_crad_round.xml.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/drawable/crad_round.xml"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/layout_expert_item1.xml.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/layout/expert_item1.xml"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_settings_black_24dp.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-mdpi/ic_settings_black_24dp.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable_round_button.xml.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/drawable/round_button.xml"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_favorite_black_24dp.xml.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_favorite_black_24dp.xml"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_logo1.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/mipmap-hdpi/ic_launcher_logo1.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_logo1_.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/mipmap-hdpi/ic_launcher_logo1_.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable_soilhealth.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/drawable/soilhealth.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_lock_black_24dp.xml.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_lock_black_24dp.xml"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable_inside_pages.xml.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/drawable/inside_pages.xml"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-mdpi_logo1_.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/mipmap-mdpi/logo1_.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-xhdpi_market.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/mipmap-xhdpi/market.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/layout_activity_inputform.xml.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/layout/activity_inputform.xml"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_expertarticles_black_24dp.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-hdpi/ic_expertarticles_black_24dp.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_lock_black_24dp.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_lock_black_24dp.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_favorite_black_24dp.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-mdpi/ic_favorite_black_24dp.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable_appbuttons.xml.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/drawable/appbuttons.xml"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_logo1.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/mipmap-xxxhdpi/ic_launcher_logo1.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_settings_black_24dp.xml.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_settings_black_24dp.xml"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_home_black_24dp.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_home_black_24dp.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_expertarticles_black_24dp.xml.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_expertarticles_black_24dp.xml"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_lock_black_24dp.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_lock_black_24dp.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_logo1__round.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/mipmap-xxhdpi/logo1__round.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable_logo_icon.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/drawable/logo_icon.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable_logo_icon.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/drawable/logo_icon.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_market_round.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/mipmap-xxxhdpi/market_round.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_marketplace.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/mipmap-hdpi/ic_launcher_marketplace.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_settings_black_24dp.xml.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_settings_black_24dp.xml"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_expertarticles_black_24dp.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_expertarticles_black_24dp.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_marketplace.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/mipmap-xxhdpi/ic_launcher_marketplace.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_market_24dp.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_market_24dp.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable_button_gradient2.xml.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/drawable/button_gradient2.xml"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_market_round.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/mipmap-xxhdpi/market_round.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_market.xml.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/mipmap-anydpi-v26/market.xml"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable_search.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/drawable/search.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_settings_black_24dp.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_settings_black_24dp.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_expertarticles_black_24dp.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_expertarticles_black_24dp.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_launcher_background.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-ldpi/ic_launcher_background.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_email_black_24dp.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-mdpi/ic_email_black_24dp.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_notifications_black_24dp.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-ldpi/ic_notifications_black_24dp.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable_expertface.jpg.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/drawable/expertface.jpg"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_lock_black_24dp.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_lock_black_24dp.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_market_24dp.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_market_24dp.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_menu_black_24dp.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_menu_black_24dp.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_market.xml.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/mipmap-anydpi-v26/market.xml"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_favorite_black_24dp.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-mdpi/ic_favorite_black_24dp.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable_search.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/drawable/search.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_launcher_background.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_launcher_background.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_favorite_black_24dp.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_favorite_black_24dp.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-xhdpi_logo1_.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/mipmap-xhdpi/logo1_.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_email_black_24dp.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-mdpi/ic_email_black_24dp.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-mdpi_market.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/mipmap-mdpi/market.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable_button_gradient2.xml.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/drawable/button_gradient2.xml"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable_button_selector.xml.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/drawable/button_selector.xml"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_market_24dp.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_market_24dp.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_marketplace.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/mipmap-xxxhdpi/ic_launcher_marketplace.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable_suggest_gradient.xml.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/drawable/suggest_gradient.xml"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_settings_black_24dp.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-hdpi/ic_settings_black_24dp.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_market_24dp.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-ldpi/ic_market_24dp.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_home_black_24dp.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_home_black_24dp.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_email_black_24dp.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_email_black_24dp.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_notifications_black_24dp.png.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_notifications_black_24dp.png"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable_logo.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/drawable/logo.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_home_black_24dp.xml.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_home_black_24dp.xml"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/layout_activity_weather_forecast.xml.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/src/main/res/layout/activity_weather_forecast.xml"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable_suggest_gradient.xml.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/drawable/suggest_gradient.xml"
     },
     {
-        "merged": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_menu_black_24dp.png.flat",
-        "source": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_menu_black_24dp.png"
+        "merged": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/res/merged/debug/layout_fragment_market.xml.flat",
+        "source": "/home/rahul/Desktop/eKheti/Android/Cropad/app/src/main/res/layout/fragment_market.xml"
     }
 ]

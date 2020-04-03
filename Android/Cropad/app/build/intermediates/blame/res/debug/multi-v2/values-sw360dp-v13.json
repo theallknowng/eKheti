@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/rahul/Desktop/ekheti/Android/Cropad/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw360dp-v13/values-sw360dp-v13.xml",
+            "outputFile": "/home/rahul/Desktop/eKheti/Android/Cropad/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw360dp-v13/values-sw360dp-v13.xml",
             "map": [
                 {
-                    "source": "/home/rahul/.gradle/caches/transforms-2/files-2.1/66b72f0a9b0e828e61d4937c12d14e4c/preference-1.1.0-alpha05/res/values-sw360dp-v13/values-sw360dp-v13.xml",
+                    "source": "/home/rahul/.gradle/caches/transforms-2/files-2.1/690038a1c48c165ff53e08344902b1fa/preference-1.1.0-alpha05/res/values-sw360dp-v13/values-sw360dp-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

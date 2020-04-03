@@ -29,6 +29,8 @@ router.get('/signup', function(req, res ,next) {
 router.get('/profile', function(req, res ,next) {
   if(req.session.email)
     res.render('profile',{login: 'true',name: req.session.name,healthID:req.session.healthID, profile: req.session})
+  else
+    res.redirect('/login')
 })
 
 
