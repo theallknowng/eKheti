@@ -46,25 +46,25 @@
   <style>
     .column01{
         text-align: center;
-        width: 20%;
+        width: 10%;
     }
     .column02{
         text-align: center;
-        width: 40%;
+        width: 15%;
     }
     .column03{
         text-align: center;
-        width: 40%;
-    }
-    /* .column04{
-        text-align: center;
         width: 15%;
+    }
+     .column04{
+        text-align: center;
+        width: 35%;
     }
     .column05{
         text-align: center;
-        width: 15%;
+        width: 25%;
     }
-    .column06{
+   /* .column06{
         text-align: center;
         width: 10%;
     }
@@ -130,6 +130,9 @@
                 <th class="cell100 column01"><b>Sr. No.</b></th>
                 <th class="cell100 column02"><b>Name of Crop</b></th>
                 <th class="cell100 column03"><b>View Life Cycle</b></th>
+                <th class="cell100 column04"><b>Market Price (Rs. / Quintal)</b></th>
+                <th class="cell100 column05"><b>Suitable Season/Period</b></th>
+
                 
               </tr>
             </thead>
@@ -143,7 +146,10 @@
                 <td class="cell100 column01">1</td>
                 <td class="cell100 column02"><%=result.Crop1%></td>
                 <td class="cell100 column03"><a href="<%=result.Crop1%>">Click here</a></td>
-                
+                <td class="cell100 column04"><%-result.Crop1Price%></td>
+                <td class="cell100 column05"><%=result.Crop1Season%></td>
+
+               
                 
               </tr>
 
@@ -151,19 +157,29 @@
                 <td class="cell100 column01">2</td>
                 <td class="cell100 column02"><%=result.Crop2%></td>
                 <td class="cell100 column03"><a href="<%=result.Crop2%>">Click here</a></td>
+                <td class="cell100 column04"><%-result.Crop2Price%></td>
+                <td class="cell100 column05"><%=result.Crop2Season%></td>
+
+
+
               </tr>
 
               <tr class="row100 body">
                 <td class="cell100 column01">3</td>
                 <td class="cell100 column02"><%=result.Crop3%></td>
                 <td class="cell100 column03"><a href="<%=result.Crop3%>">Click here</a></td>
+                <td class="cell100 column04"><%-result.Crop3Price%></td>
+                <td class="cell100 column05"><%=result.Crop3Season%></td>
+
+
+
               </tr>
 
 
 
             </tbody>
           </table>
-
+          <p align="center" ><b>Note:</b> Predicted Market Price <cite><a href="https://agriculture.anvayin.com/market-id/1296/state/Maharashtra/district/Sholapur/market/Solapur" target="_blank" >Source</a></cite>.</p>
         </div>
       </div>
 

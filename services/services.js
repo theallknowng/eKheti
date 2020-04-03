@@ -71,7 +71,7 @@ router.post('/suggestCrops', (req,res)=>{
         dataArray=data.split(" ")
         console.log(dataArray)
 
-        result={"region":req.session.region,"Crop1":getCrop(dataArray[6]),"Crop2":getCrop(dataArray[5]),"Crop3":getCrop(dataArray[4]),"Crop4":getCrop(dataArray[3]),"Crop5":getCrop(dataArray[2]),"Crop6":getCrop(dataArray[1]),"Crop7":getCrop(dataArray[0]),}
+        result={"region":req.session.region,"Crop1":getCrop(dataArray[6]),"Crop1Price":getPrice(getCrop(dataArray[6])),"Crop2":getCrop(dataArray[5]),"Crop2Price":getPrice(getCrop(dataArray[5])),"Crop3":getCrop(dataArray[4]),"Crop3Price":getPrice(getCrop(dataArray[4])),"Crop4":getCrop(dataArray[3]),"Crop4Price":getPrice(getCrop(dataArray[3])) ,"Crop5":getCrop(dataArray[2]) ,"Crop5Price":getPrice(getCrop(dataArray[2])),"Crop6":getCrop(dataArray[1]),"Crop6Price":getPrice(getCrop(dataArray[1])),"Crop7":getCrop(dataArray[0]),"Crop7Price":getPrice(getCrop(dataArray[0]))}
         console.log(result)
         res.render('cropsuggestion',{success:'true',login: 'true', name: req.session.name,healthID: req.session.healthID,result: result})
         // res.render('test',{success:'true',result: result,login: 'true',name: req.session.name})
@@ -84,7 +84,8 @@ router.post('/suggestCrops', (req,res)=>{
         dataArray=data.split(" ")
         console.log(dataArray)
 
-        result={"region":req.session.region,"Crop1":getCrop(dataArray[6]),"Crop2":getCrop(dataArray[5]),"Crop3":getCrop(dataArray[4]),"Crop4":getCrop(dataArray[3]),"Crop5":getCrop(dataArray[2]),"Crop6":getCrop(dataArray[1]),"Crop7":getCrop(dataArray[0]),}
+        // result={"region":req.session.region,"Crop1":getCrop(dataArray[6]),"Crop2":getCrop(dataArray[5]),"Crop3":getCrop(dataArray[4]),"Crop4":getCrop(dataArray[3]),"Crop5":getCrop(dataArray[2]),"Crop6":getCrop(dataArray[1]),"Crop7":getCrop(dataArray[0]),}
+        result={"region":req.session.region,"Crop1":getCrop(dataArray[6]),"Crop1Price":getPrice(getCrop(dataArray[6])),"Crop1Season":getSeason(getCrop(dataArray[6])),"Crop2":getCrop(dataArray[5]),"Crop2Price":getPrice(getCrop(dataArray[5])), "Crop2Season":getSeason(getCrop(dataArray[5])),"Crop3":getCrop(dataArray[4]),"Crop3Price":getPrice(getCrop(dataArray[4])),"Crop3Season":getSeason(getCrop(dataArray[4])),"Crop4":getCrop(dataArray[3]),"Crop4Price":getPrice(getCrop(dataArray[3])) ,"Crop4Season":getSeason(getCrop(dataArray[3])) ,"Crop5":getCrop(dataArray[2]) ,"Crop5Price":getPrice(getCrop(dataArray[2])) ,"Crop5Season":getSeason(getCrop(dataArray[2])),"Crop6":getCrop(dataArray[1]),"Crop6Price":getPrice(getCrop(dataArray[1])) ,"Crop6Season":getSeason(getCrop(dataArray[1])),"Crop7":getCrop(dataArray[0]),"Crop7Price":getPrice(getCrop(dataArray[0])) ,"Crop7Season":getSeason(getCrop(dataArray[0]))}
         console.log(result)
         res.render('cropsuggestion',{success:'true',login: 'true', name: req.session.name,healthID: req.session.healthID,result: result})
 
@@ -139,6 +140,51 @@ function getCrop(code){
 
 
 }
+
+function getPrice(crop){
+  switch(crop) {
+    case 'Sunflower':
+      return '<b>Range</b>: [3,500 - 3,500]<br> <b>Modal</b>: 3,500'
+    break;
+    case 'Grapes':
+      return 'Range</b>: [80 - 100] <br><b>Modal</b>: 90'
+    break;
+    case 'Wheat':
+      return '<b>Range</b>: [2,580 - 3,175] <br><b>Modal</b>: 2,700'
+    break;
+    case 'Maize':
+      return '<b>Range</b>: [1,810 - 1,901]<br><b> Modal</b>: 1,901'
+    break;
+    case 'Oil Crop':
+      return '<b>Range</b>: [5,100 - 5,100]<br><b> Modal</b>: 5,100'
+    break;
+    case 'SugarCane':
+      return 'Not available'
+    break;
+    case 'Jowar':
+      return '<b>Range</b>: [3,452 - 3,900]<br><b> Modal</b>: 3,600'
+    break;
+    case 'Pulses':
+      return '<b>Range:<b> [3,850 - 4,600]<br> <b>Modal</b>: 4,501'
+    break;
+    default:
+      return "Not availble"
+  }
+
+}
+
+function getSeason(crop){
+  kharif=['SugarCane','Oil Crop','Maize','Pulses','Jowar']
+  rabi=['Jowar','Wheat','Grapes','Pulses']
+
+  if(kharif.includes(crop) && rabi.includes(crop))
+    return 'Kharif / Rabi'
+  else if(kharif.includes(crop))
+    return 'Kharif'
+  else
+    return 'Rabi'
+}
+
 
 
 router.post('/weather', function (req,res){

@@ -543,6 +543,27 @@
 
 <% }%>
 
+<style>
+  table {
+    border:1px black solid;
+    border-radius: 10px;
+    width: 80%;
+    text-align: center;
+  }
+  
+  th, td {
+    text-align: center;
+    padding:5px;
+    font-size: 20px;
+  }
+  
+  tr:nth-child(even){background-color: #f2f2f2}
+  
+  th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  </style>
 
 <!-- Modal -->
 <div class="modal fade" id="healthcarddata" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
@@ -557,7 +578,8 @@
       <div class="modal-body">
          <!-- Dynamic content -->
       </div>
-      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
+     <br><br>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         <a type="button" href="/healthcard" class="btn btn-primary" >Edit</a>
@@ -638,9 +660,8 @@ $('#health').on('click', function(){
 	    {
 			//  console.log("success");
       //  console.log(data.health);
-       var card= ' <h5>TimeStamp :  '+data.health.date+'</h5>  <h5>Name  : <%=name%></h5><h5>Health Card number - '+data.health.healthID+' </h5> <h5>Location  : '+data.health.region+'</h5> <div class="col-sm-6 col-md-6 col-xs-12"> <h5>pH min :  '+data.health.pHMin+'   </h5><h5>Nitrogen min :  '+data.health.nitrogenMin+' </h5><h5>Phosphorous min : '+data.health.phosphorusMin+' </h5><h5>Potassium min : '+data.health.potassiumMin+' </h5><h5>Calcium min : '+data.health.calciumMin+' </h5><h5>Magnesium min :  '+data.health.magnesiumMin+' </h5><h5>Sulphur min :  '+data.health.sulphurMin+'  </h5><h5>Iron min :  '+data.health.ironMin+' </h5><h5>Zinc min : '+data.health.zincMin+' </h5><h5>Manganese min : '+data.health.manganeseMin+' </h5><h5>Copper min : '+data.health.copperMin+' </h5><h5>Boron min : '+data.health.boronMin+' </h5><h5>Temperature min : '+data.health.temperatureMin+' </h5><h5> Precipitation min : '+data.health.precipitationMin+' </h5></div><div class="col-sm-6 col-md-6 col-xs-12"><h5>pH max :   '+data.health.pHMax+'  </h5><h5>Nitrogen max :  '+data.health.nitrogenMax+'</h5><h5>Phosphorous max :  '+data.health.phosphorusMax+'</h5> <h5>Potassium max :  '+data.health.potassiumMax+'</h5><h5>Calcium max :  '+data.health.calciumMax+'</h5><h5>Magnesium max :  '+data.health.magnesiumMax+'</h5><h5>Sulphur max : '+data.health.sulphurMax+' </h5><h5>Iron max : '+data.health.ironMax+' </h5><h5>Zinc max : '+data.health.zincMax+' </h5><h5>Manganese max : '+data.health.manganeseMax+' </h5><h5>Copper max : '+data.health.copperMax+' </h5><h5>Boron max :  '+data.health.boronMax+'</h5><h5>Temperature max :  '+data.health.temperatureMax+' </h5><h5> Precipitation max : '+data.health.precipitationMax+'  </h5></div>'
-
-
+      //  var card= ' <h5>TimeStamp :  '+data.health.date+'</h5>  <h5>Name  : <%=name%></h5><h5>Health Card number - '+data.health.healthID+' </h5> <h5>Location  : '+data.health.region+'</h5> <div class="col-sm-6 col-md-6 col-xs-12"> <h5>pH min :  '+data.health.pHMin+'   </h5><h5>Nitrogen min :  '+data.health.nitrogenMin+' </h5><h5>Phosphorous min : '+data.health.phosphorusMin+' </h5><h5>Potassium min : '+data.health.potassiumMin+' </h5><h5>Calcium min : '+data.health.calciumMin+' </h5><h5>Magnesium min :  '+data.health.magnesiumMin+' </h5><h5>Sulphur min :  '+data.health.sulphurMin+'  </h5><h5>Iron min :  '+data.health.ironMin+' </h5><h5>Zinc min : '+data.health.zincMin+' </h5><h5>Manganese min : '+data.health.manganeseMin+' </h5><h5>Copper min : '+data.health.copperMin+' </h5><h5>Boron min : '+data.health.boronMin+' </h5><h5>Temperature min : '+data.health.temperatureMin+' </h5><h5> Precipitation min : '+data.health.precipitationMin+' </h5></div><div class="col-sm-6 col-md-6 col-xs-12"><h5>pH max :   '+data.health.pHMax+'  </h5><h5>Nitrogen max :  '+data.health.nitrogenMax+'</h5><h5>Phosphorous max :  '+data.health.phosphorusMax+'</h5> <h5>Potassium max :  '+data.health.potassiumMax+'</h5><h5>Calcium max :  '+data.health.calciumMax+'</h5><h5>Magnesium max :  '+data.health.magnesiumMax+'</h5><h5>Sulphur max : '+data.health.sulphurMax+' </h5><h5>Iron max : '+data.health.ironMax+' </h5><h5>Zinc max : '+data.health.zincMax+' </h5><h5>Manganese max : '+data.health.manganeseMax+' </h5><h5>Copper max : '+data.health.copperMax+' </h5><h5>Boron max :  '+data.health.boronMax+'</h5><h5>Temperature max :  '+data.health.temperatureMax+' </h5><h5> Precipitation max : '+data.health.precipitationMax+'  </h5></div>'
+        var card='<h5>TimeStamp :'+data.health.date+'</h5> <h5>Name  :  <%=name%></h5> <h5>Health Card number - '+data.health.healthID+'</h5> <h5>Location  :'+data.health.region+'</h5> <hr> <div style="text-align: center;"> <table align="center"> <tr> <th style="padding: 0%;"></th> <th>min</th> <th>max</th> </tr> <tr> <td>pH</td> <td>'+data.health.pHMin+'</td> <td>'+data.health.pHMax+'</td> </tr> <tr> <td>Nitrogen</td> <td>'+data.health.nitrogenMin+'</td> <td>'+data.health.nitrogenMax+'</td> </tr> <tr> <td>Phosphorous</td> <td>'+data.health.phosphorusMin+'</td> <td>'+data.health.phosphorusMax+'</td> </tr> <tr> <td>Potassium</td> <td>'+data.health.potassiumMin+'</td> <td>'+data.health.potassiumMax+'</td> </tr> <tr> <td>Calcium</td> <td>'+data.health.calciumMin+'</td> <td>'+data.health.calciumMax+'</td> </tr> <tr> <td>Magnesium</td> <td>'+data.health.magnesiumMin+'</td> <td>'+data.health.magnesiumMax+'</td> </tr> <tr> <td>Sulphur</td> <td>'+data.health.sulphurMin+'</td> <td>'+data.health.sulphurMax+'</td> </tr> <tr> <td>Iron</td> <td>'+data.health.ironMin+'</td> <td>'+data.health.ironMax+'</td> </tr> <tr> <td>Zinc</td> <td>'+data.health.zincMin+'</td> <td>'+data.health.zincMax+'</td> </tr> <tr> <td>Manganese</td> <td>'+data.health.manganeseMin+'</td> <td>'+data.health.manganeseMax+'</td> </tr> <tr> <td>Copper</td> <td>'+data.health.copperMin+'</td> <td>'+data.health.copperMax+'</td> </tr> <tr> <td>Boron</td> <td>'+data.health.boronMin+'</td> <td>'+data.health.boronMax+'</td> </tr><tr><td>Temperature</td> <td>'+data.health.temperatureMin+'</td> <td>'+data.health.temperatureMax+'</td></tr><tr><td>Precipitation</td> <td>'+data.health.precipitationMin+'</td> <td>'+data.health.precipitationMax+'</td> </tr> </table>'
 			 $('.modal-body').html(card);
 		},
  		error: function(jqXHR, textStatus, errorThrown){
