@@ -205,6 +205,45 @@
     </div>
   </div>
   
+<!-- Lifecycle popup -->
+  <div class="modal fade" id="popupLifeCycle" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true" >
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+
+          <h2 class="modal-title" id="exampleModalLongTitle">Note</h2>
+          <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"> -->
+            <!-- <span aria-hidden="true">&times;</span> -->
+          </button> 
+        </div>
+        <div class="modal-body" style="text-align: center;">
+            <a class="services-icon" href="/Wheat" target="_blank" >Lifecycle Wheat</a>
+            <br>
+            <a class="services-icon" href="/Jowar" target="_blank" >Lifecycle Jowar</a>
+            <br>
+            <a class="services-icon" href="/oilseeds" target="_blank" >Lifecycle Oilseeds</a>
+            <br>
+            <a class="services-icon" href="/Maize" target="_blank" >Lifecycle Maize</a>
+            <br>
+            <a class="services-icon" href="/Grapes" target="_blank" >Lifecycle Grapes</a>
+            <br>
+            <a class="services-icon" href="/Pulses" target="_blank" >Lifecycle Pulses</a>
+            <br>
+            <a class="services-icon" href="/Sugarcane" target="_blank" >Lifecycle Sugarcane</a>
+            <br>
+
+        </div>
+        <div class="modal-footer">
+          <!-- <a type="button" href="main page.html" class="btn btn-secondary" >Skip</a> -->
+          <b>More Crops coming soon!</b>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
 
 
   <!-- Start About area -->
@@ -283,7 +322,7 @@
             <div class="about-move">
               <div class="services-details">
                 <div class="single-services">
-                  <a class="services-icon" href="articles.html" target="_blank">
+                  <a class="services-icon" data-toggle="modal" data-target="#popupLifeCycle">
                   <h4>Expert Articles</h4>
                 </a>
                   <p>
@@ -298,7 +337,7 @@
             <div class="about-move">
               <div class="services-details">
                 <div class="single-services">
-                  <a class="services-icon" href="cropsuggestion.html" target="_blank">
+                  <a class="services-icon"  data-toggle="modal" <% if(!healthID) { %> data-target="#popup" <%} else {%> onclick="document.getElementById('cropSuggest').submit();" <%}%> >
 											
                   <h4>Crop Suggestion</h4>
                 </a>
