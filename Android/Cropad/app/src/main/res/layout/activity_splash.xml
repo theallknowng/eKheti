@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash" >
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="250dp"
+        android:layout_marginTop="160dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="300dp"
+        android:src="@drawable/androidlogo2" />
+
+<!--    <TextView-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="260dp"-->
+<!--        android:textSize="20dp"-->
+<!--        android:textColor="@color/colorPrimaryDark"-->
+<!--        android:textStyle="bold"-->
+<!--        android:gravity="center_horizontal"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:text="CROPAD" />-->
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="265dp"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:text="A Crop Prediction Application" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:textSize="14dp"
+        android:textColor="#ffffff"
+
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:text="Powered by DBIT" />
+
+
+</RelativeLayout>

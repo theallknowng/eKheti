@@ -25,8 +25,8 @@ public class expertadvice extends AppCompatActivity {
 
         expertdataList = new ArrayList<>();
         expertdataList.add(new expertdata("T. Kuhu", "Coupling crop","https://www.sciencedirect.com/science/article/pii/S0308521X19303257"));
-        expertdataList.add(new expertdata("Andrew P. Smith", "Whole farm implications of lucerne transitions in temperate crop-livestock systems","https://www.sciencedirect.com/science/article/pii/S0308521X18300222"));
-        expertdataList.add(new expertdata("Loksatta", "Sendriya Sheti","https://www.loksatta.com/lokshivar-news/marathi-articles-on-introduction-to-organic-farming-1507444/"));
+        expertdataList.add(new expertdata("Andrew P. Smith", "Farm implications","https://www.sciencedirect.com/science/article/pii/S0308521X18300222"));
+        expertdataList.add(new expertdata("लोकसत्ता", "सेंद्रिय शेती","https://www.loksatta.com/lokshivar-news/marathi-articles-on-introduction-to-organic-farming-1507444/"));
         expertdataList.add(new expertdata("M.S Allahyari", "Precision Agriculture","https://www.sciencedirect.com/science/article/pii/S2214317316300397"));
         expertdataList.add(new expertdata("Economic Times", "Self Marketing","https://economictimes.indiatimes.com/news/economy/agriculture/agriculture-experts-call-on-farmers-to-focus-on-self-marketing/articleshow/58660917.cms"));
         expertdataList.add(new expertdata("Mr. Rajiv Ahuja", "Basic Agriculture","https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=15&ved=2ahUKEwidwuLc6OvnAhWoxzgGHZAnBSoQFjAOegQIBBAB&url=https%3A%2F%2Fwww.manage.gov.in%2Fpublications%2Ffarmerbook.pdf&usg=AOvVaw1ongbEpgeX_Q2KsXvBMe5y"));

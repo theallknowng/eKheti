@@ -21,11 +21,11 @@
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="67dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="18dp"
         android:layout_centerHorizontal="true"
-        android:text="CROPAD"
+        android:text="Ekheti New User Registration Page "
         android:textAlignment="center"
-        android:textSize="50dp"
+        android:textSize="25dp"
         android:textStyle="bold"
        />
 

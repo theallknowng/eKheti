@@ -20,10 +20,10 @@ public final class R {
         private id() {}
 
         public static final int circles = 0x7f08006d;
-        public static final int material = 0x7f0800ca;
+        public static final int material = 0x7f0800cb;
         public static final int ring = 0x7f0800fe;
         public static final int smartisan = 0x7f08011c;
-        public static final int water_drop = 0x7f080165;
+        public static final int water_drop = 0x7f080168;
     }
     public static final class styleable {
         private styleable() {}

@@ -108,13 +108,13 @@ public class MainActivity extends AppCompatActivity {
 //            }
 //        });
 
-        test = (Button) findViewById(R.id.test_but);
-        test.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                testing();
-            }
-        });
+//        test = (Button) findViewById(R.id.test_but);
+//        test.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                testing();
+//            }
+//        });
 
         login = (Button) findViewById(R.id.login_but);
         login.setOnClickListener(new View.OnClickListener() {

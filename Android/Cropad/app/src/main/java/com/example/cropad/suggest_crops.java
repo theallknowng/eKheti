@@ -1,11 +1,24 @@
 package com.example.cropad;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.graphics.Region;
+import android.net.Uri;
 import android.os.Bundle;
+import android.text.Html;
+import android.text.SpannableString;
+import android.text.Spanned;
+import android.text.TextPaint;
+import android.text.method.LinkMovementMethod;
+import android.text.style.ClickableSpan;
+import android.view.View;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -27,6 +40,41 @@ public class suggest_crops extends AppCompatActivity {
     String healthID=null;
     TextView t1,t2,t3;
 
+    Spanned Text;
+
+    public void Jowar(){
+        Intent j = new Intent(this, Jowar.class);
+        startActivity(j);
+    }
+    public void wheat(){
+        Intent w = new Intent(this, wheat.class);
+        startActivity(w);
+    }
+    public void bajra(){
+        Intent b = new Intent(this, bajra.class);
+        startActivity(b);
+    }
+    public void sugarcane(){
+        Intent j = new Intent(this, sugarcane.class);
+        startActivity(j);
+    }
+    public void maize(){
+        Intent j = new Intent(this, maize.class);
+        startActivity(j);
+    }
+    public void oilcrops(){
+        Intent j = new Intent(this, oilcrops.class);
+        startActivity(j);
+    }
+    public void pulses(){
+        Intent j = new Intent(this, pulses.class);
+        startActivity(j);
+    }
+
+
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,6 +82,210 @@ public class suggest_crops extends AppCompatActivity {
         t1 = (TextView)findViewById(R.id.t1);
         t2 = (TextView)findViewById(R.id.t2);
         t3 = (TextView)findViewById(R.id.t3);
+
+        TextView textView = findViewById(R.id.textView1);
+
+        String text = "Life Cycle of  Jowar";
+
+        SpannableString ss = new SpannableString(text);
+
+        //  ForegroundColorSpan fcs = new ForegroundColorSpan(Color.BLUE);
+
+        ClickableSpan cs = new ClickableSpan() {
+            @Override
+            public void onClick(@NonNull View widget)
+            {
+                Jowar();
+            }
+
+            @Override
+            public void updateDrawState(@NonNull TextPaint ds) {
+                super.updateDrawState(ds);
+                ds.setColor(Color.BLUE);
+            }
+        };
+
+        // ss.setSpan(fcs,31,44, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        ss.setSpan(cs,15,20, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+
+        textView.setText(ss);
+
+        textView.setMovementMethod(LinkMovementMethod.getInstance());
+
+        TextView textView3 = findViewById(R.id.textView3);
+
+        String text3 = "Life Cycle of  Wheat";
+
+        SpannableString ss3 = new SpannableString(text3);
+
+        //  ForegroundColorSpan fcs = new ForegroundColorSpan(Color.BLUE);
+
+        ClickableSpan cs3 = new ClickableSpan() {
+            @Override
+            public void onClick(@NonNull View widget)
+            {
+                wheat();
+            }
+
+            @Override
+            public void updateDrawState(@NonNull TextPaint ds) {
+                super.updateDrawState(ds);
+                ds.setColor(Color.BLUE);
+            }
+        };
+
+        // ss.setSpan(fcs,31,44, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        ss3.setSpan(cs3,15,20, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+
+        textView3.setText(ss3);
+
+        textView3.setMovementMethod(LinkMovementMethod.getInstance());
+
+        TextView textView4 = findViewById(R.id.textView4);
+
+        String text4 = "Life Cycle of  Grapes";
+
+        SpannableString ss4 = new SpannableString(text4);
+
+        //  ForegroundColorSpan fcs = new ForegroundColorSpan(Color.BLUE);
+
+        ClickableSpan cs4 = new ClickableSpan() {
+            @Override
+            public void onClick(@NonNull View widget)
+            {
+                bajra();
+            }
+
+            @Override
+            public void updateDrawState(@NonNull TextPaint ds) {
+                super.updateDrawState(ds);
+                ds.setColor(Color.BLUE);
+            }
+        };
+
+        // ss.setSpan(fcs,31,44, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        ss4.setSpan(cs4,15,21, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+
+        textView4.setText(ss4);
+
+        textView4.setMovementMethod(LinkMovementMethod.getInstance());
+
+        TextView textView5 = findViewById(R.id.textView5);
+
+        String text5 = "Life Cycle of  Sugarcane";
+
+        SpannableString ss5 = new SpannableString(text5);
+
+        //  ForegroundColorSpan fcs = new ForegroundColorSpan(Color.BLUE);
+
+        ClickableSpan cs5 = new ClickableSpan() {
+            @Override
+            public void onClick(@NonNull View widget)
+            {
+                sugarcane();
+            }
+
+            @Override
+            public void updateDrawState(@NonNull TextPaint ds) {
+                super.updateDrawState(ds);
+                ds.setColor(Color.BLUE);
+            }
+        };
+
+        // ss.setSpan(fcs,31,44, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        ss5.setSpan(cs5,15,24, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+
+        textView5.setText(ss5);
+
+        textView5.setMovementMethod(LinkMovementMethod.getInstance());
+
+        TextView textView6 = findViewById(R.id.textView6);
+
+        String text6 = "Life Cycle of  Maize";
+
+        SpannableString ss6 = new SpannableString(text6);
+
+        //  ForegroundColorSpan fcs = new ForegroundColorSpan(Color.BLUE);
+
+        ClickableSpan cs6 = new ClickableSpan() {
+            @Override
+            public void onClick(@NonNull View widget)
+            {
+                maize();
+            }
+
+            @Override
+            public void updateDrawState(@NonNull TextPaint ds) {
+                super.updateDrawState(ds);
+                ds.setColor(Color.BLUE);
+            }
+        };
+
+        // ss.setSpan(fcs,31,44, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        ss6.setSpan(cs6,15,20, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+
+        textView6.setText(ss6);
+
+        textView6.setMovementMethod(LinkMovementMethod.getInstance());
+
+        TextView textView7 = findViewById(R.id.textView7);
+
+        String text7 = "Life Cycle of  Oilseeds";
+
+        SpannableString ss7 = new SpannableString(text7);
+
+        //  ForegroundColorSpan fcs = new ForegroundColorSpan(Color.BLUE);
+
+        ClickableSpan cs7 = new ClickableSpan() {
+            @Override
+            public void onClick(@NonNull View widget)
+            {
+                oilcrops();
+            }
+
+            @Override
+            public void updateDrawState(@NonNull TextPaint ds) {
+                super.updateDrawState(ds);
+                ds.setColor(Color.BLUE);
+            }
+        };
+
+        // ss.setSpan(fcs,31,44, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        ss7.setSpan(cs7,15,23, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+
+        textView7.setText(ss7);
+
+        textView7.setMovementMethod(LinkMovementMethod.getInstance());
+
+        TextView textView8 = findViewById(R.id.textView8);
+
+        String text8 = "Life Cycle of  Pulses";
+
+        SpannableString ss8 = new SpannableString(text8);
+
+        //  ForegroundColorSpan fcs = new ForegroundColorSpan(Color.BLUE);
+
+        ClickableSpan cs8 = new ClickableSpan() {
+            @Override
+            public void onClick(@NonNull View widget)
+            {
+                pulses();
+            }
+
+            @Override
+            public void updateDrawState(@NonNull TextPaint ds) {
+                super.updateDrawState(ds);
+                ds.setColor(Color.BLUE);
+            }
+        };
+
+        // ss.setSpan(fcs,31,44, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        ss8.setSpan(cs8,15,21, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+
+        textView8.setText(ss8);
+
+        textView8.setMovementMethod(LinkMovementMethod.getInstance());
+
 
 
         final SharedPreferences sharedpreferences = getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE);
@@ -159,7 +411,11 @@ public class suggest_crops extends AppCompatActivity {
 
                 @Override
                 public void onErrorResponse(VolleyError error) {
+<<<<<<< HEAD
+                    Toast toast = Toast.makeText(suggest_crops.this,"Internal Server Error "+error, Toast.LENGTH_LONG);
+=======
                     Toast toast = Toast.makeText(suggest_crops.this,"Internal Server Error "+error,Toast.LENGTH_LONG);
+>>>>>>> 339badd2c09eff5b3d8596f745612d782e0b6aff
                     toast.show();
                 }
             });
@@ -170,3 +426,22 @@ public class suggest_crops extends AppCompatActivity {
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

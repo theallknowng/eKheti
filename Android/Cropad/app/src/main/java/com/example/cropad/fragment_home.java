@@ -71,7 +71,7 @@ public class fragment_home extends Fragment {
         Healthcards.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent hc = new Intent(getContext(), Healthcards.class);
+                Intent hc = new Intent(getContext(), edithealthcard.class);
                 startActivity(hc);
             }
         });
@@ -93,7 +93,7 @@ public class fragment_home extends Fragment {
         suggest_crops.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent sc = new Intent(getContext(), suggest_crops.class);
+                Intent sc = new Intent(getContext(), Splash2.class);
                 startActivity(sc);
             }
         });

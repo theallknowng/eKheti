@@ -4,8 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/suggest_gradient"
+    android:background="@drawable/suggestpage"
     tools:context=".suggest_crops">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The list of Suggested Crops is as follows:"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:layout_marginTop="335dp"
+        android:layout_centerHorizontal="true"/>
+
+
+
+
 
 
     <TextView
@@ -16,78 +31,197 @@
         android:textSize="40dp"
 
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp"/>
+        android:layout_marginTop="270dp"/>
 
     <TextView
         android:id="@+id/t1"
-        android:layout_width="290dp"
-        android:layout_height="60dp"
-        android:textAlignment="center"
-        android:background="@drawable/bottomline"
-        android:text="Crop 1"
-        android:textSize="35dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="200dp"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:autoLink="web"
+        android:paddingLeft="10dp"
+
+
+        android:text=""
+        android:textSize="30dp"
+        android:layout_marginLeft="177dp"
+        android:layout_marginTop="370dp"
         android:textColor="#000000"
         />
 
     <TextView
         android:id="@+id/t2"
-        android:layout_width="290dp"
-        android:layout_height="60dp"
-        android:textAlignment="center"
-        android:text="Crop 2"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="177dp"
 
-        android:background="@drawable/bottomline"
-        android:textSize="35dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="300dp"
+        android:text=""
+        android:autoLink="web"
+        android:paddingLeft="10dp"
+
+
+        android:textSize="30dp"
+
+        android:layout_marginTop="420dp"
         android:textColor="#000000"
         />
 
     <TextView
         android:id="@+id/t3"
-        android:layout_width="290dp"
-        android:textAlignment="center"
-        android:text="Crop 3"
+        android:layout_width="170dp"
 
-        android:textSize="35dp"
-        android:layout_height="60dp"
-        android:background="@drawable/bottomline"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="400dp"
+        android:text=""
+        android:autoLink="web"
+        android:paddingLeft="10dp"
+
+        android:textSize="30dp"
+        android:layout_height="40dp"
+
+        android:layout_marginLeft="177dp"
+        android:layout_marginTop="470dp"
         android:textColor="#000000"/>
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="82dp"
-        android:layout_height="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Suggestion No.1 ---"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:layout_marginTop="385dp"
+        android:layout_marginLeft="70dp"/>
 
-        android:layout_marginTop="200dp"
-        android:textSize="35dp"
-        android:gravity="center"
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Suggestion No.3 ---"
+        android:textStyle="bold"
+        android:textSize="12dp"
+        android:layout_marginTop="487dp"
+        android:layout_marginLeft="70dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Suggestion No.2 ---"
+        android:textStyle="bold"
+        android:textSize="12dp"
+        android:layout_marginTop="437dp"
+        android:layout_marginLeft="70dp"/>
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView3"-->
+<!--        android:layout_width="82dp"-->
+<!--        android:layout_height="60dp"-->
+<!---->
+<!--        android:layout_marginTop="200dp"-->
+<!--        android:textSize="35dp"-->
+<!--        android:gravity="center"-->
+<!--        android:textColor="#000000"-->
+<!--        android:text="1." />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView4"-->
+<!--        android:layout_width="82dp"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:layout_marginTop="300dp"-->
+<!--        android:gravity="center"-->
+<!--        android:text="2."-->
+<!--        android:textColor="#000000"-->
+<!--        android:textSize="35dp" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView5"-->
+<!--        android:layout_width="82dp"-->
+<!--        android:layout_height="60dp"-->
+<!---->
+<!--        android:layout_marginTop="400dp"-->
+<!--        android:gravity="center"-->
+<!--        android:text="3."-->
+<!--        android:textColor="#000000"-->
+<!--        android:textSize="35dp" />-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Additional Information of Lifecycle of Different Crops is Mentioned Below:"
         android:textColor="#000000"
-        android:text="1." />
+        android:layout_marginTop="555dp"
+        android:layout_marginLeft="30dp"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="605dp"
+
+        android:text="Life Cycle of  Jowar"
+        android:textStyle="bold"
+        android:layout_marginLeft="250dp"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="655dp"
+
+        android:text="Life Cycle of  Wheat "
+        android:textStyle="bold"
+        android:layout_marginLeft="250dp"
+        android:gravity="center" />
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="82dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="300dp"
-        android:gravity="center"
-        android:text="2."
-        android:textColor="#000000"
-        android:textSize="35dp" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="630dp"
+
+        android:text="Life Cycle of  Grapes"
+        android:textStyle="bold"
+        android:layout_marginLeft="250dp"
+        android:gravity="center" />
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="82dp"
-        android:layout_height="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="605dp"
 
-        android:layout_marginTop="400dp"
-        android:gravity="center"
-        android:text="3."
-        android:textColor="#000000"
-        android:textSize="35dp" />
+        android:text="Life Cycle of  Sugarcane"
+        android:textStyle="bold"
+        android:layout_marginLeft="30dp"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="630dp"
+
+        android:text="Life Cycle of  Maize"
+        android:textStyle="bold"
+        android:layout_marginLeft="30dp"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="655dp"
+
+        android:text="Life Cycle of  Oilseeds"
+        android:textStyle="bold"
+        android:layout_marginLeft="30dp"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="680dp"
+
+        android:text="Life Cycle of  Pulses"
+        android:textStyle="bold"
+        android:layout_marginLeft="30dp"
+        android:gravity="center" />
 
 </RelativeLayout>

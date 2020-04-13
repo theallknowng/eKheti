@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Healthcards"
 
-    android:background="@drawable/inside_pages">
+    android:background="#ffffff">
 
     <include
         android:id="@+id/toolbar"
