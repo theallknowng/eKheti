@@ -165,7 +165,7 @@ function getPrice(crop){
       return '<b>Range</b>: [3,452 - 3,900]<br><b> Modal</b>: 3,600'
     break;
     case 'Pulses':
-      return '<b>Range:<b> [3,850 - 4,600]<br> <b>Modal</b>: 4,501'
+      return '<b>Range:</b> [3,850 - 4,600]<br> <b>Modal</b>: 4,501'
     break;
     default:
       return "Not availble"
